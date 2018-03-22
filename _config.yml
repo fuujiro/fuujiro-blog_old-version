@@ -12,7 +12,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://fuujiro.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -71,6 +71,16 @@ pagination_dir: page
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+#RSS订阅
+plugin:
+- hexo-generator-feed
+#Feed Atom
+feed:
+  type: atom
+  path: atom.xml
+  limit: 5
+  hub: 
+  content: 'true'
 ## Themes: https://hexo.io/themes/
 theme: apollo
 
@@ -89,3 +99,7 @@ deploy:
   repo: https://github.com/fuujiro/fuujiro.github.io
   branch: master
 
+# Disqus
+disqus_shortname: fuujiro
+
+#search
