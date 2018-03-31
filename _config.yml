@@ -72,15 +72,15 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 #RSS订阅
-plugin:
-- hexo-generator-feed
+#plugin:
+#- hexo-generator-feed
 #Feed Atom
-feed:
-  type: atom
-  path: atom.xml
-  limit: 5
-  hub: 
-  content: 'true'
+#feed:
+#  type: atom
+#  path: atom.xml
+#  limit: 5
+#  hub: 
+#  content: 'true'
 ## Themes: https://hexo.io/themes/
 theme: apollo
 
