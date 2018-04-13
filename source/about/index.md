@@ -9,7 +9,7 @@ date: 2018-02-14 21:33:13
  * 知乎: [fuujiro灌水主页，日常吹水](https://www.zhihu.com/people/fuujiro)
  * 哔哩哔哩: [fuujiro爱搞点小玩意儿](https://space.bilibili.com/81270094/#/)
  * GitHub: [fuujiro真正会做点事情的地方](https://github.com/fuujiro)
- * E-Mail: [你是不是有什么话想对我讲啊？](mailto:fuujiro1997@gmail.com)
+ * E-Mail: [你是不是有什么话想对我讲啊？](mailto:fuujiro@foxmail.com)
 
 
 
