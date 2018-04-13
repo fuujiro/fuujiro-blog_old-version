@@ -103,3 +103,7 @@ deploy:
 disqus_shortname: fuujiro
 
 #search
+
+# 自动生成sitemap
+sitemap:
+path: sitemap.xml
