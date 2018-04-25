@@ -10,7 +10,7 @@ tags:
 好了，正经说话吧！高校里教学c语言时，应该是用的`VC++6.0` or `VS2010`，这两个是编辑器嘛？当然，不是的！他们都是集成开发环境（`IDE`，`Integrated Development Environment`）,而`Vim`才是编辑器，与`vim`一起称作编辑器还有啥子呢？比如，`Emacs`（Vim在这个世界上的最强大对手）,`VS code`（Microsoft推出的开源编辑器，是我最近使用的最频繁的编辑器，可以说面对学习曲线陡峭的Vim来说，`VS code`是最容易上手的编辑器，我现在在写的这篇blog就是用`VS code`写的，插件十分丰富，除了由于GUI界面的存在，可能在内存上稍高于`Vim`，但比起鬼畜的`Atom`来说，那是好到不知道哪里去了的存在）,`Atom`（Google推出的开源编辑器，同样因为开源的原因，插件十分丰富）,`Sublime Text`（前端engineer一定经历过的编辑器，插件丰富，性能极优）等等......
 
 好了，你现在肯定会问我，为啥我这次blog只介绍Vim呢？因为，Vim难学啊！这里有一张网上嘲讽几大编辑器的学习曲线～
-![vim-line](https://raw.githubusercontent.com/fuujiro/pictures/master/主流編輯器學習曲線圖.jpg)
+![vim-line](https://raw.githubusercontent.com/fuujiro/pictures/master/vim操作/主流編輯器學習曲線圖.jpg)
 
 ### 2. 学习Vim能给你带来什么？
 从图上我们能看出，vim（vi）的学习曲线入门是十分陡峭的，Emacs的略显鬼畜2333～！那，学习Vim对于我来说，到底有什么什么好处呢？我在刚刚学习Vim时，也是有抱着这个疑惑的，后来总是强迫自己去学+在网上了解Vim，我觉得学习对你可能会有这些好处：
@@ -22,7 +22,7 @@ tags:
 * Vim具有其他编辑器不具有的与生俱来的特殊功能，比如轻松运用SSH（SSH指：. Secure Shell（缩写：SSH），即“安全壳协议”，一项计算机上的安全协议）；Vim内存占用很低，对于开发配置要求极低，比起具有图形界面的VS code，Atom，Sublime来说，可以说能开机的电脑都能顺溜地跑Vim～！
 
 * 最后一个：Vim能帮助乌干达的贫苦儿童，这是个梗2333～！不过，认真讲哦～你用Vim写代码，是在帮助世界上的其他小孩子呢！还有什么理由，不好好写代码233～！
-![Uganda](https://raw.githubusercontent.com/fuujiro/pictures/master/4170551-f560a9916f58202d.jpg)
+![Uganda](https://raw.githubusercontent.com/fuujiro/pictures/master/vim操作/4170551-f560a9916f58202d.jpg)
 
 相信前面的大串理由，你一定拒绝不了Vim的诱惑，不如和我一起来学习Vim工具吧～啦啦啦～！
 
@@ -95,7 +95,7 @@ VIM - Vi IMproved 8.0 (2016 Sep 12, compiled Jul 26 2017 19:10:24)
 ##### 3.3.2 vim的基本操作
 你如果是第一次接触命令行，可以在打开终端（open terminal），敲下`vimtutor`然后按下回车，就可以看到（如下图）
 
-![vimtutor](https://raw.githubusercontent.com/fuujiro/pictures/master/DeepinScreenshot_select-area_20180331125208.png)
+![vimtutor](https://raw.githubusercontent.com/fuujiro/pictures/master/vim操作/DeepinScreenshot_select-area_20180331125208.png)
 
 这是vim的学习文档，文档语言取决于你的系统语言，所以不会英语的小伙伴也不必害怕学习vim，毕竟中文文档也是挺丰富的，不过我还是推荐学习好英语的。
 
@@ -312,9 +312,9 @@ VIM - Vi IMproved 8.0 (2016 Sep 12, compiled Jul 26 2017 19:10:24)
 
 
 最后贴2张Vim的命令大全图，可以留着当壁纸，时不时看几眼，没准就都记住了呢～
-![Vim命令图1](https://raw.githubusercontent.com/fuujiro/pictures/master/20160712110935064.png)
-![Vim命令图2](https://raw.githubusercontent.com/fuujiro/pictures/master/343184-20170103184312878-397465891.png)
-![Vim命令图3](https://raw.githubusercontent.com/fuujiro/pictures/master/175824-20161123224659425-328736487.png)
+![Vim命令图1](https://raw.githubusercontent.com/fuujiro/pictures/master/vim操作/20160712110935064.png)
+![Vim命令图2](https://raw.githubusercontent.com/fuujiro/pictures/master/vim操作/343184-20170103184312878-397465891.png)
+![Vim命令图3](https://raw.githubusercontent.com/fuujiro/pictures/master/vim操作/175824-20161123224659425-328736487.png)
 
 ### 4. Vim的终极配置
 
