@@ -24,10 +24,9 @@ tags:
     2.2 队列
 
 3. **数组**
-    3.1 数组的定义
-    3.2 数组的顺序表示和实现
-    3.3 矩阵的压缩储存
-    3.3.1 `稀疏矩阵`
+    3.1 数组的顺序表示和实现
+    3.2 矩阵的压缩储存
+    3.2.1 `稀疏矩阵`
 
 4. **树**
     4.1 二叉树
@@ -85,7 +84,8 @@ typedef struct {
 }SqList;
 ~~~
 
-更多有关线性表的基本操作，请戳——>[线性表与13个基本操作的实现](https://blog.csdn.net/bruthyu/article/details/52645510)
+> 更多有关线性表的知识，请戳：
+* [线性表与13个基本操作的实现](https://blog.csdn.net/bruthyu/article/details/52645510)
 
 #### 1.2 链式表示和实现
 
@@ -115,7 +115,7 @@ struct Node {
 };
 ~~~
 
-更多链表基本实现和操作，请戳：
+> 更多链表知识，请戳：
 
 * [C语言单向链表的实现](https://blog.csdn.net/21aspnet/article/details/160019)
 * [链表的基本使用一（构建链表）](https://blog.csdn.net/lan74__/article/details/53819849)
@@ -158,7 +158,7 @@ struct Node {
 5. 双向循环链表的实现
     在双向链表中，有如下指针关系：设指针p指向双向循环链表中的第i个位置，则`p->next`指向i+1个结点。`p->next->prior`仍指向第i个结点，即`p->next->prior==p`;同样`p->prior`指向第i-1个结点，`p->prior->next`仍指向第i个结点，即`p->prior->next==p`;双向循环链表关系算法可以方便算法设计。
 
-更多循环链表和双向链表的知识，请戳：
+> 更多循环链表和双向链表的知识，请戳：
 * [数据结构——循环单链表和双向链表](https://blog.csdn.net/xiaofei__/article/details/50984255)
 
 * [数据结构 | 双向链表简单实现及图示](http://www.cnblogs.com/hughdong/p/6785391.html) -> *recommend*！
@@ -169,7 +169,50 @@ struct Node {
 
 #### 2.1 栈
 
-栈是限定仅在表尾进行插入和删除的线性表。对于栈，表尾称为`栈顶`，相应地，表头称为`栈底`。不含元素的空表称为`空栈`。栈是一种后进先出（last in first out, LIFO）结构。
+栈`stack`是限定仅在表尾进行插入和删除的线性表。对于栈，表尾称为`栈顶`，相应地，表头称为`栈底`。不含元素的空表称为`空栈`。栈是一种后进先出（last in first out, LIFO）结构。
 
+栈有两种储存方式，顺序栈和链式栈。
 
+顺序栈的定义：
+~~~
+struct stack {
+    SElemType *base;
+    SElemType *top;
+    int stacksize;
+}SqStack;
+~~~
 
+**备注**：`stacksize`指当前可使用的最大容量，`base`表示栈底指针，`base`为NULL时，表明栈结构不存在，其初值指向栈底，即`top = base`可作为栈空的标记。插入元素，top+1；删除元素，top-1。
+
+> 更多栈的知识，请戳：
+* [[数据结构]C语言栈的实现](https://www.cnblogs.com/racaljk/p/7822309.html)
+* [数据结构图文解析之：栈的简介及C++模板实现](https://www.cnblogs.com/QG-whz/p/5170418.html) -> *recommend*！
+
+#### 2.2 队列
+
+和栈相反，队列`quene`是一种先进先出（first in first out, FIFO）的线性表，它只允许在表的一端插入，另一端删除。在队列中，允许插入的一端叫做队尾`rear`，允许删除的一端叫做队头`front`。
+
+队列也有两种储存方式，顺序队列和链队列。
+
+链队列的实现：
+~~~
+struct QNode {
+    QElemType data;
+    struct QNode *next;
+}QNode, *QuenePtr;
+struct LinkQuene {
+    QuenePtr front; //队头指针
+    QuenePtr rear; //队尾指针
+}LinkQuene;
+~~~
+
+> 更多队列知识，请戳：
+* [数据结构-队列(queue)](https://blog.csdn.net/juanqinyang/article/details/51354293) -> *recommend*！
+
+### 3. 数组
+
+数组和广义表可以看作是线性表的扩展，也算是一种数据结构。
+
+#### 3.1 数组的顺序表示和实现
+
+由于数组一般不做插入或删除操作，因此采用顺序储存结构表示数组是最吼滴！
