@@ -216,3 +216,44 @@ struct LinkQuene {
 #### 3.1 数组的顺序表示和实现
 
 由于数组一般不做插入或删除操作，因此采用顺序储存结构表示数组是最吼滴！
+
+> 假设每个数据元素占`L`个存储单元，则二维数组`A`中任一元素`aij`的存储位置可由下式确定：LOC(i, j) = LOC(0, 0) + (b2 * i + j) * L
+
+数组的顺序存储的表示：
+~~~
+ #define MAX_ARRAY_DIM 8
+struct array {
+    ElemType *base;
+    int dim;
+    int *bounds;
+    int *constants;
+}Array;
+~~~
+
+#### 3.2 矩阵的压缩存储
+
+> 压缩存储指的是为多个值相同的元只分配一个存储单元；对零元不分配空间。
+
+##### 3.2.1 稀疏矩阵
+
+> 对于那些零元素数目远远多于非零元素数目，并且非零元素的分布没有规律的矩阵称为稀疏矩阵（sparse）。
+
+*  由于非零元素分布没有任何规律，所以在进行压缩存储的时侯需要存储非零元素值的同时还要存储非零元素在矩阵中的位置，即非零元素所在的行号和列号，也就是在存储某个元素比如`aij`的值的同时，还需要存储该元素所在的行号`i`和它的列号`j`，这样就构成了一个三元组`(i,j,aij)`的线性表。
+
+~~~
+ #define MAXSIZE 12500
+struct triple {
+    int i, j; // 该非零元的行下标和列下标
+    ElemType e;
+}Triple;
+struct tsmatrix {
+    Triple data[MAXSIZE + 1]; //非零元三元组
+    int mu, nu, tu; //行数，列数，非零元个数
+}TSMatrix;
+~~~
+
+> 更多稀疏矩阵的知识，请戳：
+
+* [稀疏矩阵](https://blog.csdn.net/sunhuaqiang1/article/details/51296803)
+
+
