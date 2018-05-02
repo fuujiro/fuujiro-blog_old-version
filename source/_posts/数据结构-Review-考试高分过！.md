@@ -298,6 +298,15 @@ typedef TElemType SqBiTree[MAX_TREE_SIZE]; // 0号单元存储根节点
 SqBiTree bt;
 ```
 
+二叉树的链式存储结构：
+
+```C++
+struct BiTree {
+    TElemType data; // 数据域
+    struct BiTree *lchild, *rchild; // 左右孩子指针
+}BiTree, *BiTree;
+```
+
 > 更多二叉树知识，请戳：
 
 * [二叉树总结(一)概念和性质](https://www.cnblogs.com/yeqluofwupheng/p/7428935.html)
