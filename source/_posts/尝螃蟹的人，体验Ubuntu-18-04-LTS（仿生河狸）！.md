@@ -39,3 +39,14 @@ GNOME 正式来到 Ubuntu 18.04 LTS 桌面也标志着新统一风格定制的 G
 
 #### 1.3 彩色`emoji`
 
+![emoji](https://raw.githubusercontent.com/fuujiro/pictures/master/ubuntu-18.04-LTS/12.jpg)
+
+表情符号在个人 Linux 功能愿望清单中需求度可能不会很高，但不能否认表情符号现在是现代数字通信的一个重要组成部分。包括 Fedora 在内的许多其他流行 Linux 发行版很久以前就获得了对 emoji 的支持，在 Ubuntu 18.04 LTS 正式发布时，Ubuntu 用户也终于可以享受桌面应用程序中对彩色表情符号的开箱即用支持了。
+
+为确保平台之间的一致性， Ubuntu 18.04 LTS 将使用 Noto Color Emoji 字体，该字体支持最新 Unicode 版本中定义的所有表情符号。
+
+> 怎么安装新的emoji呢?
+
+```bash
+sudo apt install fonts-emojione
+```
