@@ -31,6 +31,9 @@ tags:
 4. **树**
     4.1 二叉树
     4.2 遍历二叉树
+    4.2.1 `三大遍历的递归实现`
+    4.2.2 `三大遍历的非递归实现`
+    4.2.3 `层次遍历`
     4.3 树和森林
     4.4 赫夫曼树
 
@@ -312,3 +315,181 @@ struct BiTree {
 * [二叉树总结(一)概念和性质](https://www.cnblogs.com/yeqluofwupheng/p/7428935.html)
 
 * [markdown中的数学公式简要](https://blog.csdn.net/wireless_com/article/details/70596155)
+
+#### 4.2 遍历二叉树
+
+> 二叉树是一种非线性结构，是由3个基本单元组成：根节点，左子树和右子树。规定先左后右，有3种基本情况，先序遍历，中序遍历和后序遍历。
+
+##### 4.2.1 三大遍历的递归实现
+
+* 先序遍历（根-左-右）
+
+    ~~~C
+    void preOrder1(BinaryTreeNode* pRoot)  
+    {  
+        if(pRoot==NULL)  
+            return;  
+    
+        cout<<pRoot->value;  
+        if(pRoot->left!=NULL)  
+            preOrder1(pRoot->left);  
+        if(pRoot->right!=NULL)  
+            preOrder1(pRoot->right);  
+    } 
+    ~~~
+
+* 中序遍历（左-根-右）
+
+    ~~~C
+    void inOrder1(BinaryTreeNode* pRoot)  
+    {  
+        if(pRoot==NULL)  
+            return;  
+        
+        if(pRoot->left!=NULL)  
+            inOrder1(pRoot->left);  
+        cout<<pRoot->value;  
+        if(pRoot->right!=NULL)  
+            inOrder1(pRoot->right);  
+    }
+    ~~~
+
+* 后序遍历（左-右-根）
+
+    ~~~C
+    void postOrder1(BinaryTreeNode* pRoot)  
+    {  
+        if(pRoot==NULL)  
+            return;  
+        postOrder1(pRoot->left);  
+        postOrder1(pRoot->right);  
+        cout<<pRoot->value<<" ";  
+    }  
+    ~~~
+
+##### 4.2.2 三大遍历的非遍历实现
+
+* 先序遍历（根-左-右）
+
+    ~~~C
+    void preOrder2(BinaryTreeNode* pRoot)  
+    {  
+        stack<BinaryTreeNode*> s;  
+        BinaryTreeNode *p=pRoot;  
+    
+        if(pRoot==NULL)  
+            return;  
+        while(p!=NULL||!s.empty())  
+        {  
+            while(p!=NULL)  
+            {  
+                cout<<p->value<<" ";  
+                s.push(p);  
+                p=p->left;  
+            }  
+            if(!s.empty())  
+            {  
+                p=s.top();  
+                s.pop();  
+                p=p->right;  
+            }  
+        }  
+    }  
+    ~~~
+
+* 中序遍历（左-根-右）
+
+    ~~~C
+    void inOrder(BinaryTreeNode* pRoot)  
+    {  
+        stack<BinaryTreeNode*> s;  
+        BinaryTreeNode *p=pRoot;  
+        while(p!=NULL||!s.empty())  
+        {  
+            while(p!=NULL)  
+            {  
+                s.push(p);  
+                p=p->left;  
+            }  
+            if(!s.empty())  
+            {  
+                p=s.top();  
+                cout<<p->value;  
+                s.pop();  
+                p=p->right;  
+            }  
+        }  
+    }  
+    ~~~
+
+* 后序遍历（左-右-根）
+
+    ~~~C
+    void postOrder(BinaryTreeNode* pRoot)  
+    {  
+        stack<BinaryTreeNode*> s;  
+        BinaryTreeNode *cur;  
+        BinaryTreeNode *pre=NULL;  
+        s.push(pRoot);//根结点入栈  
+        while(!s.empty())  
+        {  
+            cur=s.top();  
+            if((cur->left==NULL&&cur->right==NULL)||(pre!=NULL&&(pre==cur->left||pre==cur->right)))  
+            {  
+                //左孩子和右孩子同时为空，或者当前结点的左孩子或右孩子已经遍历过了  
+                cout<<cur->value<<" ";  
+                s.pop();  
+                pre=cur;  
+            }  
+            else  
+            {  
+                if(cur->right!=NULL)  
+                    s.push(cur->right);  
+                if(cur->left!=NULL)  
+                    s.push(cur->left);  
+            }  
+        }  
+    } 
+    ~~~
+
+##### 4.2.3 层次遍历
+
+~~~C
+void PrintFromTopToBottom(BinaryTreeNode* pRoot)  
+{  
+    if(pRoot == NULL)  
+        return;  
+  
+    std::deque<BinaryTreeNode *> dequeTreeNode;  
+  
+    dequeTreeNode.push_back(pRoot);  
+  
+    while(dequeTreeNode.size())  
+    {  
+        BinaryTreeNode *pNode = dequeTreeNode.front();  
+        dequeTreeNode.pop_front();  
+  
+        printf("%d ", pNode->m_nValue);  
+  
+        if(pNode->m_pLeft)  
+            dequeTreeNode.push_back(pNode->m_pLeft);  
+  
+        if(pNode->m_pRight)  
+            dequeTreeNode.push_back(pNode->m_pRight);  
+    }  
+}  
+~~~
+
+> 更多二叉树的知识，请戳：
+* [二叉树的四种遍历的递归和非递归的实现](https://blog.csdn.net/xiaominkong123/article/details/51567437) -> *recommend*！
+* [二叉树三种遍历方式的递归和循环实现](https://blog.csdn.net/lieacui/article/details/52453292)
+
+#### 4.3 树和森林
+
+##### 4.3.1 树的储存结构
+
+
+
+> 更多数和森林的知识，请戳：
+* [树的存储结构和代码实现](https://blog.csdn.net/qq_36016407/article/details/55272598)
+
