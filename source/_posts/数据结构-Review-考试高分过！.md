@@ -1,193 +1,193 @@
 ---
-title: ���ݽṹ-Review-���Ը߷ֹ���
+title: 数据结构-Review-考试高分过！
 date: 2018-04-29 10:42:36
 tags:
 ---
 
-### ǰ��
+### 前言
 
-��ϰһ�¿�Ҫ��û�ú��Ϲ������ݽṹ������Ҫ�����࣡��ˢһ�����������������渴ϰ�����ţ�����������`���ݽṹ��˫�`��ѧ��Ȳ����أ���û�н���ɶ���㷨���������໪��ʦ���Ǻܰ��ģ����ĺ�������~�������ֳ���`������Ϣ`��`�����`���ֲ�ͬ��Ҫ�󣬵紴���Ȼ�ǵ���Ҫ�󣬲���ɭ���������ݽṹ���㷨Ҫ�����Ϊ`Master`����Ҫ���ǿ���ѧ������
-
----
-
-### Ŀ¼
-
-1. **���Ա�**
-    1.1 ˳���ʾ��ʵ��
-    1.2 ��ʽ��ʾ��ʵ��
-    1.2.1 `��������`
-    1.2.2 `ѭ������`
-    1.2.3 `˫������`
-
-2. **ջ�Ͷ���**
-    2.1 ջ
-    2.2 ����
-
-3. **����**
-    3.1 �����˳���ʾ��ʵ��
-    3.2 �����ѹ���洢
-    3.2.1 `ϡ�����`
-
-4. **��**
-    4.1 ������
-    4.2 ����������
-    4.2.1 `��������ĵݹ�ʵ��`
-    4.2.2 `��������ķǵݹ�ʵ��`
-    4.2.3 `��α���`
-    4.3 ����ɭ��
-    4.3.1 `����ɭ�ֵĴ洢�ṹ`
-    4.3.2 `����ɭ�ֵı���`
-    4.4 �շ�����
-
-5. **ͼ**
-    5.1 ͼ�Ķ���
-    5.2 ͼ�Ĵ洢�ṹ
-    5.2.1 `�ڽӱ�`
-    5.2.2 `ʮ������`
-    5.3 ͼ�ı���
-    5.3.1 `�����������`
-    5.3.2 `�����������`
-    5.4 ͼ����ͨ��
-    5.4.1 `������`
-    5.4.2 `��С������`
-    5.5 ��������
-    5.6 ���·��
-
-6. **����**
-    6.1 ��̬����
-    6.2 ��̬����
-    6.2.1 `����������`
-    6.3 ��ϣ��
-
-7. **�ڲ�����**
-    7.1 ��������
-    7.1.1 `ֱ�Ӳ�������`
-    7.1.2 `ϣ������`
-    7.2 ��������
-    7.3 ѡ������
-    7.4 �鲢����
+复习一下快要课没好好上过的数据结构，唉！要考试噜！得刷一波绩点啦！！！认真复习嗯嗯嗯！大连理工的`数据结构（双语）`教学深度不够呢！并没有介绍啥子算法，但是李培华老师还是很棒的，讲的很有条理~！唉，分成了`电子信息`和`计算机`两种不同的要求，电创班居然是电信要求，不开森！不过数据结构和算法要是想成为`Master`，主要还是看自学的啦！
 
 ---
 
-### 1. ���Ա�
+### 目录
 
-> ���Ա�`Linear_list`���������򵥵�һ�����ݽṹ������֮��һ�����Ա���n������Ԫ�ص��������С�
+1. **线性表**
+    1.1 顺序表示和实现
+    1.2 链式表示和实现
+    1.2.1 `线性链表`
+    1.2.2 `循环链表`
+    1.2.3 `双向链表`
 
-#### 1.1 ˳���ʾ��ʵ��
+2. **栈和队列**
+    2.1 栈
+    2.2 队列
 
-> ���Ա���˳���ʾ`Sequential List`ָ������һ���ַ�����Ĵ��浥Ԫ���δ������Ա�������Ԫ�ء�`˳�򴢴�ṹ`��һ�������ȡ�Ĵ���ṹ��ͨ����`����`������˳�򴢴�ṹ��
+3. **数组**
+    3.1 数组的顺序表示和实现
+    3.2 矩阵的压缩存储
+    3.2.1 `稀疏矩阵`
 
-C�����ö�̬�����һά���飬���������Ա���
+4. **树**
+    4.1 二叉树
+    4.2 遍历二叉树
+    4.2.1 `三大遍历的递归实现`
+    4.2.2 `三大遍历的非递归实现`
+    4.2.3 `层次遍历`
+    4.3 树和森林
+    4.3.1 `数和森林的存储结构`
+    4.3.2 `数和森林的遍历`
+    4.4 赫夫曼树
+
+5. **图**
+    5.1 图的定义
+    5.2 图的存储结构
+    5.2.1 `邻接表`
+    5.2.2 `十字链表`
+    5.3 图的遍历
+    5.3.1 `深度优先搜索`
+    5.3.2 `广度优先搜索`
+    5.4 图的连通性
+    5.4.1 `生成树`
+    5.4.2 `最小生成树`
+    5.5 拓扑排序
+    5.6 最短路径
+
+6. **查找**
+    6.1 静态查找
+    6.2 动态查找
+    6.2.1 `二叉排序树`
+    6.3 哈希表
+
+7. **内部排序**
+    7.1 插入排序
+    7.1.1 `直接插入排序`
+    7.1.2 `希尔排序`
+    7.2 快速排序
+    7.3 选择排序
+    7.4 归并排序
+
+---
+
+### 1. 线性表
+
+> 线性表`Linear_list`是最常用且最简单的一种数据结构。简言之，一个线性表是n个数据元素的有限序列。
+
+#### 1.1 顺序表示和实现
+
+> 线性表的顺序表示`Sequential List`指的是用一组地址连续的储存单元依次储存线性表的数据元素。`顺序储存结构`是一种随机存取的储存结构。通常用`数组`来描述顺序储存结构。
+
+C语言用动态分配的一维数组，来描述线性表：
 
 ~~~C
- #define LIST_INIT_SIZE 100 //���Ա�����ռ�ĳ�ʼ������
- #define LISTINCREMENT 10 //���Ա��ķ�����
+ #define LIST_INIT_SIZE 100 //线性表储存空间的初始分配量
+ #define LISTINCREMENT 10 //线性表的分配量
 typedef int ElemType;
 typedef struct {
-    ElemType *elem;  // ����ռ�Ļ���ַ
-    int length;  //��ǰ���Ա��ĳ���
-    int listsize; //��ǰ����Ĵ�������
+    ElemType *elem;  // 储存空间的基地址
+    int length;  //当前线性表的长度
+    int listsize; //当前分配的储存容量
 }SqList;
 ~~~
 
-> �����й����Ա���֪ʶ�������
-* [���Ա���13������������ʵ��](https://blog.csdn.net/bruthyu/article/details/52645510)
+> 更多有关线性表的知识，请戳：
+* [线性表与13个基本操作的实现](https://blog.csdn.net/bruthyu/article/details/52645510)
 
-#### 1.2 ��ʽ��ʾ��ʵ��
+#### 1.2 链式表示和实现
 
-> ��ʽ����ṹ`Linked List`��˳�򴢴�ṹ`Sequential List`�Ĳ�ͬ��˳�򴢴�ṹ���ص����߼���ϵ����������Ԫ��������λ����Ҳ��ͬ�����������ȡ����Ԫ�غܿ��ֱ�ۣ�ȱ������Ҫ�ƶ���������Ԫ�ء�����ʽ�ṹ������Ҫ���߼������ڵ�Ԫ��������λ�������ڣ��������ȡԪ�ز���Ҫ�ƶ�����Ԫ�أ����Ƕ��ڲ���Ԫ������������
+> 链式储存结构`Linked List`与顺序储存结构`Sequential List`的不同：顺序储存结构的特点是逻辑关系上两个相邻元素在物理位置上也相同，这样随机存取任意元素很快很直观，缺点是需要移动大量其他元素。而链式结构，它不要求逻辑上相邻的元素在物理位置上相邻，因此它存取元素不需要移动其他元素，但是对于查找元素有心无力。
 
-##### 1.2.1 `��������`
+##### 1.2.1 `线性链表`
 
-> ��������Ϊ��������`Singly Linked List`�����������Ƿ������ȡ�ṹ
+> 可以理解为单向链表`Singly Linked List`，单向链表是非随机存取结构
 
-һЩ���õķ�����
+一些常用的方法：
 
-* ����Ԫ�أ�s��ָ������ӽڵ��ָ�룩
+* 添加元素（s是指向待添加节点的指针）
 
     ~~~C
     s->next = p->next;
     p->next = s;
     ~~~
 
-* ɾ��Ԫ�أ�a,b,c��������������3����㣬b�Ǵ�ɾ���Ľ�㣬����p��ָ��a����ָ�룩
+* 删除元素（a,b,c是链表中相连的3个结点，b是待删除的结点，现在p是指向a结点的指针）
 
     ~~~C
     p->next = p->next->next;
     ~~~
 
-�ýṹ��ʵ��������㣺
+用结构体实现链表结点：
 
 ~~~C
-//���Ա��ĵ���������ṹ
+//线性表的单链表储存结构
 struct Node {
-    int data; //������
-    struct Node *next; //ָ����
+    int data; //数据域
+    struct Node *next; //指针域
 };
 ~~~
 
-> ��������֪ʶ�������
+> 更多链表知识，请戳：
 
-* [C���Ե���������ʵ��](https://blog.csdn.net/21aspnet/article/details/160019)
-* [�����Ļ���ʹ��һ������������](https://blog.csdn.net/lan74__/article/details/53819849)
-* [���ݽṹ������(linked-list)](https://blog.csdn.net/juanqinyang/article/details/51351619)
+* [C语言单向链表的实现](https://blog.csdn.net/21aspnet/article/details/160019)
+* [链表的基本使用一（构建链表）](https://blog.csdn.net/lan74__/article/details/53819849)
+* [数据结构：链表(linked-list)](https://blog.csdn.net/juanqinyang/article/details/51351619)
 
-##### 1.2.2 `ѭ������`
+##### 1.2.2 `循环链表`
 
-1. ѭ���������ص㣺
+1. 循环单链表特点：
 
-    ���������һ������ָ�������ǽ�����־������ָ�����������ĵ�һ����㣬�Ӷ�ʹ�����γ�һ�������͵�������ͬ��ѭ��������Ҳ�д�ͷ���Ͳ���ͷ������֡���ͷ����ѭ��������ʵ�ֲ����ɾ��������Ϊ���㣬�Ҹ������á�
+    链表中最后一个结点的指针域不再是结束标志，而是指向整个链表的第一个结点，从而使链表形成一个环。和单链表相同，循环单链表也有带头结点和不带头结点两种。带头结点的循环单链表实现插入和删除操作较为方便，且更加适用。
 
-2. ��������ѭ���������Ƚϣ�
+2. 单链表与循环单链表比较：
 
-    ѭ�����������Դ�β��ͷ�������������ܴ�β��ͷ����˴������������о��л��νṹ�ص�ʱ���ʺϲ���ѭ����������
+    循环单链表可以从尾到头，而单链表不能从尾到头。因此处理的数据序列具有环形结构特点时，适合采用循环单链表。
 
-3. ��ͷ����ѭ���������ʹ�ͷ���ĵ������Ƚϣ�
+3. 带头结点的循环单链表和带头结点的单链表比较：
 
-    �� �ڳ�ʼ�������У������`head->next=NULL`��Ϊ`head->next = head`�����γ�һ���� 
-    �� �����������У�ѭ���ж�����`p->next!=NULL`��`p->next->next!=NULL`�е�NULL�ĳ�ͷָ��`head`��
+    ① 在初始化函数中，把语句`head->next=NULL`改为`head->next = head`，即形成一个环 
+    ② 在其他函数中，循环判断条件`p->next!=NULL`和`p->next->next!=NULL`中的NULL改成头指针`head`。
 
-##### 1.2.3 `˫������`
+##### 1.2.3 `双向链表`
 
-1. ˫�������ص㣺
-    ÿ���ڵ�����к��ָ������һ��ǰ��ָ����
+1. 双向链表特点：
+    每个节点除了有后继指针域还有一个前驱指针域。
 
-2. ˫�������ķ��ࣺ
-    ˫�������У���ͷ���Ͳ���ͷ����˫�����������Ǵ�ͷ����˫��������Ϊ���ã���Ҳ��ѭ���ͷ�ѭ��֮�֣�ѭ���ṹ��˫��������Ϊ���á�����������۵��Ǵ�ͷ����ѭ��˫������
+2. 双向链表的分类：
+    双向链表有：带头结点和不带头结点的双向链表（但是带头结点的双向链表更为常用）。也有循环和非循环之分，循环结构的双向链表更为常用。因此下面讨论的是带头结点的循环双链表。
 
-3. ˫��ѭ���������Ľṹ�嶨��
+3. 双向循环链表结点的结构体定义
     ~~~C
-    //���Ա���˫����������ṹ
+    //线性表的双向链表储存结构
     struct DuLNode {
-        Elemtype data; //������
-        struct DuLNode *prior; //ǰ�����
-        struct DuLNode *next;  //��̽��
-    }DuLNode�� *DuLinklist;
+        Elemtype data; //数据域
+        struct DuLNode *prior; //前驱结点
+        struct DuLNode *next;  //后继结点
+    }DuLNode， *DuLinklist;
     ~~~
-    **��ע**��data��next��prior������data����������next��Ϊָ���̽���ָ����prior��Ϊָ��ǰ������ָ����
+    **备注**：data域、next域、prior域。其中data域是数据域，next域为指向后继结点的指针域，prior域为指向前驱结点的指针域。
 
-4. ˫���������ŵ㣺
-    �ڵ����в��ҵ�ǰ���ĺ�̽�㲢�����ѣ�����ͨ����ǰ����nextָ����У���Ҫ���ҵ�ǰ����ǰ����㣬��Ҫ��ͷָ��head��ʼ���½��С�����һ��ҪƵ�����е�ǰ���ĺ�̽���ǰ������Ӧ����˵��ʹ��˫����������Ч��
+4. 双向链表的优点：
+    在单链中查找当前结点的后继结点并不困难，可以通过当前结点的next指针进行，但要查找当前结点的前驱结点，就要从头指针head开始重新进行。对于一个要频繁进行当前结点的后继结点和前驱结点的应用来说，使用双向链表很有效。
 
-5. ˫��ѭ��������ʵ��
-    ��˫�������У�������ָ���ϵ����ָ��pָ��˫��ѭ�������еĵ�i��λ�ã���`p->next`ָ��i+1����㡣`p->next->prior`��ָ���i����㣬��`p->next->prior==p`;ͬ��`p->prior`ָ���i-1����㣬`p->prior->next`��ָ���i����㣬��`p->prior->next==p`;˫��ѭ��������ϵ�㷨���Է����㷨��ơ�
+5. 双向循环链表的实现
+    在双向链表中，有如下指针关系：设指针p指向双向循环链表中的第i个位置，则`p->next`指向i+1个结点。`p->next->prior`仍指向第i个结点，即`p->next->prior==p`;同样`p->prior`指向第i-1个结点，`p->prior->next`仍指向第i个结点，即`p->prior->next==p`;双向循环链表关系算法可以方便算法设计。
 
-> ����ѭ��������˫��������֪ʶ�������
-* [���ݽṹ����ѭ����������˫������](https://blog.csdn.net/xiaofei__/article/details/50984255)
+> 更多循环链表和双向链表的知识，请戳：
+* [数据结构——循环单链表和双向链表](https://blog.csdn.net/xiaofei__/article/details/50984255)
 
-* [���ݽṹ | ˫��������ʵ�ּ�ͼʾ](http://www.cnblogs.com/hughdong/p/6785391.html) -> *recommend*��
+* [数据结构 | 双向链表简单实现及图示](http://www.cnblogs.com/hughdong/p/6785391.html) -> *recommend*！
 
-### 2. ջ�Ͷ���
+### 2. 栈和队列
 
-�����ݽṹ�Ͽ���ջ�Ͷ���Ҳ�����Ա������������ǲ������޵����Ա�����ˣ�������Ϊ�޶��Ե����ݽṹ��
+从数据结构上看，栈和队列也是线性表。不过他们是操作受限的线性表，因此，称它们为限定性的数据结构。
 
-#### 2.1 ջ
+#### 2.1 栈
 
-ջ`stack`���޶����ڱ�β���в����ɾ�������Ա�������ջ����β��Ϊ`ջ��`����Ӧ�أ���ͷ��Ϊ`ջ��`������Ԫ�صĿձ���Ϊ`��ջ`��ջ��һ�ֺ���ȳ���last in first out, LIFO���ṹ��
+栈`stack`是限定仅在表尾进行插入和删除的线性表。对于栈，表尾称为`栈顶`，相应地，表头称为`栈底`。不含元素的空表称为`空栈`。栈是一种后进先出（last in first out, LIFO）结构。
 
-ջ�����ִ��淽ʽ��˳��ջ����ʽջ��
+栈有两种储存方式，顺序栈和链式栈。
 
-˳��ջ�Ķ��壺
+顺序栈的定义：
 
 ~~~C
 struct stack {
@@ -197,19 +197,19 @@ struct stack {
 }SqStack;
 ~~~
 
-**��ע**��`stacksize`ָ��ǰ��ʹ�õ����������`base`��ʾջ��ָ�룬`base`ΪNULLʱ������ջ�ṹ�����ڣ����ֵָ��ջ�ף���`top = base`����Ϊջ�յı�ǡ�����Ԫ�أ�top+1��ɾ��Ԫ�أ�top-1��
+**备注**：`stacksize`指当前可使用的最大容量，`base`表示栈底指针，`base`为NULL时，表明栈结构不存在，其初值指向栈底，即`top = base`可作为栈空的标记。插入元素，top+1；删除元素，top-1。
 
-> ����ջ��֪ʶ�������
-* [[���ݽṹ]C����ջ��ʵ��](https://www.cnblogs.com/racaljk/p/7822309.html)
-* [���ݽṹͼ�Ľ���֮��ջ�ļ�鼰C++ģ��ʵ��](https://www.cnblogs.com/QG-whz/p/5170418.html) -> *recommend*��
+> 更多栈的知识，请戳：
+* [[数据结构]C语言栈的实现](https://www.cnblogs.com/racaljk/p/7822309.html)
+* [数据结构图文解析之：栈的简介及C++模板实现](https://www.cnblogs.com/QG-whz/p/5170418.html) -> *recommend*！
 
-#### 2.2 ����
+#### 2.2 队列
 
-��ջ�෴������`quene`��һ���Ƚ��ȳ���first in first out, FIFO�������Ա�����ֻ�����ڱ���һ�˲��룬��һ��ɾ�����ڶ����У����������һ�˽�����β`rear`������ɾ����һ�˽�����ͷ`front`��
+和栈相反，队列`quene`是一种先进先出（first in first out, FIFO）的线性表，它只允许在表的一端插入，另一端删除。在队列中，允许插入的一端叫做队尾`rear`，允许删除的一端叫做队头`front`。
 
-����Ҳ�����ִ��淽ʽ��˳����к������С�
+队列也有两种储存方式，顺序队列和链队列。
 
-�����е�ʵ�֣�
+链队列的实现：
 
 ~~~C
 struct QNode {
@@ -217,25 +217,25 @@ struct QNode {
     struct QNode *next;
 }QNode, *QuenePtr;
 struct LinkQuene {
-    QuenePtr front; //��ͷָ��
-    QuenePtr rear; //��βָ��
+    QuenePtr front; //队头指针
+    QuenePtr rear; //队尾指针
 }LinkQuene;
 ~~~
 
-> �������֪ʶ�������
-* [���ݽṹ-����(queue)](https://blog.csdn.net/juanqinyang/article/details/51354293) -> *recommend*��
+> 更多队列知识，请戳：
+* [数据结构-队列(queue)](https://blog.csdn.net/juanqinyang/article/details/51354293) -> *recommend*！
 
-### 3. ����
+### 3. 数组
 
-����͹�������Կ��������Ա�����չ��Ҳ����һ�����ݽṹ��
+数组和广义表可以看作是线性表的扩展，也算是一种数据结构。
 
-#### 3.1 �����˳���ʾ��ʵ��
+#### 3.1 数组的顺序表示和实现
 
-��������һ�㲻�������ɾ����������˲���˳�򴢴�ṹ��ʾ���������Σ�
+由于数组一般不做插入或删除操作，因此采用顺序储存结构表示数组是最吼滴！
 
-> ����ÿ������Ԫ��ռ$L$���洢��Ԫ�����ά����$A$����һԪ��$aij$�Ĵ洢λ�ÿ�����ʽȷ����$LOC(i, j) = LOC(0, 0) + (b_2*i + j)L$
+> 假设每个数据元素占$L$个存储单元，则二维数组$A$中任一元素$aij$的存储位置可由下式确定：$LOC(i, j) = LOC(0, 0) + (b_2*i + j)L$
 
-�����˳��洢�ı�ʾ��
+数组的顺序存储的表示：
 
 ~~~C
  #define MAX_ARRAY_DIM 8
@@ -247,84 +247,84 @@ struct array {
 }Array;
 ~~~
 
-#### 3.2 �����ѹ���洢
+#### 3.2 矩阵的压缩存储
 
-> ѹ���洢ָ����Ϊ���ֵ��ͬ��Ԫֻ����һ���洢��Ԫ������Ԫ������ռ䡣
+> 压缩存储指的是为多个值相同的元只分配一个存储单元；对零元不分配空间。
 
-##### 3.2.1 ϡ�����
+##### 3.2.1 稀疏矩阵
 
-> ������Щ��Ԫ����ĿԶԶ���ڷ���Ԫ����Ŀ�����ҷ���Ԫ�صķֲ�û�й��ɵľ����Ϊϡ�����sparse����
+> 对于那些零元素数目远远多于非零元素数目，并且非零元素的分布没有规律的矩阵称为稀疏矩阵（sparse）。
 
-* ���ڷ���Ԫ�طֲ�û���κι��ɣ������ڽ���ѹ���洢��ʱ����Ҫ�洢����Ԫ��ֵ��ͬʱ��Ҫ�洢����Ԫ���ھ����е�λ�ã�������Ԫ�����ڵ��кź��кţ�Ҳ�����ڴ洢ĳ��Ԫ�ر���$aij$��ֵ��ͬʱ������Ҫ�洢��Ԫ�����ڵ��к�$i$�������к�$j$�������͹�����һ����Ԫ��$(i,j,aij)$�����Ա���
+* 由于非零元素分布没有任何规律，所以在进行压缩存储的时侯需要存储非零元素值的同时还要存储非零元素在矩阵中的位置，即非零元素所在的行号和列号，也就是在存储某个元素比如$aij$的值的同时，还需要存储该元素所在的行号$i$和它的列号$j$，这样就构成了一个三元组$(i,j,aij)$的线性表。
 
 ```C
  #define MAXSIZE 12500
 struct triple {
-    int i, j; // �÷���Ԫ�����±�����±�
+    int i, j; // 该非零元的行下标和列下标
     ElemType e;
 }Triple;
 struct tsmatrix {
-    Triple data[MAXSIZE + 1]; //����Ԫ��Ԫ��
-    int mu, nu, tu; //����������������Ԫ����
+    Triple data[MAXSIZE + 1]; //非零元三元组
+    int mu, nu, tu; //行数，列数，非零元个数
 }TSMatrix;
 ```
 
-> ����ϡ������֪ʶ�������
+> 更多稀疏矩阵的知识，请戳：
 
-* [ϡ�����](https://blog.csdn.net/sunhuaqiang1/article/details/51296803)
+* [稀疏矩阵](https://blog.csdn.net/sunhuaqiang1/article/details/51296803)
 
-### 4. ��
+### 4. 树
 
-> ��״ͼ��һ�����ݽṹ��������$n$��$n>=1$�������޽ڵ����һ�����в�ι�ϵ�ļ��ϡ�������������������Ϊ����������һ�õ��ҵ�����Ҳ����˵���Ǹ����ϣ���Ҷ���µġ����������µ��ص㣺
-> * ÿ���ڵ�����������ӽڵ�
-> * û�и��ڵ�Ľڵ��Ϊ���ڵ�
-> * ÿһ���Ǹ��ڵ�����ֻ��һ�����ڵ㣨���˸��ڵ��⣬ÿ���ӽڵ���Է�Ϊ������ཻ��������
+> 树状图是一种数据结构，它是由$n$（$n>=1$）个有限节点组成一个具有层次关系的集合。把它叫做“树”是因为它看起来像一棵倒挂的树，也就是说它是根朝上，而叶朝下的。它具有以下的特点：
+> * 每个节点有零个或多个子节点
+> * 没有父节点的节点称为根节点
+> * 每一个非根节点有且只有一个父节点（除了根节点外，每个子节点可以分为多个不相交的子树）
 
-#### 4.1 ������
+#### 4.1 二叉树
 
-> ������`Binary Tree`����һ�����ͽṹ�������ص���ÿ�����������$2$�����������������в����ڶȴ���$2$�Ľ�㣩�����ң�������������������֮�֣������������ߵ���
+> 二叉树`Binary Tree`是另一种树型结构，它的特点是每个结点至多有$2$棵子树（即二叉树中不存在度大于$2$的结点），并且，二叉树的子树有左右之分，其次序不能任意颠倒。
 
-�����������ʣ�
+二叉树的性质：
 
-* �ڶ������ĵ�$i$����������$2^(i-1)$����㣨$i>=1$����
-* ���Ϊ$k$�Ķ�����������$2^k - 1$����㣨$K>=1$����
-* ���κ�һ�ö�����$T$��������ն˽����Ϊ$n_0$����Ϊ$2$�Ľ����Ϊ$n_2$����$n_0=n_2+1$��
-* ����$n$��������ȫ�����������Ϊ|$\log_2 n$| + 1����|$\log_2 n$|��ʾ������$\log_2 n$�����������
-* �����һ����$n$��������ȫ�������������Ϊ|$\log_2 n$| + 1���Ľ�㰴�����ţ��ӵ�$1$�㵽��|$\log_2 n$| + $1$�㣬ÿ������ң��������һ���$i$��$1 <= i <= n$�����У�
-    1. ���$i = 1$������$i$�Ƕ������ĸ�����˫�ף����$i > 1$������˫��`PARENT(i)`�ǽ��|$i/2$|��
-    2. ���$2i > n$������$i$�����ӣ������iΪҶ�ӽ�㣩������������`LCHILD(i)`�ǽ��$2$��
-    3. ���$2i + 1 > n$������$i$���Һ��ӣ��������Һ���`RCHILD(i)`�ǽ��$2i+1$��
+* 在二叉树的第$i$层上至多有$2^(i-1)$个结点（$i>=1$）。
+* 深度为$k$的二叉树至多有$2^k - 1$个结点（$K>=1$）。
+* 对任何一棵二叉树$T$，如果其终端结点数为$n_0$，度为$2$的结点树为$n_2$，则$n_0=n_2+1$。
+* 具有$n$个结点的完全二叉树的深度为|$\log_2 n$| + 1。（|$\log_2 n$|表示不大于$\log_2 n$的最大整数）
+* 如果对一棵有$n$个结点的完全二叉树（其深度为|$\log_2 n$| + 1）的结点按层序编号（从第$1$层到第|$\log_2 n$| + $1$层，每层从左到右），则对任一结点$i$（$1 <= i <= n$），有：
+    1. 如果$i = 1$，则结点$i$是二叉树的根，无双亲；如果$i > 1$，则其双亲`PARENT(i)`是结点|$i/2$|。
+    2. 如果$2i > n$，则结点$i$无左孩子（即结点i为叶子结点）；否则其左孩子`LCHILD(i)`是结点$2$。
+    3. 如果$2i + 1 > n$，则结点$i$无右孩子；否则其右孩子`RCHILD(i)`是结点$2i+1$。
 
-��������˳�򴢴�ṹ������������ȫ����������
+二叉树的顺序储存结构（仅适用于完全二叉树）：
 
 ```C
-# define MAX_TREE_SIZE 100 // ���������������
-typedef TElemType SqBiTree[MAX_TREE_SIZE]; // 0�ŵ�Ԫ�洢���ڵ�
+# define MAX_TREE_SIZE 100 // 二叉树的最大结点树
+typedef TElemType SqBiTree[MAX_TREE_SIZE]; // 0号单元存储根节点
 SqBiTree bt;
 ```
 
-����������ʽ�洢�ṹ��
+二叉树的链式存储结构：
 
 ```C++
 struct BiTree {
-    TElemType data; // ������
-    struct BiTree *lchild, *rchild; // ���Һ���ָ��
+    TElemType data; // 数据域
+    struct BiTree *lchild, *rchild; // 左右孩子指针
 }BiTree, *BiTree;
 ```
 
-> ���������֪ʶ�������
+> 更多二叉树知识，请戳：
 
-* [�������ܽ�(һ)���������](https://www.cnblogs.com/yeqluofwupheng/p/7428935.html)
+* [二叉树总结(一)概念和性质](https://www.cnblogs.com/yeqluofwupheng/p/7428935.html)
 
-* [markdown�е���ѧ��ʽ��Ҫ](https://blog.csdn.net/wireless_com/article/details/70596155)
+* [markdown中的数学公式简要](https://blog.csdn.net/wireless_com/article/details/70596155)
 
-#### 4.2 ����������
+#### 4.2 遍历二叉树
 
-> ��������һ�ַ����Խṹ������3��������Ԫ��ɣ����ڵ㣬�����������������涨������ң���3�ֻ�������������������������ͺ��������
+> 二叉树是一种非线性结构，是由3个基本单元组成：根节点，左子树和右子树。规定先左后右，有3种基本情况，先序遍历，中序遍历和后序遍历。
 
-##### 4.2.1 ��������ĵݹ�ʵ��
+##### 4.2.1 三大遍历的递归实现
 
-* �����������-��-�ң�
+* 先序遍历（根-左-右）
 
     ~~~C
     void preOrder1(BinaryTreeNode* pRoot)  
@@ -340,7 +340,7 @@ struct BiTree {
     } 
     ~~~
 
-* �����������-��-�ң�
+* 中序遍历（左-根-右）
 
     ~~~C
     void inOrder1(BinaryTreeNode* pRoot)  
@@ -356,7 +356,7 @@ struct BiTree {
     }
     ~~~
 
-* �����������-��-����
+* 后序遍历（左-右-根）
 
     ~~~C
     void postOrder1(BinaryTreeNode* pRoot)  
@@ -369,9 +369,9 @@ struct BiTree {
     }  
     ~~~
 
-##### 4.2.2 ��������ķǱ���ʵ��
+##### 4.2.2 三大遍历的非遍历实现
 
-* �����������-��-�ң�
+* 先序遍历（根-左-右）
 
     ~~~C
     void preOrder2(BinaryTreeNode* pRoot)  
@@ -399,7 +399,7 @@ struct BiTree {
     }  
     ~~~
 
-* �����������-��-�ң�
+* 中序遍历（左-根-右）
 
     ~~~C
     void inOrder(BinaryTreeNode* pRoot)  
@@ -424,7 +424,7 @@ struct BiTree {
     }  
     ~~~
 
-* �����������-��-����
+* 后序遍历（左-右-根）
 
     ~~~C
     void postOrder(BinaryTreeNode* pRoot)  
@@ -432,13 +432,13 @@ struct BiTree {
         stack<BinaryTreeNode*> s;  
         BinaryTreeNode *cur;  
         BinaryTreeNode *pre=NULL;  
-        s.push(pRoot);//�������ջ  
+        s.push(pRoot);//根结点入栈  
         while(!s.empty())  
         {  
             cur=s.top();  
             if((cur->left==NULL&&cur->right==NULL)||(pre!=NULL&&(pre==cur->left||pre==cur->right)))  
             {  
-                //���Ӻ��Һ���ͬʱΪ�գ����ߵ�ǰ�������ӻ��Һ����Ѿ���������  
+                //左孩子和右孩子同时为空，或者当前结点的左孩子或右孩子已经遍历过了  
                 cout<<cur->value<<" ";  
                 s.pop();  
                 pre=cur;  
@@ -454,7 +454,7 @@ struct BiTree {
     } 
     ~~~
 
-##### 4.2.3 ��α���
+##### 4.2.3 层次遍历
 
 ~~~C
 void PrintFromTopToBottom(BinaryTreeNode* pRoot)  
@@ -482,124 +482,124 @@ void PrintFromTopToBottom(BinaryTreeNode* pRoot)
 }  
 ~~~
 
-> �����������֪ʶ�������
-* [�����������ֱ����ĵݹ�ͷǵݹ��ʵ��](https://blog.csdn.net/xiaominkong123/article/details/51567437) -> *recommend*��
-* [���������ֱ�����ʽ�ĵݹ��ѭ��ʵ��](https://blog.csdn.net/lieacui/article/details/52453292)
+> 更多二叉树的知识，请戳：
+* [二叉树的四种遍历的递归和非递归的实现](https://blog.csdn.net/xiaominkong123/article/details/51567437) -> *recommend*！
+* [二叉树三种遍历方式的递归和循环实现](https://blog.csdn.net/lieacui/article/details/52453292)
 
-#### 4.3 ����ɭ��
+#### 4.3 树和森林
 
-##### 4.3.1 ���Ĵ洢�ṹ
+##### 4.3.1 树的存储结构
 
-> ˫�ױ�ʾ��
+> 双亲表示法
 
 ~~~C
  #define MAX_TREE_SIZE 100
-typedef struct PTNode { // ���ṹ
-    TElemType data; // ������
-    int parent; // ˫��λ����
+typedef struct PTNode { // 结点结构
+    TElemType data; // 数据域
+    int parent; // 双亲位置域
 }PTNode;
-typedef struct { // ���ṹ
+typedef struct { // 树结构
     PTNode nodes[MAX_TREE_SIZE]; 
-    int r, n; // ����λ�úͽ����
+    int r, n; // 根的位置和结点数
 }
 ~~~
 
-ȱ�㣺����ĺ���ʱ��Ҫ���������ṹ��
+缺点：求结点的孩子时需要遍历整个结构。
 
->  ���ӱ�ʾ��
+>  孩子表示法
 
 ~~~C
-typedef struct CTNode { // ���ӽ��
+typedef struct CTNode { // 孩子结点
     int child; 
     sturct CTNode *next;
 }*ChildPtr;
 typedef struct {
     TElemType data;
-    ChildPtr firstchild; // ��������ͷ���
+    ChildPtr firstchild; // 孩子链表头结点
 }CTBox;
 typedef struct {
     CTBox nodes[MAX_TREE_SIZE];
-    int n, r; // ������ĸ���λ��
+    int n, r; // 结点数的根的位置
 }
 ~~~
 
-> �����ֵܱ�ʾ�������԰Ѹ��ӵ�����ɶ�������
+> 孩子兄弟表示法（可以把复杂的树变成二叉树）
 
 ~~~C
 typedef struct CSNode {
     ElemType data;
-    struct CSNode *firstchild, *nextsibling; // ��һ�����ӽ�����һ���ֵܽ��
+    struct CSNode *firstchild, *nextsibling; // 第一个孩子结点和下一个兄弟结点
 }
 ~~~
 
-##### 4.3.2 ����ɭ�ֵı���
+##### 4.3.2 树和森林的遍历
 
-������������Ϊ���Ĵ���ṹʱ�������ȸ������ͺ�������ɽ��ö�������������������ʵ�֡�
+当二叉链表作为树的储存结构时，树的先根遍历和后根遍历可借用二叉树的先序和中序遍历实现。
 
-ɭ��һ��ֻ˵���������������Ͷ���������������������ͬ��
+森林一般只说先序和中序遍历，和二叉树的先序和中序遍历相同。
 
-> ��������ɭ�ֵ�֪ʶ�������
-* [���Ĵ洢�ṹ�ʹ���ʵ��](https://blog.csdn.net/qq_36016407/article/details/55272598)
-* [����ɭ�ֵı���](https://blog.csdn.net/wangzi11322/article/details/45391157)
+> 更多树和森林的知识，请戳：
+* [树的存储结构和代码实现](https://blog.csdn.net/qq_36016407/article/details/55272598)
+* [树和森林的遍历](https://blog.csdn.net/wangzi11322/article/details/45391157)
 
-#### 4.4 �շ�����
+#### 4.4 赫夫曼树
 
-> �շ�����`Huffman`���ֳ����Ŷ���������һ���Ȩ·��������̵���������·������Ϊ��������Ҷ�ӽ��Ĵ�Ȩ·������֮�͡�ͨ������$WPL=\sum_{k=0}^{n}\omega_k\iota_k$ ��
+> 赫夫曼树`Huffman`，又称最优二叉树，是一类带权路径长度最短的树。树的路径长度为树中所有叶子结点的带权路径长度之和。通常记作$WPL=\sum_{k=0}^{n}\omega_k\iota_k$ 。
 
-������n��Ȩֵ������һ����n��Ҷ�ӽ��Ķ�������ÿ��Ҷ�ӽ���ȨΪ$\omega_i$�������д�Ȩ·������$WPL$��С�Ķ�������Ϊ**�շ�����**��
+假设有n个权值，构造一棵有n个叶子结点的二叉树，每个叶子结点带权为$\omega_i$，则其中带权路径长度$WPL$最小的二叉树称为**赫夫曼树**。
 
 ~~~C
 typedef struct {
-    unsigned int weight; // Ȩ��
+    unsigned int weight; // 权重
     unsigned int parent, lchild, rchild; 
-}HTNode, *HuffmanTree; // ��̬��������洢�շ�����
+}HTNode, *HuffmanTree; // 动态分配数组存储赫夫曼树
 ~~~
 
-> ����շ�������֪ʶ�������
-* [��������](https://blog.csdn.net/wo16fafafa/article/details/52420007)
-* [�������ݽṹ-������-�շ������Ľ���](https://www.cnblogs.com/nathaneko/p/6497982.html)
+> 更多赫夫曼树的知识，请戳：
+* [哈夫曼树](https://blog.csdn.net/wo16fafafa/article/details/52420007)
+* [基础数据结构-二叉树-赫夫曼树的解码](https://www.cnblogs.com/nathaneko/p/6497982.html)
 
-### 5. ͼ
+### 5. 图
 
-> **ͼ**`Graph`��һ�ֽ����Ա�������Ϊ���ӵ����ݽṹ����**���Ա�**�У�����Ԫ��֮��������Թ�ϵ��ÿ������Ԫ��ֻ��һ��ֱ��ǰ����һ��ֱ�Ӻ�̣���**��**�νṹ�У�����Ԫ��֮���������ԵĲ�ι�ϵ������ÿһ���ϵ�����Ԫ�ؿ��ܺ���һ��Ķ��Ԫ�أ������ӽ�㣩��أ���ֻ����һ���һ��Ԫ�أ���˫�׽�㣩��ء�����**ͼ**�νṹ�У����֮��Ĺ�ϵ������ġ�
+> **图**`Graph`是一种较线性表和树更为复杂的数据结构。在**线性表**中，数据元素之间仅有线性关系，每个数据元素只有一个直接前驱和一个直接后继；在**树**形结构中，数据元素之间有着明显的层次关系，并且每一层上的数据元素可能和下一层的多个元素（即孩子结点）相关，但只和上一层的一个元素（即双亲结点）相关。而在**图**形结构中，结点之间的关系是任意的。
 
-#### 5.1 ͼ�Ķ���
+#### 5.1 图的定义
 
-��ͼ�У�����Ԫ�س�Ϊ**����**��$V$�Ƕ��������ǿռ��ϣ�$VR$����������֮��Ĺ�ϵ���ϡ�
+在图中，数据元素称为**顶点**，$V$是顶点的有穷非空集合；$VR$是两个顶点之间的关系集合。
 
-* ��$<v,w>\epsilon VR$,��$<v,w>$��ʾ��$v$��$w$��һ��**��**`Arc`���ҳ�$v$Ϊ**��β**`Tail`or**��ʼ��**��$w$Ϊ**��ͷ**`Head`or**�ն˵�**����ʱ��ͼ��Ϊ**����ͼ**`Digraph`��
+* 若$<v,w>\epsilon VR$,则$<v,w>$表示从$v$到$w$的一条**弧**`Arc`，且称$v$为**弧尾**`Tail`or**初始点**，$w$为**弧头**`Head`or**终端点**。此时的图称为**有向图**`Digraph`。
 
 $$G_1 = (V_1,{A_1})$$
 
-* ��$<v,w>\epsilon VR$������$<w,v>\epsilon VR$����$VR$�ǶԳƵģ����������$(v,w)$��������������ԣ���ʾ$v$��$w$֮���һ��**��**`Edge`����ʱ��ͼ��Ϊ**����ͼ**`Undigraph`��
+* 若$<v,w>\epsilon VR$，必有$<w,v>\epsilon VR$，即$VR$是对称的，则以无序对$(v,w)$代替这两个有序对，表示$v$和$w$之间的一条**边**`Edge`，此时的图称为**无向图**`Undigraph`。
 
 $$G_2 = (V_2,{E_2})$$
 
-#### 5.2 ͼ�Ĵ洢�ṹ
+#### 5.2 图的存储结构
 
-> ͼ�Ľṹ��Ϊ���ӣ����õĴ洢�ṹ��**�ڽӱ�**��**ʮ������**��
+> 图的结构较为复杂，常用的存储结构有**邻接表**，**十字链表**。
 
-##### 5.2.1 �ڽӱ�
+##### 5.2.1 邻接表
 
-> **�ڽӱ�**��ͼ��һ����ʽ�洢�ṹ��
+> **邻接表**是图的一种链式存储结构。
 
 ~~~C
  #define MAX_VERTEX_NUM 20
 typedef struct ArcNode {
-    int adjvex; // �û���ָ��Ķ����λ��
-    struct ArcNode *nextarc; // ָ����һ������ָ��
-    InfoType *info; // �û������Ϣ��ָ��
+    int adjvex; // 该弧所指向的顶点的位置
+    struct ArcNode *nextarc; // 指向下一条弧的指针
+    InfoType *info; // 该弧相关信息的指针
 }ArcNode;
 typedef struct VNode {
-    VertexType data; // ������Ϣ
-    ArcNode *firstarc; //ָ���һ�������ö���Ļ���ָ��
+    VertexType data; // 顶点信息
+    ArcNode *firstarc; //指向第一条依附该顶点的弧的指针
 }VNode, AdjList[MAX_VERTEX_NUM];
 typedef struct {
     AdjList vertices;
-    int vexnum, arcnum; //ͼ�ĵ�ǰ�������ͻ���
-    int kind; // ͼ�������־
+    int vexnum, arcnum; //图的当前顶点数和弧数
+    int kind; // 图的种类标志
 }ALGraph;
 ~~~
 
-> ����ͼ��֪ʶ�������
-* [���ݽṹ(16)--ͼ�Ĵ洢��ʵ��](https://blog.csdn.net/u010366748/article/details/50790324)
+> 更多图的知识，请戳：
+* [数据结构(16)--图的存储及实现](https://blog.csdn.net/u010366748/article/details/50790324)
