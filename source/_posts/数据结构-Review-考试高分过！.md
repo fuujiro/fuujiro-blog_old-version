@@ -94,7 +94,7 @@ typedef struct {
 ~~~
 
 > 更多有关线性表的知识，请戳：
-* [线性表与13个基本操作的实现](https://blog.csdn.net/bruthyu/article/details/52645510)
+> * [线性表与13个基本操作的实现](https://blog.csdn.net/bruthyu/article/details/52645510)
 
 #### 1.2 链式表示和实现
 
@@ -130,10 +130,9 @@ struct Node {
 ~~~
 
 > 更多链表知识，请戳：
-
-* [C语言单向链表的实现](https://blog.csdn.net/21aspnet/article/details/160019)
-* [链表的基本使用一（构建链表）](https://blog.csdn.net/lan74__/article/details/53819849)
-* [数据结构：链表(linked-list)](https://blog.csdn.net/juanqinyang/article/details/51351619)
+> * [C语言单向链表的实现](https://blog.csdn.net/21aspnet/article/details/160019)
+> * [链表的基本使用一（构建链表）](https://blog.csdn.net/lan74__/article/details/53819849)
+> * [数据结构：链表(linked-list)](https://blog.csdn.net/juanqinyang/article/details/51351619)
 
 ##### 1.2.2 `循环链表`
 
@@ -176,9 +175,8 @@ struct Node {
     在双向链表中，有如下指针关系：设指针p指向双向循环链表中的第i个位置，则`p->next`指向i+1个结点。`p->next->prior`仍指向第i个结点，即`p->next->prior==p`;同样`p->prior`指向第i-1个结点，`p->prior->next`仍指向第i个结点，即`p->prior->next==p`;双向循环链表关系算法可以方便算法设计。
 
 > 更多循环链表和双向链表的知识，请戳：
-* [数据结构——循环单链表和双向链表](https://blog.csdn.net/xiaofei__/article/details/50984255)
-
-* [数据结构 | 双向链表简单实现及图示](http://www.cnblogs.com/hughdong/p/6785391.html) -> *recommend*！
+> * [数据结构——循环单链表和双向链表](https://blog.csdn.net/xiaofei__/article/details/50984255)
+> * [数据结构 | 双向链表简单实现及图示](http://www.cnblogs.com/hughdong/p/6785391.html) -> *recommend*！
 
 ### 2. 栈和队列
 
@@ -203,8 +201,8 @@ struct stack {
 **备注**：`stacksize`指当前可使用的最大容量，`base`表示栈底指针，`base`为NULL时，表明栈结构不存在，其初值指向栈底，即`top = base`可作为栈空的标记。插入元素，top+1；删除元素，top-1。
 
 > 更多栈的知识，请戳：
-* [[数据结构]C语言栈的实现](https://www.cnblogs.com/racaljk/p/7822309.html)
-* [数据结构图文解析之：栈的简介及C++模板实现](https://www.cnblogs.com/QG-whz/p/5170418.html) -> *recommend*！
+> * [[数据结构]C语言栈的实现](https://www.cnblogs.com/racaljk/p/7822309.html)
+> * [数据结构图文解析之：栈的简介及C++模板实现](https://www.cnblogs.com/QG-whz/p/5170418.html) -> *recommend*！
 
 #### 2.2 队列
 
@@ -226,7 +224,7 @@ struct LinkQuene {
 ~~~
 
 > 更多队列知识，请戳：
-* [数据结构-队列(queue)](https://blog.csdn.net/juanqinyang/article/details/51354293) -> *recommend*！
+> * [数据结构-队列(queue)](https://blog.csdn.net/juanqinyang/article/details/51354293) -> *recommend*！
 
 ### 3. 数组
 
@@ -273,8 +271,7 @@ struct tsmatrix {
 ```
 
 > 更多稀疏矩阵的知识，请戳：
-
-* [稀疏矩阵](https://blog.csdn.net/sunhuaqiang1/article/details/51296803)
+> * [稀疏矩阵](https://blog.csdn.net/sunhuaqiang1/article/details/51296803)
 
 ### 4. 树
 
@@ -316,10 +313,8 @@ struct BiTree {
 ```
 
 > 更多二叉树知识，请戳：
-
-* [二叉树总结(一)概念和性质](https://www.cnblogs.com/yeqluofwupheng/p/7428935.html)
-
-* [markdown中的数学公式简要](https://blog.csdn.net/wireless_com/article/details/70596155)
+> * [二叉树总结(一)概念和性质](https://www.cnblogs.com/yeqluofwupheng/p/7428935.html)
+> * [markdown中的数学公式简要](https://blog.csdn.net/wireless_com/article/details/70596155)
 
 #### 4.2 遍历二叉树
 
@@ -486,8 +481,8 @@ void PrintFromTopToBottom(BinaryTreeNode* pRoot)
 ~~~
 
 > 更多二叉树的知识，请戳：
-* [二叉树的四种遍历的递归和非递归的实现](https://blog.csdn.net/xiaominkong123/article/details/51567437) -> *recommend*！
-* [二叉树三种遍历方式的递归和循环实现](https://blog.csdn.net/lieacui/article/details/52453292)
+> * [二叉树的四种遍历的递归和非递归的实现](https://blog.csdn.net/xiaominkong123/article/details/51567437) -> *recommend*！
+> * [二叉树三种遍历方式的递归和循环实现](https://blog.csdn.net/lieacui/article/details/52453292)
 
 #### 4.3 树和森林
 
@@ -542,8 +537,8 @@ typedef struct CSNode {
 森林一般只说**先序遍历**和**中序遍历**，和二叉树的**先序遍历**和**中序遍历**相同。
 
 > 更多树和森林的知识，请戳：
-* [树的存储结构和代码实现](https://blog.csdn.net/qq_36016407/article/details/55272598)
-* [树和森林的遍历](https://blog.csdn.net/wangzi11322/article/details/45391157)
+> * [树的存储结构和代码实现](https://blog.csdn.net/qq_36016407/article/details/55272598)
+> * [树和森林的遍历](https://blog.csdn.net/wangzi11322/article/details/45391157)
 
 #### 4.4 赫夫曼树
 
@@ -559,8 +554,8 @@ typedef struct {
 ~~~
 
 > 更多赫夫曼树的知识，请戳：
-* [哈夫曼树](https://blog.csdn.net/wo16fafafa/article/details/52420007)
-* [基础数据结构-二叉树-赫夫曼树的解码](https://www.cnblogs.com/nathaneko/p/6497982.html)
+> * [哈夫曼树](https://blog.csdn.net/wo16fafafa/article/details/52420007)
+> * [基础数据结构-二叉树-赫夫曼树的解码](https://www.cnblogs.com/nathaneko/p/6497982.html)
 
 ### 5. 图
 
@@ -626,10 +621,10 @@ typedef struct {
 ~~~
 
 > 更多关于图的存储的知识，请戳：
-* [数据结构(16)--图的存储及实现](https://blog.csdn.net/u010366748/article/details/50790324)
-* [图的存储结构之邻接表(详解)](https://www.cnblogs.com/ECJTUACM-873284962/p/6905416.html)
-* [图的存储 ( 十字链表 )](https://blog.csdn.net/wr_technology/article/details/51909432) -> *recommend*！
-* [十字链表的画法](https://www.cnblogs.com/zyl905487045/p/7815429.html) -> *recommend*！
+> * [数据结构(16)--图的存储及实现](https://blog.csdn.net/u010366748/article/details/50790324)
+> * [图的存储结构之邻接表(详解)](https://www.cnblogs.com/ECJTUACM-873284962/p/6905416.html)
+> * [图的存储 ( 十字链表 )](https://blog.csdn.net/wr_technology/article/details/51909432) -> *recommend*！
+> * [十字链表的画法](https://www.cnblogs.com/zyl905487045/p/7815429.html) -> *recommend*！
 
 #### 5.3 图的遍历
 
@@ -681,8 +676,8 @@ void BFSTraverse(Graph G, Status(*visit)(int v)) {
 遍历图的过程实质上是通过边或弧找邻接点的过程，因此广度优先搜索和深度优先搜索地**时间复杂度**相同。
 
 > 更多关于图的遍历的知识，请戳：
-* [图的深度优先遍历和广度优先遍历理解](https://www.cnblogs.com/George1994/p/6399889.html)
-* [数据结构和算法总结（一）：广度优先搜索BFS和深度优先搜索DFS](https://www.cnblogs.com/0kk470/p/7555033.html) -> *recommend*！
+> * [图的深度优先遍历和广度优先遍历理解](https://www.cnblogs.com/George1994/p/6399889.html)
+> * [数据结构和算法总结（一）：广度优先搜索BFS和深度优先搜索DFS](https://www.cnblogs.com/0kk470/p/7555033.html) -> *recommend*！
 
 #### 5.4 图的连通性问题
 
@@ -729,7 +724,7 @@ struct
 ~~~
 
 > 更多关于最小生成树的知识，请戳：
-* [算法导论--最小生成树（Kruskal和Prim算法）](https://blog.csdn.net/luoshixian099/article/details/51908175) -> *recommend*！
+> * [算法导论--最小生成树（Kruskal和Prim算法）](https://blog.csdn.net/luoshixian099/article/details/51908175) -> *recommend*！
 
 #### 5.5 拓扑排序
 
@@ -762,7 +757,12 @@ struct
 4. 然后，又从dis中找出最小值，重复上述动作，直到T中包含了图的所有顶点
 
 > 更多关于最短路径的知识，请戳：
-* [最短路径问题---Dijkstra算法详解](https://blog.csdn.net/qq_35644234/article/details/60870719)
+> * [最短路径问题---Dijkstra算法详解](https://blog.csdn.net/qq_35644234/article/details/60870719)
 
 ### 6. 查找
+
+> **查找**`Search`：根据给定的某个值，在查找表中确定一个其关键字等于给定值的数据元素（或记录）。
+
+静态查找和动态查找；
+　　注：静态或者动态都是针对查找表而言的。动态表指查找表中有删除和插入操作的表。
 
