@@ -1,191 +1,193 @@
 ---
-title: æ•°æ®ç»“æž„-Review-è€ƒè¯•é«˜åˆ†è¿‡ï¼
+title: Êý¾Ý½á¹¹-Review-¿¼ÊÔ¸ß·Ö¹ý£¡
 date: 2018-04-29 10:42:36
 tags:
 ---
 
-### å‰è¨€
+### Ç°ÑÔ
 
-å¤ä¹ ä¸€ä¸‹å¿«è¦è¯¾æ²¡å¥½å¥½ä¸Šè¿‡çš„æ•°æ®ç»“æž„ï¼Œå”‰ï¼è¦è€ƒè¯•å™œï¼å¾—åˆ·ä¸€æ³¢ç»©ç‚¹å•¦ï¼ï¼ï¼è®¤çœŸå¤ä¹ å—¯å—¯å—¯ï¼å¤§è¿žç†å·¥çš„`æ•°æ®ç»“æž„ï¼ˆåŒè¯­ï¼‰`æ•™å­¦æ·±åº¦ä¸å¤Ÿå‘¢ï¼å¹¶æ²¡æœ‰ä»‹ç»å•¥å­ç®—æ³•ï¼Œä½†æ˜¯æŽåŸ¹åŽè€å¸ˆè¿˜æ˜¯å¾ˆæ£’çš„ï¼Œè®²çš„å¾ˆæœ‰æ¡ç†~ï¼å”‰ï¼Œåˆ†æˆäº†`ç”µå­ä¿¡æ¯`å’Œ`è®¡ç®—æœº`ä¸¤ç§ä¸åŒçš„è¦æ±‚ï¼Œç”µåˆ›ç­å±…ç„¶æ˜¯ç”µä¿¡è¦æ±‚ï¼Œä¸å¼€æ£®ï¼ä¸è¿‡æ•°æ®ç»“æž„å’Œç®—æ³•è¦æ˜¯æƒ³æˆä¸º`Master`ï¼Œä¸»è¦è¿˜æ˜¯çœ‹è‡ªå­¦çš„å•¦ï¼
-
----
-
-### ç›®å½•
-
-1. **çº¿æ€§è¡¨**
-    1.1 é¡ºåºè¡¨ç¤ºå’Œå®žçŽ°
-    1.2 é“¾å¼è¡¨ç¤ºå’Œå®žçŽ°
-    1.2.1 `çº¿æ€§é“¾è¡¨`
-    1.2.2 `å¾ªçŽ¯é“¾è¡¨`
-    1.2.3 `åŒå‘é“¾è¡¨`
-
-2. **æ ˆå’Œé˜Ÿåˆ—**
-    2.1 æ ˆ
-    2.2 é˜Ÿåˆ—
-
-3. **æ•°ç»„**
-    3.1 æ•°ç»„çš„é¡ºåºè¡¨ç¤ºå’Œå®žçŽ°
-    3.2 çŸ©é˜µçš„åŽ‹ç¼©å‚¨å­˜
-    3.2.1 `ç¨€ç–çŸ©é˜µ`
-
-4. **æ ‘**
-    4.1 äºŒå‰æ ‘
-    4.2 éåŽ†äºŒå‰æ ‘
-    4.2.1 `ä¸‰å¤§éåŽ†çš„é€’å½’å®žçŽ°`
-    4.2.2 `ä¸‰å¤§éåŽ†çš„éžé€’å½’å®žçŽ°`
-    4.2.3 `å±‚æ¬¡éåŽ†`
-    4.3 æ ‘å’Œæ£®æž—
-    4.4 èµ«å¤«æ›¼æ ‘
-
-5. **å›¾**
-    5.1 å›¾çš„å®šä¹‰
-    5.2 å›¾çš„å‚¨å­˜ç»“æž„
-    5.2.1 `é‚»æŽ¥è¡¨`
-    5.2.2 `åå­—é“¾è¡¨`
-    5.3 å›¾çš„éåŽ†
-    5.3.1 `æ·±åº¦ä¼˜å…ˆæœç´¢`
-    5.3.2 `å¹¿åº¦ä¼˜å…ˆæœç´¢`
-    5.4 å›¾çš„è¿žé€šæ€§
-    5.4.1 `ç”Ÿæˆæ ‘`
-    5.4.2 `æœ€å°ç”Ÿæˆæ ‘`
-    5.5 æ‹“æ‰‘æŽ’åº
-    5.6 æœ€çŸ­è·¯å¾„
-
-6. **æŸ¥æ‰¾**
-    6.1 é™æ€æŸ¥æ‰¾
-    6.2 åŠ¨æ€æŸ¥æ‰¾
-    6.2.1 `äºŒå‰æŽ’åºæ ‘`
-    6.3 å“ˆå¸Œè¡¨
-
-7. **å†…éƒ¨æŽ’åº**
-    7.1 æ’å…¥æŽ’åº
-    7.1.1 `ç›´æŽ¥æ’å…¥æŽ’åº`
-    7.1.2 `å¸Œå°”æŽ’åº`
-    7.2 å¿«é€ŸæŽ’åº
-    7.3 é€‰æ‹©æŽ’åº
-    7.4 å½’å¹¶æŽ’åº
+¸´Ï°Ò»ÏÂ¿ìÒª¿ÎÃ»ºÃºÃÉÏ¹ýµÄÊý¾Ý½á¹¹£¬°¦£¡Òª¿¼ÊÔàà£¡µÃË¢Ò»²¨¼¨µãÀ²£¡£¡£¡ÈÏÕæ¸´Ï°àÅàÅàÅ£¡´óÁ¬Àí¹¤µÄ`Êý¾Ý½á¹¹£¨Ë«Óï£©`½ÌÑ§Éî¶È²»¹»ÄØ£¡²¢Ã»ÓÐ½éÉÜÉ¶×ÓËã·¨£¬µ«ÊÇÀîÅà»ªÀÏÊ¦»¹ÊÇºÜ°ôµÄ£¬½²µÄºÜÓÐÌõÀí~£¡°¦£¬·Ö³ÉÁË`µç×ÓÐÅÏ¢`ºÍ`¼ÆËã»ú`Á½ÖÖ²»Í¬µÄÒªÇó£¬µç´´°à¾ÓÈ»ÊÇµçÐÅÒªÇó£¬²»¿ªÉ­£¡²»¹ýÊý¾Ý½á¹¹ºÍËã·¨ÒªÊÇÏë³ÉÎª`Master`£¬Ö÷Òª»¹ÊÇ¿´×ÔÑ§µÄÀ²£¡
 
 ---
 
-### 1. çº¿æ€§è¡¨
+### Ä¿Â¼
 
-> çº¿æ€§è¡¨`Linear_list`æ˜¯æœ€å¸¸ç”¨ä¸”æœ€ç®€å•çš„ä¸€ç§æ•°æ®ç»“æž„ã€‚ç®€è¨€ä¹‹ï¼Œä¸€ä¸ªçº¿æ€§è¡¨æ˜¯nä¸ªæ•°æ®å…ƒç´ çš„æœ‰é™åºåˆ—ã€‚
+1. **ÏßÐÔ±í**
+    1.1 Ë³Ðò±íÊ¾ºÍÊµÏÖ
+    1.2 Á´Ê½±íÊ¾ºÍÊµÏÖ
+    1.2.1 `ÏßÐÔÁ´±í`
+    1.2.2 `Ñ­»·Á´±í`
+    1.2.3 `Ë«ÏòÁ´±í`
 
-#### 1.1 é¡ºåºè¡¨ç¤ºå’Œå®žçŽ°
+2. **Õ»ºÍ¶ÓÁÐ**
+    2.1 Õ»
+    2.2 ¶ÓÁÐ
 
-> çº¿æ€§è¡¨çš„é¡ºåºè¡¨ç¤º`Sequential List`æŒ‡çš„æ˜¯ç”¨ä¸€ç»„åœ°å€è¿žç»­çš„å‚¨å­˜å•å…ƒä¾æ¬¡å‚¨å­˜çº¿æ€§è¡¨çš„æ•°æ®å…ƒç´ ã€‚`é¡ºåºå‚¨å­˜ç»“æž„`æ˜¯ä¸€ç§éšæœºå­˜å–çš„å‚¨å­˜ç»“æž„ã€‚é€šå¸¸ç”¨`æ•°ç»„`æ¥æè¿°é¡ºåºå‚¨å­˜ç»“æž„ã€‚
+3. **Êý×é**
+    3.1 Êý×éµÄË³Ðò±íÊ¾ºÍÊµÏÖ
+    3.2 ¾ØÕóµÄÑ¹Ëõ´æ´¢
+    3.2.1 `Ï¡Êè¾ØÕó`
 
-Cè¯­è¨€ç”¨åŠ¨æ€åˆ†é…çš„ä¸€ç»´æ•°ç»„ï¼Œæ¥æè¿°çº¿æ€§è¡¨ï¼š
+4. **Ê÷**
+    4.1 ¶þ²æÊ÷
+    4.2 ±éÀú¶þ²æÊ÷
+    4.2.1 `Èý´ó±éÀúµÄµÝ¹éÊµÏÖ`
+    4.2.2 `Èý´ó±éÀúµÄ·ÇµÝ¹éÊµÏÖ`
+    4.2.3 `²ã´Î±éÀú`
+    4.3 Ê÷ºÍÉ­ÁÖ
+    4.3.1 `ÊýºÍÉ­ÁÖµÄ´æ´¢½á¹¹`
+    4.3.2 `ÊýºÍÉ­ÁÖµÄ±éÀú`
+    4.4 ºÕ·òÂüÊ÷
+
+5. **Í¼**
+    5.1 Í¼µÄ¶¨Òå
+    5.2 Í¼µÄ´æ´¢½á¹¹
+    5.2.1 `ÁÚ½Ó±í`
+    5.2.2 `Ê®×ÖÁ´±í`
+    5.3 Í¼µÄ±éÀú
+    5.3.1 `Éî¶ÈÓÅÏÈËÑË÷`
+    5.3.2 `¹ã¶ÈÓÅÏÈËÑË÷`
+    5.4 Í¼µÄÁ¬Í¨ÐÔ
+    5.4.1 `Éú³ÉÊ÷`
+    5.4.2 `×îÐ¡Éú³ÉÊ÷`
+    5.5 ÍØÆËÅÅÐò
+    5.6 ×î¶ÌÂ·¾¶
+
+6. **²éÕÒ**
+    6.1 ¾²Ì¬²éÕÒ
+    6.2 ¶¯Ì¬²éÕÒ
+    6.2.1 `¶þ²æÅÅÐòÊ÷`
+    6.3 ¹þÏ£±í
+
+7. **ÄÚ²¿ÅÅÐò**
+    7.1 ²åÈëÅÅÐò
+    7.1.1 `Ö±½Ó²åÈëÅÅÐò`
+    7.1.2 `Ï£¶ûÅÅÐò`
+    7.2 ¿ìËÙÅÅÐò
+    7.3 Ñ¡ÔñÅÅÐò
+    7.4 ¹é²¢ÅÅÐò
+
+---
+
+### 1. ÏßÐÔ±í
+
+> ÏßÐÔ±í`Linear_list`ÊÇ×î³£ÓÃÇÒ×î¼òµ¥µÄÒ»ÖÖÊý¾Ý½á¹¹¡£¼òÑÔÖ®£¬Ò»¸öÏßÐÔ±íÊÇn¸öÊý¾ÝÔªËØµÄÓÐÏÞÐòÁÐ¡£
+
+#### 1.1 Ë³Ðò±íÊ¾ºÍÊµÏÖ
+
+> ÏßÐÔ±íµÄË³Ðò±íÊ¾`Sequential List`Ö¸µÄÊÇÓÃÒ»×éµØÖ·Á¬ÐøµÄ´¢´æµ¥ÔªÒÀ´Î´¢´æÏßÐÔ±íµÄÊý¾ÝÔªËØ¡£`Ë³Ðò´¢´æ½á¹¹`ÊÇÒ»ÖÖËæ»ú´æÈ¡µÄ´¢´æ½á¹¹¡£Í¨³£ÓÃ`Êý×é`À´ÃèÊöË³Ðò´¢´æ½á¹¹¡£
+
+CÓïÑÔÓÃ¶¯Ì¬·ÖÅäµÄÒ»Î¬Êý×é£¬À´ÃèÊöÏßÐÔ±í£º
 
 ~~~C
- #define LIST_INIT_SIZE 100 //çº¿æ€§è¡¨å‚¨å­˜ç©ºé—´çš„åˆå§‹åˆ†é…é‡
- #define LISTINCREMENT 10 //çº¿æ€§è¡¨çš„åˆ†é…é‡
+ #define LIST_INIT_SIZE 100 //ÏßÐÔ±í´¢´æ¿Õ¼äµÄ³õÊ¼·ÖÅäÁ¿
+ #define LISTINCREMENT 10 //ÏßÐÔ±íµÄ·ÖÅäÁ¿
 typedef int ElemType;
 typedef struct {
-    ElemType *elem;  // å‚¨å­˜ç©ºé—´çš„åŸºåœ°å€
-    int length;  //å½“å‰çº¿æ€§è¡¨çš„é•¿åº¦
-    int listsize; //å½“å‰åˆ†é…çš„å‚¨å­˜å®¹é‡
+    ElemType *elem;  // ´¢´æ¿Õ¼äµÄ»ùµØÖ·
+    int length;  //µ±Ç°ÏßÐÔ±íµÄ³¤¶È
+    int listsize; //µ±Ç°·ÖÅäµÄ´¢´æÈÝÁ¿
 }SqList;
 ~~~
 
-> æ›´å¤šæœ‰å…³çº¿æ€§è¡¨çš„çŸ¥è¯†ï¼Œè¯·æˆ³ï¼š
-* [çº¿æ€§è¡¨ä¸Ž13ä¸ªåŸºæœ¬æ“ä½œçš„å®žçŽ°](https://blog.csdn.net/bruthyu/article/details/52645510)
+> ¸ü¶àÓÐ¹ØÏßÐÔ±íµÄÖªÊ¶£¬Çë´Á£º
+* [ÏßÐÔ±íÓë13¸ö»ù±¾²Ù×÷µÄÊµÏÖ](https://blog.csdn.net/bruthyu/article/details/52645510)
 
-#### 1.2 é“¾å¼è¡¨ç¤ºå’Œå®žçŽ°
+#### 1.2 Á´Ê½±íÊ¾ºÍÊµÏÖ
 
-> é“¾å¼å‚¨å­˜ç»“æž„`Linked List`ä¸Žé¡ºåºå‚¨å­˜ç»“æž„`Sequential List`çš„ä¸åŒï¼šé¡ºåºå‚¨å­˜ç»“æž„çš„ç‰¹ç‚¹æ˜¯é€»è¾‘å…³ç³»ä¸Šä¸¤ä¸ªç›¸é‚»å…ƒç´ åœ¨ç‰©ç†ä½ç½®ä¸Šä¹Ÿç›¸åŒï¼Œè¿™æ ·éšæœºå­˜å–ä»»æ„å…ƒç´ å¾ˆå¿«å¾ˆç›´è§‚ï¼Œç¼ºç‚¹æ˜¯éœ€è¦ç§»åŠ¨å¤§é‡å…¶ä»–å…ƒç´ ã€‚è€Œé“¾å¼ç»“æž„ï¼Œå®ƒä¸è¦æ±‚é€»è¾‘ä¸Šç›¸é‚»çš„å…ƒç´ åœ¨ç‰©ç†ä½ç½®ä¸Šç›¸é‚»ï¼Œå› æ­¤å®ƒå­˜å–å…ƒç´ ä¸éœ€è¦ç§»åŠ¨å…¶ä»–å…ƒç´ ï¼Œä½†æ˜¯å¯¹äºŽæŸ¥æ‰¾å…ƒç´ æœ‰å¿ƒæ— åŠ›ã€‚
+> Á´Ê½´¢´æ½á¹¹`Linked List`ÓëË³Ðò´¢´æ½á¹¹`Sequential List`µÄ²»Í¬£ºË³Ðò´¢´æ½á¹¹µÄÌØµãÊÇÂß¼­¹ØÏµÉÏÁ½¸öÏàÁÚÔªËØÔÚÎïÀíÎ»ÖÃÉÏÒ²ÏàÍ¬£¬ÕâÑùËæ»ú´æÈ¡ÈÎÒâÔªËØºÜ¿ìºÜÖ±¹Û£¬È±µãÊÇÐèÒªÒÆ¶¯´óÁ¿ÆäËûÔªËØ¡£¶øÁ´Ê½½á¹¹£¬Ëü²»ÒªÇóÂß¼­ÉÏÏàÁÚµÄÔªËØÔÚÎïÀíÎ»ÖÃÉÏÏàÁÚ£¬Òò´ËËü´æÈ¡ÔªËØ²»ÐèÒªÒÆ¶¯ÆäËûÔªËØ£¬µ«ÊÇ¶ÔÓÚ²éÕÒÔªËØÓÐÐÄÎÞÁ¦¡£
 
-##### 1.2.1 `çº¿æ€§é“¾è¡¨`
+##### 1.2.1 `ÏßÐÔÁ´±í`
 
-> å¯ä»¥ç†è§£ä¸ºå•å‘é“¾è¡¨`Singly Linked List`ï¼Œå•å‘é“¾è¡¨æ˜¯éžéšæœºå­˜å–ç»“æž„
+> ¿ÉÒÔÀí½âÎªµ¥ÏòÁ´±í`Singly Linked List`£¬µ¥ÏòÁ´±íÊÇ·ÇËæ»ú´æÈ¡½á¹¹
 
-ä¸€äº›å¸¸ç”¨çš„æ–¹æ³•ï¼š
+Ò»Ð©³£ÓÃµÄ·½·¨£º
 
-* æ·»åŠ å…ƒç´ ï¼ˆsæ˜¯æŒ‡å‘å¾…æ·»åŠ èŠ‚ç‚¹çš„æŒ‡é’ˆï¼‰
+* Ìí¼ÓÔªËØ£¨sÊÇÖ¸Ïò´ýÌí¼Ó½ÚµãµÄÖ¸Õë£©
 
     ~~~C
     s->next = p->next;
     p->next = s;
     ~~~
 
-* åˆ é™¤å…ƒç´ ï¼ˆa,b,cæ˜¯é“¾è¡¨ä¸­ç›¸è¿žçš„3ä¸ªç»“ç‚¹ï¼Œbæ˜¯å¾…åˆ é™¤çš„ç»“ç‚¹ï¼ŒçŽ°åœ¨pæ˜¯æŒ‡å‘aç»“ç‚¹çš„æŒ‡é’ˆï¼‰
+* É¾³ýÔªËØ£¨a,b,cÊÇÁ´±íÖÐÏàÁ¬µÄ3¸ö½áµã£¬bÊÇ´ýÉ¾³ýµÄ½áµã£¬ÏÖÔÚpÊÇÖ¸Ïòa½áµãµÄÖ¸Õë£©
 
     ~~~C
     p->next = p->next->next;
     ~~~
 
-ç”¨ç»“æž„ä½“å®žçŽ°é“¾è¡¨ç»“ç‚¹ï¼š
+ÓÃ½á¹¹ÌåÊµÏÖÁ´±í½áµã£º
 
 ~~~C
-//çº¿æ€§è¡¨çš„å•é“¾è¡¨å‚¨å­˜ç»“æž„
+//ÏßÐÔ±íµÄµ¥Á´±í´¢´æ½á¹¹
 struct Node {
-    int data; //æ•°æ®åŸŸ
-    struct Node *next; //æŒ‡é’ˆåŸŸ
+    int data; //Êý¾ÝÓò
+    struct Node *next; //Ö¸ÕëÓò
 };
 ~~~
 
-> æ›´å¤šé“¾è¡¨çŸ¥è¯†ï¼Œè¯·æˆ³ï¼š
+> ¸ü¶àÁ´±íÖªÊ¶£¬Çë´Á£º
 
-* [Cè¯­è¨€å•å‘é“¾è¡¨çš„å®žçŽ°](https://blog.csdn.net/21aspnet/article/details/160019)
-* [é“¾è¡¨çš„åŸºæœ¬ä½¿ç”¨ä¸€ï¼ˆæž„å»ºé“¾è¡¨ï¼‰](https://blog.csdn.net/lan74__/article/details/53819849)
-* [æ•°æ®ç»“æž„ï¼šé“¾è¡¨(linked-list)](https://blog.csdn.net/juanqinyang/article/details/51351619)
+* [CÓïÑÔµ¥ÏòÁ´±íµÄÊµÏÖ](https://blog.csdn.net/21aspnet/article/details/160019)
+* [Á´±íµÄ»ù±¾Ê¹ÓÃÒ»£¨¹¹½¨Á´±í£©](https://blog.csdn.net/lan74__/article/details/53819849)
+* [Êý¾Ý½á¹¹£ºÁ´±í(linked-list)](https://blog.csdn.net/juanqinyang/article/details/51351619)
 
-##### 1.2.2 `å¾ªçŽ¯é“¾è¡¨`
+##### 1.2.2 `Ñ­»·Á´±í`
 
-1. å¾ªçŽ¯å•é“¾è¡¨ç‰¹ç‚¹ï¼š
+1. Ñ­»·µ¥Á´±íÌØµã£º
 
-    é“¾è¡¨ä¸­æœ€åŽä¸€ä¸ªç»“ç‚¹çš„æŒ‡é’ˆåŸŸä¸å†æ˜¯ç»“æŸæ ‡å¿—ï¼Œè€Œæ˜¯æŒ‡å‘æ•´ä¸ªé“¾è¡¨çš„ç¬¬ä¸€ä¸ªç»“ç‚¹ï¼Œä»Žè€Œä½¿é“¾è¡¨å½¢æˆä¸€ä¸ªçŽ¯ã€‚å’Œå•é“¾è¡¨ç›¸åŒï¼Œå¾ªçŽ¯å•é“¾è¡¨ä¹Ÿæœ‰å¸¦å¤´ç»“ç‚¹å’Œä¸å¸¦å¤´ç»“ç‚¹ä¸¤ç§ã€‚å¸¦å¤´ç»“ç‚¹çš„å¾ªçŽ¯å•é“¾è¡¨å®žçŽ°æ’å…¥å’Œåˆ é™¤æ“ä½œè¾ƒä¸ºæ–¹ä¾¿ï¼Œä¸”æ›´åŠ é€‚ç”¨ã€‚
+    Á´±íÖÐ×îºóÒ»¸ö½áµãµÄÖ¸ÕëÓò²»ÔÙÊÇ½áÊø±êÖ¾£¬¶øÊÇÖ¸ÏòÕû¸öÁ´±íµÄµÚÒ»¸ö½áµã£¬´Ó¶øÊ¹Á´±íÐÎ³ÉÒ»¸ö»·¡£ºÍµ¥Á´±íÏàÍ¬£¬Ñ­»·µ¥Á´±íÒ²ÓÐ´øÍ·½áµãºÍ²»´øÍ·½áµãÁ½ÖÖ¡£´øÍ·½áµãµÄÑ­»·µ¥Á´±íÊµÏÖ²åÈëºÍÉ¾³ý²Ù×÷½ÏÎª·½±ã£¬ÇÒ¸ü¼ÓÊÊÓÃ¡£
 
-2. å•é“¾è¡¨ä¸Žå¾ªçŽ¯å•é“¾è¡¨æ¯”è¾ƒï¼š
+2. µ¥Á´±íÓëÑ­»·µ¥Á´±í±È½Ï£º
 
-    å¾ªçŽ¯å•é“¾è¡¨å¯ä»¥ä»Žå°¾åˆ°å¤´ï¼Œè€Œå•é“¾è¡¨ä¸èƒ½ä»Žå°¾åˆ°å¤´ã€‚å› æ­¤å¤„ç†çš„æ•°æ®åºåˆ—å…·æœ‰çŽ¯å½¢ç»“æž„ç‰¹ç‚¹æ—¶ï¼Œé€‚åˆé‡‡ç”¨å¾ªçŽ¯å•é“¾è¡¨ã€‚
+    Ñ­»·µ¥Á´±í¿ÉÒÔ´ÓÎ²µ½Í·£¬¶øµ¥Á´±í²»ÄÜ´ÓÎ²µ½Í·¡£Òò´Ë´¦ÀíµÄÊý¾ÝÐòÁÐ¾ßÓÐ»·ÐÎ½á¹¹ÌØµãÊ±£¬ÊÊºÏ²ÉÓÃÑ­»·µ¥Á´±í¡£
 
-3. å¸¦å¤´ç»“ç‚¹çš„å¾ªçŽ¯å•é“¾è¡¨å’Œå¸¦å¤´ç»“ç‚¹çš„å•é“¾è¡¨æ¯”è¾ƒï¼š
+3. ´øÍ·½áµãµÄÑ­»·µ¥Á´±íºÍ´øÍ·½áµãµÄµ¥Á´±í±È½Ï£º
 
-    â‘  åœ¨åˆå§‹åŒ–å‡½æ•°ä¸­ï¼ŒæŠŠè¯­å¥`head->next=NULL`æ”¹ä¸º`head->next = head`ï¼Œå³å½¢æˆä¸€ä¸ªçŽ¯ 
-    â‘¡ åœ¨å…¶ä»–å‡½æ•°ä¸­ï¼Œå¾ªçŽ¯åˆ¤æ–­æ¡ä»¶`p->next!=NULL`å’Œ`p->next->next!=NULL`ä¸­çš„NULLæ”¹æˆå¤´æŒ‡é’ˆ`head`ã€‚
+    ¢Ù ÔÚ³õÊ¼»¯º¯ÊýÖÐ£¬°ÑÓï¾ä`head->next=NULL`¸ÄÎª`head->next = head`£¬¼´ÐÎ³ÉÒ»¸ö»· 
+    ¢Ú ÔÚÆäËûº¯ÊýÖÐ£¬Ñ­»·ÅÐ¶ÏÌõ¼þ`p->next!=NULL`ºÍ`p->next->next!=NULL`ÖÐµÄNULL¸Ä³ÉÍ·Ö¸Õë`head`¡£
 
-##### 1.2.3 `åŒå‘é“¾è¡¨`
+##### 1.2.3 `Ë«ÏòÁ´±í`
 
-1. åŒå‘é“¾è¡¨ç‰¹ç‚¹ï¼š
-    æ¯ä¸ªèŠ‚ç‚¹é™¤äº†æœ‰åŽç»§æŒ‡é’ˆåŸŸè¿˜æœ‰ä¸€ä¸ªå‰é©±æŒ‡é’ˆåŸŸã€‚
+1. Ë«ÏòÁ´±íÌØµã£º
+    Ã¿¸ö½Úµã³ýÁËÓÐºó¼ÌÖ¸ÕëÓò»¹ÓÐÒ»¸öÇ°ÇýÖ¸ÕëÓò¡£
 
-2. åŒå‘é“¾è¡¨çš„åˆ†ç±»ï¼š
-    åŒå‘é“¾è¡¨æœ‰ï¼šå¸¦å¤´ç»“ç‚¹å’Œä¸å¸¦å¤´ç»“ç‚¹çš„åŒå‘é“¾è¡¨ï¼ˆä½†æ˜¯å¸¦å¤´ç»“ç‚¹çš„åŒå‘é“¾è¡¨æ›´ä¸ºå¸¸ç”¨ï¼‰ã€‚ä¹Ÿæœ‰å¾ªçŽ¯å’Œéžå¾ªçŽ¯ä¹‹åˆ†ï¼Œå¾ªçŽ¯ç»“æž„çš„åŒå‘é“¾è¡¨æ›´ä¸ºå¸¸ç”¨ã€‚å› æ­¤ä¸‹é¢è®¨è®ºçš„æ˜¯å¸¦å¤´ç»“ç‚¹çš„å¾ªçŽ¯åŒé“¾è¡¨ã€‚
+2. Ë«ÏòÁ´±íµÄ·ÖÀà£º
+    Ë«ÏòÁ´±íÓÐ£º´øÍ·½áµãºÍ²»´øÍ·½áµãµÄË«ÏòÁ´±í£¨µ«ÊÇ´øÍ·½áµãµÄË«ÏòÁ´±í¸üÎª³£ÓÃ£©¡£Ò²ÓÐÑ­»·ºÍ·ÇÑ­»·Ö®·Ö£¬Ñ­»·½á¹¹µÄË«ÏòÁ´±í¸üÎª³£ÓÃ¡£Òò´ËÏÂÃæÌÖÂÛµÄÊÇ´øÍ·½áµãµÄÑ­»·Ë«Á´±í¡£
 
-3. åŒå‘å¾ªçŽ¯é“¾è¡¨ç»“ç‚¹çš„ç»“æž„ä½“å®šä¹‰
+3. Ë«ÏòÑ­»·Á´±í½áµãµÄ½á¹¹Ìå¶¨Òå
     ~~~C
-    //çº¿æ€§è¡¨çš„åŒå‘é“¾è¡¨å‚¨å­˜ç»“æž„
+    //ÏßÐÔ±íµÄË«ÏòÁ´±í´¢´æ½á¹¹
     struct DuLNode {
-        Elemtype data; //æ•°æ®åŸŸ
-        struct DuLNode *prior; //å‰é©±ç»“ç‚¹
-        struct DuLNode *next;  //åŽç»§ç»“ç‚¹
-    }DuLNodeï¼Œ *DuLinklist;
+        Elemtype data; //Êý¾ÝÓò
+        struct DuLNode *prior; //Ç°Çý½áµã
+        struct DuLNode *next;  //ºó¼Ì½áµã
+    }DuLNode£¬ *DuLinklist;
     ~~~
-    **å¤‡æ³¨**ï¼šdataåŸŸã€nextåŸŸã€prioråŸŸã€‚å…¶ä¸­dataåŸŸæ˜¯æ•°æ®åŸŸï¼ŒnextåŸŸä¸ºæŒ‡å‘åŽç»§ç»“ç‚¹çš„æŒ‡é’ˆåŸŸï¼ŒprioråŸŸä¸ºæŒ‡å‘å‰é©±ç»“ç‚¹çš„æŒ‡é’ˆåŸŸã€‚
+    **±¸×¢**£ºdataÓò¡¢nextÓò¡¢priorÓò¡£ÆäÖÐdataÓòÊÇÊý¾ÝÓò£¬nextÓòÎªÖ¸Ïòºó¼Ì½áµãµÄÖ¸ÕëÓò£¬priorÓòÎªÖ¸ÏòÇ°Çý½áµãµÄÖ¸ÕëÓò¡£
 
-4. åŒå‘é“¾è¡¨çš„ä¼˜ç‚¹ï¼š
-    åœ¨å•é“¾ä¸­æŸ¥æ‰¾å½“å‰ç»“ç‚¹çš„åŽç»§ç»“ç‚¹å¹¶ä¸å›°éš¾ï¼Œå¯ä»¥é€šè¿‡å½“å‰ç»“ç‚¹çš„nextæŒ‡é’ˆè¿›è¡Œï¼Œä½†è¦æŸ¥æ‰¾å½“å‰ç»“ç‚¹çš„å‰é©±ç»“ç‚¹ï¼Œå°±è¦ä»Žå¤´æŒ‡é’ˆheadå¼€å§‹é‡æ–°è¿›è¡Œã€‚å¯¹äºŽä¸€ä¸ªè¦é¢‘ç¹è¿›è¡Œå½“å‰ç»“ç‚¹çš„åŽç»§ç»“ç‚¹å’Œå‰é©±ç»“ç‚¹çš„åº”ç”¨æ¥è¯´ï¼Œä½¿ç”¨åŒå‘é“¾è¡¨å¾ˆæœ‰æ•ˆã€‚
+4. Ë«ÏòÁ´±íµÄÓÅµã£º
+    ÔÚµ¥Á´ÖÐ²éÕÒµ±Ç°½áµãµÄºó¼Ì½áµã²¢²»À§ÄÑ£¬¿ÉÒÔÍ¨¹ýµ±Ç°½áµãµÄnextÖ¸Õë½øÐÐ£¬µ«Òª²éÕÒµ±Ç°½áµãµÄÇ°Çý½áµã£¬¾ÍÒª´ÓÍ·Ö¸Õëhead¿ªÊ¼ÖØÐÂ½øÐÐ¡£¶ÔÓÚÒ»¸öÒªÆµ·±½øÐÐµ±Ç°½áµãµÄºó¼Ì½áµãºÍÇ°Çý½áµãµÄÓ¦ÓÃÀ´Ëµ£¬Ê¹ÓÃË«ÏòÁ´±íºÜÓÐÐ§¡£
 
-5. åŒå‘å¾ªçŽ¯é“¾è¡¨çš„å®žçŽ°
-    åœ¨åŒå‘é“¾è¡¨ä¸­ï¼Œæœ‰å¦‚ä¸‹æŒ‡é’ˆå…³ç³»ï¼šè®¾æŒ‡é’ˆpæŒ‡å‘åŒå‘å¾ªçŽ¯é“¾è¡¨ä¸­çš„ç¬¬iä¸ªä½ç½®ï¼Œåˆ™`p->next`æŒ‡å‘i+1ä¸ªç»“ç‚¹ã€‚`p->next->prior`ä»æŒ‡å‘ç¬¬iä¸ªç»“ç‚¹ï¼Œå³`p->next->prior==p`;åŒæ ·`p->prior`æŒ‡å‘ç¬¬i-1ä¸ªç»“ç‚¹ï¼Œ`p->prior->next`ä»æŒ‡å‘ç¬¬iä¸ªç»“ç‚¹ï¼Œå³`p->prior->next==p`;åŒå‘å¾ªçŽ¯é“¾è¡¨å…³ç³»ç®—æ³•å¯ä»¥æ–¹ä¾¿ç®—æ³•è®¾è®¡ã€‚
+5. Ë«ÏòÑ­»·Á´±íµÄÊµÏÖ
+    ÔÚË«ÏòÁ´±íÖÐ£¬ÓÐÈçÏÂÖ¸Õë¹ØÏµ£ºÉèÖ¸ÕëpÖ¸ÏòË«ÏòÑ­»·Á´±íÖÐµÄµÚi¸öÎ»ÖÃ£¬Ôò`p->next`Ö¸Ïòi+1¸ö½áµã¡£`p->next->prior`ÈÔÖ¸ÏòµÚi¸ö½áµã£¬¼´`p->next->prior==p`;Í¬Ñù`p->prior`Ö¸ÏòµÚi-1¸ö½áµã£¬`p->prior->next`ÈÔÖ¸ÏòµÚi¸ö½áµã£¬¼´`p->prior->next==p`;Ë«ÏòÑ­»·Á´±í¹ØÏµËã·¨¿ÉÒÔ·½±ãËã·¨Éè¼Æ¡£
 
-> æ›´å¤šå¾ªçŽ¯é“¾è¡¨å’ŒåŒå‘é“¾è¡¨çš„çŸ¥è¯†ï¼Œè¯·æˆ³ï¼š
-* [æ•°æ®ç»“æž„â€”â€”å¾ªçŽ¯å•é“¾è¡¨å’ŒåŒå‘é“¾è¡¨](https://blog.csdn.net/xiaofei__/article/details/50984255)
+> ¸ü¶àÑ­»·Á´±íºÍË«ÏòÁ´±íµÄÖªÊ¶£¬Çë´Á£º
+* [Êý¾Ý½á¹¹¡ª¡ªÑ­»·µ¥Á´±íºÍË«ÏòÁ´±í](https://blog.csdn.net/xiaofei__/article/details/50984255)
 
-* [æ•°æ®ç»“æž„ | åŒå‘é“¾è¡¨ç®€å•å®žçŽ°åŠå›¾ç¤º](http://www.cnblogs.com/hughdong/p/6785391.html) -> *recommend*ï¼
+* [Êý¾Ý½á¹¹ | Ë«ÏòÁ´±í¼òµ¥ÊµÏÖ¼°Í¼Ê¾](http://www.cnblogs.com/hughdong/p/6785391.html) -> *recommend*£¡
 
-### 2. æ ˆå’Œé˜Ÿåˆ—
+### 2. Õ»ºÍ¶ÓÁÐ
 
-ä»Žæ•°æ®ç»“æž„ä¸Šçœ‹ï¼Œæ ˆå’Œé˜Ÿåˆ—ä¹Ÿæ˜¯çº¿æ€§è¡¨ã€‚ä¸è¿‡ä»–ä»¬æ˜¯æ“ä½œå—é™çš„çº¿æ€§è¡¨ï¼Œå› æ­¤ï¼Œç§°å®ƒä»¬ä¸ºé™å®šæ€§çš„æ•°æ®ç»“æž„ã€‚
+´ÓÊý¾Ý½á¹¹ÉÏ¿´£¬Õ»ºÍ¶ÓÁÐÒ²ÊÇÏßÐÔ±í¡£²»¹ýËûÃÇÊÇ²Ù×÷ÊÜÏÞµÄÏßÐÔ±í£¬Òò´Ë£¬³ÆËüÃÇÎªÏÞ¶¨ÐÔµÄÊý¾Ý½á¹¹¡£
 
-#### 2.1 æ ˆ
+#### 2.1 Õ»
 
-æ ˆ`stack`æ˜¯é™å®šä»…åœ¨è¡¨å°¾è¿›è¡Œæ’å…¥å’Œåˆ é™¤çš„çº¿æ€§è¡¨ã€‚å¯¹äºŽæ ˆï¼Œè¡¨å°¾ç§°ä¸º`æ ˆé¡¶`ï¼Œç›¸åº”åœ°ï¼Œè¡¨å¤´ç§°ä¸º`æ ˆåº•`ã€‚ä¸å«å…ƒç´ çš„ç©ºè¡¨ç§°ä¸º`ç©ºæ ˆ`ã€‚æ ˆæ˜¯ä¸€ç§åŽè¿›å…ˆå‡ºï¼ˆlast in first out, LIFOï¼‰ç»“æž„ã€‚
+Õ»`stack`ÊÇÏÞ¶¨½öÔÚ±íÎ²½øÐÐ²åÈëºÍÉ¾³ýµÄÏßÐÔ±í¡£¶ÔÓÚÕ»£¬±íÎ²³ÆÎª`Õ»¶¥`£¬ÏàÓ¦µØ£¬±íÍ·³ÆÎª`Õ»µ×`¡£²»º¬ÔªËØµÄ¿Õ±í³ÆÎª`¿ÕÕ»`¡£Õ»ÊÇÒ»ÖÖºó½øÏÈ³ö£¨last in first out, LIFO£©½á¹¹¡£
 
-æ ˆæœ‰ä¸¤ç§å‚¨å­˜æ–¹å¼ï¼Œé¡ºåºæ ˆå’Œé“¾å¼æ ˆã€‚
+Õ»ÓÐÁ½ÖÖ´¢´æ·½Ê½£¬Ë³ÐòÕ»ºÍÁ´Ê½Õ»¡£
 
-é¡ºåºæ ˆçš„å®šä¹‰ï¼š
+Ë³ÐòÕ»µÄ¶¨Òå£º
 
 ~~~C
 struct stack {
@@ -195,19 +197,19 @@ struct stack {
 }SqStack;
 ~~~
 
-**å¤‡æ³¨**ï¼š`stacksize`æŒ‡å½“å‰å¯ä½¿ç”¨çš„æœ€å¤§å®¹é‡ï¼Œ`base`è¡¨ç¤ºæ ˆåº•æŒ‡é’ˆï¼Œ`base`ä¸ºNULLæ—¶ï¼Œè¡¨æ˜Žæ ˆç»“æž„ä¸å­˜åœ¨ï¼Œå…¶åˆå€¼æŒ‡å‘æ ˆåº•ï¼Œå³`top = base`å¯ä½œä¸ºæ ˆç©ºçš„æ ‡è®°ã€‚æ’å…¥å…ƒç´ ï¼Œtop+1ï¼›åˆ é™¤å…ƒç´ ï¼Œtop-1ã€‚
+**±¸×¢**£º`stacksize`Ö¸µ±Ç°¿ÉÊ¹ÓÃµÄ×î´óÈÝÁ¿£¬`base`±íÊ¾Õ»µ×Ö¸Õë£¬`base`ÎªNULLÊ±£¬±íÃ÷Õ»½á¹¹²»´æÔÚ£¬Æä³õÖµÖ¸ÏòÕ»µ×£¬¼´`top = base`¿É×÷ÎªÕ»¿ÕµÄ±ê¼Ç¡£²åÈëÔªËØ£¬top+1£»É¾³ýÔªËØ£¬top-1¡£
 
-> æ›´å¤šæ ˆçš„çŸ¥è¯†ï¼Œè¯·æˆ³ï¼š
-* [[æ•°æ®ç»“æž„]Cè¯­è¨€æ ˆçš„å®žçŽ°](https://www.cnblogs.com/racaljk/p/7822309.html)
-* [æ•°æ®ç»“æž„å›¾æ–‡è§£æžä¹‹ï¼šæ ˆçš„ç®€ä»‹åŠC++æ¨¡æ¿å®žçŽ°](https://www.cnblogs.com/QG-whz/p/5170418.html) -> *recommend*ï¼
+> ¸ü¶àÕ»µÄÖªÊ¶£¬Çë´Á£º
+* [[Êý¾Ý½á¹¹]CÓïÑÔÕ»µÄÊµÏÖ](https://www.cnblogs.com/racaljk/p/7822309.html)
+* [Êý¾Ý½á¹¹Í¼ÎÄ½âÎöÖ®£ºÕ»µÄ¼ò½é¼°C++Ä£°åÊµÏÖ](https://www.cnblogs.com/QG-whz/p/5170418.html) -> *recommend*£¡
 
-#### 2.2 é˜Ÿåˆ—
+#### 2.2 ¶ÓÁÐ
 
-å’Œæ ˆç›¸åï¼Œé˜Ÿåˆ—`quene`æ˜¯ä¸€ç§å…ˆè¿›å…ˆå‡ºï¼ˆfirst in first out, FIFOï¼‰çš„çº¿æ€§è¡¨ï¼Œå®ƒåªå…è®¸åœ¨è¡¨çš„ä¸€ç«¯æ’å…¥ï¼Œå¦ä¸€ç«¯åˆ é™¤ã€‚åœ¨é˜Ÿåˆ—ä¸­ï¼Œå…è®¸æ’å…¥çš„ä¸€ç«¯å«åšé˜Ÿå°¾`rear`ï¼Œå…è®¸åˆ é™¤çš„ä¸€ç«¯å«åšé˜Ÿå¤´`front`ã€‚
+ºÍÕ»Ïà·´£¬¶ÓÁÐ`quene`ÊÇÒ»ÖÖÏÈ½øÏÈ³ö£¨first in first out, FIFO£©µÄÏßÐÔ±í£¬ËüÖ»ÔÊÐíÔÚ±íµÄÒ»¶Ë²åÈë£¬ÁíÒ»¶ËÉ¾³ý¡£ÔÚ¶ÓÁÐÖÐ£¬ÔÊÐí²åÈëµÄÒ»¶Ë½Ð×ö¶ÓÎ²`rear`£¬ÔÊÐíÉ¾³ýµÄÒ»¶Ë½Ð×ö¶ÓÍ·`front`¡£
 
-é˜Ÿåˆ—ä¹Ÿæœ‰ä¸¤ç§å‚¨å­˜æ–¹å¼ï¼Œé¡ºåºé˜Ÿåˆ—å’Œé“¾é˜Ÿåˆ—ã€‚
+¶ÓÁÐÒ²ÓÐÁ½ÖÖ´¢´æ·½Ê½£¬Ë³Ðò¶ÓÁÐºÍÁ´¶ÓÁÐ¡£
 
-é“¾é˜Ÿåˆ—çš„å®žçŽ°ï¼š
+Á´¶ÓÁÐµÄÊµÏÖ£º
 
 ~~~C
 struct QNode {
@@ -215,25 +217,25 @@ struct QNode {
     struct QNode *next;
 }QNode, *QuenePtr;
 struct LinkQuene {
-    QuenePtr front; //é˜Ÿå¤´æŒ‡é’ˆ
-    QuenePtr rear; //é˜Ÿå°¾æŒ‡é’ˆ
+    QuenePtr front; //¶ÓÍ·Ö¸Õë
+    QuenePtr rear; //¶ÓÎ²Ö¸Õë
 }LinkQuene;
 ~~~
 
-> æ›´å¤šé˜Ÿåˆ—çŸ¥è¯†ï¼Œè¯·æˆ³ï¼š
-* [æ•°æ®ç»“æž„-é˜Ÿåˆ—(queue)](https://blog.csdn.net/juanqinyang/article/details/51354293) -> *recommend*ï¼
+> ¸ü¶à¶ÓÁÐÖªÊ¶£¬Çë´Á£º
+* [Êý¾Ý½á¹¹-¶ÓÁÐ(queue)](https://blog.csdn.net/juanqinyang/article/details/51354293) -> *recommend*£¡
 
-### 3. æ•°ç»„
+### 3. Êý×é
 
-æ•°ç»„å’Œå¹¿ä¹‰è¡¨å¯ä»¥çœ‹ä½œæ˜¯çº¿æ€§è¡¨çš„æ‰©å±•ï¼Œä¹Ÿç®—æ˜¯ä¸€ç§æ•°æ®ç»“æž„ã€‚
+Êý×éºÍ¹ãÒå±í¿ÉÒÔ¿´×÷ÊÇÏßÐÔ±íµÄÀ©Õ¹£¬Ò²ËãÊÇÒ»ÖÖÊý¾Ý½á¹¹¡£
 
-#### 3.1 æ•°ç»„çš„é¡ºåºè¡¨ç¤ºå’Œå®žçŽ°
+#### 3.1 Êý×éµÄË³Ðò±íÊ¾ºÍÊµÏÖ
 
-ç”±äºŽæ•°ç»„ä¸€èˆ¬ä¸åšæ’å…¥æˆ–åˆ é™¤æ“ä½œï¼Œå› æ­¤é‡‡ç”¨é¡ºåºå‚¨å­˜ç»“æž„è¡¨ç¤ºæ•°ç»„æ˜¯æœ€å¼æ»´ï¼
+ÓÉÓÚÊý×éÒ»°ã²»×ö²åÈë»òÉ¾³ý²Ù×÷£¬Òò´Ë²ÉÓÃË³Ðò´¢´æ½á¹¹±íÊ¾Êý×éÊÇ×îºðµÎ£¡
 
-> å‡è®¾æ¯ä¸ªæ•°æ®å…ƒç´ å $L$ä¸ªå­˜å‚¨å•å…ƒï¼Œåˆ™äºŒç»´æ•°ç»„$A$ä¸­ä»»ä¸€å…ƒç´ $aij$çš„å­˜å‚¨ä½ç½®å¯ç”±ä¸‹å¼ç¡®å®šï¼š$LOC(i, j) = LOC(0, 0) + (b_2*i + j)L$
+> ¼ÙÉèÃ¿¸öÊý¾ÝÔªËØÕ¼$L$¸ö´æ´¢µ¥Ôª£¬Ôò¶þÎ¬Êý×é$A$ÖÐÈÎÒ»ÔªËØ$aij$µÄ´æ´¢Î»ÖÃ¿ÉÓÉÏÂÊ½È·¶¨£º$LOC(i, j) = LOC(0, 0) + (b_2*i + j)L$
 
-æ•°ç»„çš„é¡ºåºå­˜å‚¨çš„è¡¨ç¤ºï¼š
+Êý×éµÄË³Ðò´æ´¢µÄ±íÊ¾£º
 
 ~~~C
  #define MAX_ARRAY_DIM 8
@@ -245,84 +247,84 @@ struct array {
 }Array;
 ~~~
 
-#### 3.2 çŸ©é˜µçš„åŽ‹ç¼©å­˜å‚¨
+#### 3.2 ¾ØÕóµÄÑ¹Ëõ´æ´¢
 
-> åŽ‹ç¼©å­˜å‚¨æŒ‡çš„æ˜¯ä¸ºå¤šä¸ªå€¼ç›¸åŒçš„å…ƒåªåˆ†é…ä¸€ä¸ªå­˜å‚¨å•å…ƒï¼›å¯¹é›¶å…ƒä¸åˆ†é…ç©ºé—´ã€‚
+> Ñ¹Ëõ´æ´¢Ö¸µÄÊÇÎª¶à¸öÖµÏàÍ¬µÄÔªÖ»·ÖÅäÒ»¸ö´æ´¢µ¥Ôª£»¶ÔÁãÔª²»·ÖÅä¿Õ¼ä¡£
 
-##### 3.2.1 ç¨€ç–çŸ©é˜µ
+##### 3.2.1 Ï¡Êè¾ØÕó
 
-> å¯¹äºŽé‚£äº›é›¶å…ƒç´ æ•°ç›®è¿œè¿œå¤šäºŽéžé›¶å…ƒç´ æ•°ç›®ï¼Œå¹¶ä¸”éžé›¶å…ƒç´ çš„åˆ†å¸ƒæ²¡æœ‰è§„å¾‹çš„çŸ©é˜µç§°ä¸ºç¨€ç–çŸ©é˜µï¼ˆsparseï¼‰ã€‚
+> ¶ÔÓÚÄÇÐ©ÁãÔªËØÊýÄ¿Ô¶Ô¶¶àÓÚ·ÇÁãÔªËØÊýÄ¿£¬²¢ÇÒ·ÇÁãÔªËØµÄ·Ö²¼Ã»ÓÐ¹æÂÉµÄ¾ØÕó³ÆÎªÏ¡Êè¾ØÕó£¨sparse£©¡£
 
-* ç”±äºŽéžé›¶å…ƒç´ åˆ†å¸ƒæ²¡æœ‰ä»»ä½•è§„å¾‹ï¼Œæ‰€ä»¥åœ¨è¿›è¡ŒåŽ‹ç¼©å­˜å‚¨çš„æ—¶ä¾¯éœ€è¦å­˜å‚¨éžé›¶å…ƒç´ å€¼çš„åŒæ—¶è¿˜è¦å­˜å‚¨éžé›¶å…ƒç´ åœ¨çŸ©é˜µä¸­çš„ä½ç½®ï¼Œå³éžé›¶å…ƒç´ æ‰€åœ¨çš„è¡Œå·å’Œåˆ—å·ï¼Œä¹Ÿå°±æ˜¯åœ¨å­˜å‚¨æŸä¸ªå…ƒç´ æ¯”å¦‚$aij$çš„å€¼çš„åŒæ—¶ï¼Œè¿˜éœ€è¦å­˜å‚¨è¯¥å…ƒç´ æ‰€åœ¨çš„è¡Œå·$i$å’Œå®ƒçš„åˆ—å·$j$ï¼Œè¿™æ ·å°±æž„æˆäº†ä¸€ä¸ªä¸‰å…ƒç»„$(i,j,aij)$çš„çº¿æ€§è¡¨ã€‚
+* ÓÉÓÚ·ÇÁãÔªËØ·Ö²¼Ã»ÓÐÈÎºÎ¹æÂÉ£¬ËùÒÔÔÚ½øÐÐÑ¹Ëõ´æ´¢µÄÊ±ºîÐèÒª´æ´¢·ÇÁãÔªËØÖµµÄÍ¬Ê±»¹Òª´æ´¢·ÇÁãÔªËØÔÚ¾ØÕóÖÐµÄÎ»ÖÃ£¬¼´·ÇÁãÔªËØËùÔÚµÄÐÐºÅºÍÁÐºÅ£¬Ò²¾ÍÊÇÔÚ´æ´¢Ä³¸öÔªËØ±ÈÈç$aij$µÄÖµµÄÍ¬Ê±£¬»¹ÐèÒª´æ´¢¸ÃÔªËØËùÔÚµÄÐÐºÅ$i$ºÍËüµÄÁÐºÅ$j$£¬ÕâÑù¾Í¹¹³ÉÁËÒ»¸öÈýÔª×é$(i,j,aij)$µÄÏßÐÔ±í¡£
 
 ```C
  #define MAXSIZE 12500
 struct triple {
-    int i, j; // è¯¥éžé›¶å…ƒçš„è¡Œä¸‹æ ‡å’Œåˆ—ä¸‹æ ‡
+    int i, j; // ¸Ã·ÇÁãÔªµÄÐÐÏÂ±êºÍÁÐÏÂ±ê
     ElemType e;
 }Triple;
 struct tsmatrix {
-    Triple data[MAXSIZE + 1]; //éžé›¶å…ƒä¸‰å…ƒç»„
-    int mu, nu, tu; //è¡Œæ•°ï¼Œåˆ—æ•°ï¼Œéžé›¶å…ƒä¸ªæ•°
+    Triple data[MAXSIZE + 1]; //·ÇÁãÔªÈýÔª×é
+    int mu, nu, tu; //ÐÐÊý£¬ÁÐÊý£¬·ÇÁãÔª¸öÊý
 }TSMatrix;
 ```
 
-> æ›´å¤šç¨€ç–çŸ©é˜µçš„çŸ¥è¯†ï¼Œè¯·æˆ³ï¼š
+> ¸ü¶àÏ¡Êè¾ØÕóµÄÖªÊ¶£¬Çë´Á£º
 
-* [ç¨€ç–çŸ©é˜µ](https://blog.csdn.net/sunhuaqiang1/article/details/51296803)
+* [Ï¡Êè¾ØÕó](https://blog.csdn.net/sunhuaqiang1/article/details/51296803)
 
-### 4. æ ‘
+### 4. Ê÷
 
-> æ ‘çŠ¶å›¾æ˜¯ä¸€ç§æ•°æ®ç»“æž„ï¼Œå®ƒæ˜¯ç”±$n$ï¼ˆ$n>=1$ï¼‰ä¸ªæœ‰é™èŠ‚ç‚¹ç»„æˆä¸€ä¸ªå…·æœ‰å±‚æ¬¡å…³ç³»çš„é›†åˆã€‚æŠŠå®ƒå«åšâ€œæ ‘â€æ˜¯å› ä¸ºå®ƒçœ‹èµ·æ¥åƒä¸€æ£µå€’æŒ‚çš„æ ‘ï¼Œä¹Ÿå°±æ˜¯è¯´å®ƒæ˜¯æ ¹æœä¸Šï¼Œè€Œå¶æœä¸‹çš„ã€‚å®ƒå…·æœ‰ä»¥ä¸‹çš„ç‰¹ç‚¹ï¼š
-> * æ¯ä¸ªèŠ‚ç‚¹æœ‰é›¶ä¸ªæˆ–å¤šä¸ªå­èŠ‚ç‚¹
-> * æ²¡æœ‰çˆ¶èŠ‚ç‚¹çš„èŠ‚ç‚¹ç§°ä¸ºæ ¹èŠ‚ç‚¹
-> * æ¯ä¸€ä¸ªéžæ ¹èŠ‚ç‚¹æœ‰ä¸”åªæœ‰ä¸€ä¸ªçˆ¶èŠ‚ç‚¹ï¼ˆé™¤äº†æ ¹èŠ‚ç‚¹å¤–ï¼Œæ¯ä¸ªå­èŠ‚ç‚¹å¯ä»¥åˆ†ä¸ºå¤šä¸ªä¸ç›¸äº¤çš„å­æ ‘ï¼‰
+> Ê÷×´Í¼ÊÇÒ»ÖÖÊý¾Ý½á¹¹£¬ËüÊÇÓÉ$n$£¨$n>=1$£©¸öÓÐÏÞ½Úµã×é³ÉÒ»¸ö¾ßÓÐ²ã´Î¹ØÏµµÄ¼¯ºÏ¡£°ÑËü½Ð×ö¡°Ê÷¡±ÊÇÒòÎªËü¿´ÆðÀ´ÏñÒ»¿Ãµ¹¹ÒµÄÊ÷£¬Ò²¾ÍÊÇËµËüÊÇ¸ù³¯ÉÏ£¬¶øÒ¶³¯ÏÂµÄ¡£Ëü¾ßÓÐÒÔÏÂµÄÌØµã£º
+> * Ã¿¸ö½ÚµãÓÐÁã¸ö»ò¶à¸ö×Ó½Úµã
+> * Ã»ÓÐ¸¸½ÚµãµÄ½Úµã³ÆÎª¸ù½Úµã
+> * Ã¿Ò»¸ö·Ç¸ù½ÚµãÓÐÇÒÖ»ÓÐÒ»¸ö¸¸½Úµã£¨³ýÁË¸ù½ÚµãÍâ£¬Ã¿¸ö×Ó½Úµã¿ÉÒÔ·ÖÎª¶à¸ö²»Ïà½»µÄ×ÓÊ÷£©
 
-#### 4.1 äºŒå‰æ ‘
+#### 4.1 ¶þ²æÊ÷
 
-> äºŒå‰æ ‘`Binary Tree`æ˜¯å¦ä¸€ç§æ ‘åž‹ç»“æž„ï¼Œå®ƒçš„ç‰¹ç‚¹æ˜¯æ¯ä¸ªç»“ç‚¹è‡³å¤šæœ‰$2$æ£µå­æ ‘ï¼ˆå³äºŒå‰æ ‘ä¸­ä¸å­˜åœ¨åº¦å¤§äºŽ$2$çš„ç»“ç‚¹ï¼‰ï¼Œå¹¶ä¸”ï¼ŒäºŒå‰æ ‘çš„å­æ ‘æœ‰å·¦å³ä¹‹åˆ†ï¼Œå…¶æ¬¡åºä¸èƒ½ä»»æ„é¢ å€’ã€‚
+> ¶þ²æÊ÷`Binary Tree`ÊÇÁíÒ»ÖÖÊ÷ÐÍ½á¹¹£¬ËüµÄÌØµãÊÇÃ¿¸ö½áµãÖÁ¶àÓÐ$2$¿Ã×ÓÊ÷£¨¼´¶þ²æÊ÷ÖÐ²»´æÔÚ¶È´óÓÚ$2$µÄ½áµã£©£¬²¢ÇÒ£¬¶þ²æÊ÷µÄ×ÓÊ÷ÓÐ×óÓÒÖ®·Ö£¬Æä´ÎÐò²»ÄÜÈÎÒâµßµ¹¡£
 
-äºŒå‰æ ‘çš„æ€§è´¨ï¼š
+¶þ²æÊ÷µÄÐÔÖÊ£º
 
-* åœ¨äºŒå‰æ ‘çš„ç¬¬$i$å±‚ä¸Šè‡³å¤šæœ‰$2^(i-1)$ä¸ªç»“ç‚¹ï¼ˆ$i>=1$ï¼‰ã€‚
-* æ·±åº¦ä¸º$k$çš„äºŒå‰æ ‘è‡³å¤šæœ‰$2^k - 1$ä¸ªç»“ç‚¹ï¼ˆ$K>=1$ï¼‰ã€‚
-* å¯¹ä»»ä½•ä¸€æ£µäºŒå‰æ ‘$T$ï¼Œå¦‚æžœå…¶ç»ˆç«¯ç»“ç‚¹æ•°ä¸º$n_0$ï¼Œåº¦ä¸º$2$çš„ç»“ç‚¹æ ‘ä¸º$n_2$ï¼Œåˆ™$n_0=n_2+1$ã€‚
-* å…·æœ‰$n$ä¸ªç»“ç‚¹çš„å®Œå…¨äºŒå‰æ ‘çš„æ·±åº¦ä¸º|$\log_2 n$| + 1ã€‚ï¼ˆ|$\log_2 n$|è¡¨ç¤ºä¸å¤§äºŽ$\log_2 n$çš„æœ€å¤§æ•´æ•°ï¼‰
-* å¦‚æžœå¯¹ä¸€æ£µæœ‰$n$ä¸ªç»“ç‚¹çš„å®Œå…¨äºŒå‰æ ‘ï¼ˆå…¶æ·±åº¦ä¸º|$\log_2 n$| + 1ï¼‰çš„ç»“ç‚¹æŒ‰å±‚åºç¼–å·ï¼ˆä»Žç¬¬$1$å±‚åˆ°ç¬¬|$\log_2 n$| + $1$å±‚ï¼Œæ¯å±‚ä»Žå·¦åˆ°å³ï¼‰ï¼Œåˆ™å¯¹ä»»ä¸€ç»“ç‚¹$i$ï¼ˆ$1 <= i <= n$ï¼‰ï¼Œæœ‰ï¼š
-    1. å¦‚æžœ$i = 1$ï¼Œåˆ™ç»“ç‚¹$i$æ˜¯äºŒå‰æ ‘çš„æ ¹ï¼Œæ— åŒäº²ï¼›å¦‚æžœ$i > 1$ï¼Œåˆ™å…¶åŒäº²`PARENT(i)`æ˜¯ç»“ç‚¹|$i/2$|ã€‚
-    2. å¦‚æžœ$2i > n$ï¼Œåˆ™ç»“ç‚¹$i$æ— å·¦å­©å­ï¼ˆå³ç»“ç‚¹iä¸ºå¶å­ç»“ç‚¹ï¼‰ï¼›å¦åˆ™å…¶å·¦å­©å­`LCHILD(i)`æ˜¯ç»“ç‚¹$2$ã€‚
-    3. å¦‚æžœ$2i + 1 > n$ï¼Œåˆ™ç»“ç‚¹$i$æ— å³å­©å­ï¼›å¦åˆ™å…¶å³å­©å­`RCHILD(i)`æ˜¯ç»“ç‚¹$2i+1$ã€‚
+* ÔÚ¶þ²æÊ÷µÄµÚ$i$²ãÉÏÖÁ¶àÓÐ$2^(i-1)$¸ö½áµã£¨$i>=1$£©¡£
+* Éî¶ÈÎª$k$µÄ¶þ²æÊ÷ÖÁ¶àÓÐ$2^k - 1$¸ö½áµã£¨$K>=1$£©¡£
+* ¶ÔÈÎºÎÒ»¿Ã¶þ²æÊ÷$T$£¬Èç¹ûÆäÖÕ¶Ë½áµãÊýÎª$n_0$£¬¶ÈÎª$2$µÄ½áµãÊ÷Îª$n_2$£¬Ôò$n_0=n_2+1$¡£
+* ¾ßÓÐ$n$¸ö½áµãµÄÍêÈ«¶þ²æÊ÷µÄÉî¶ÈÎª|$\log_2 n$| + 1¡££¨|$\log_2 n$|±íÊ¾²»´óÓÚ$\log_2 n$µÄ×î´óÕûÊý£©
+* Èç¹û¶ÔÒ»¿ÃÓÐ$n$¸ö½áµãµÄÍêÈ«¶þ²æÊ÷£¨ÆäÉî¶ÈÎª|$\log_2 n$| + 1£©µÄ½áµã°´²ãÐò±àºÅ£¨´ÓµÚ$1$²ãµ½µÚ|$\log_2 n$| + $1$²ã£¬Ã¿²ã´Ó×óµ½ÓÒ£©£¬Ôò¶ÔÈÎÒ»½áµã$i$£¨$1 <= i <= n$£©£¬ÓÐ£º
+    1. Èç¹û$i = 1$£¬Ôò½áµã$i$ÊÇ¶þ²æÊ÷µÄ¸ù£¬ÎÞË«Ç×£»Èç¹û$i > 1$£¬ÔòÆäË«Ç×`PARENT(i)`ÊÇ½áµã|$i/2$|¡£
+    2. Èç¹û$2i > n$£¬Ôò½áµã$i$ÎÞ×óº¢×Ó£¨¼´½áµãiÎªÒ¶×Ó½áµã£©£»·ñÔòÆä×óº¢×Ó`LCHILD(i)`ÊÇ½áµã$2$¡£
+    3. Èç¹û$2i + 1 > n$£¬Ôò½áµã$i$ÎÞÓÒº¢×Ó£»·ñÔòÆäÓÒº¢×Ó`RCHILD(i)`ÊÇ½áµã$2i+1$¡£
 
-äºŒå‰æ ‘çš„é¡ºåºå‚¨å­˜ç»“æž„ï¼ˆä»…é€‚ç”¨äºŽå®Œå…¨äºŒå‰æ ‘ï¼‰ï¼š
+¶þ²æÊ÷µÄË³Ðò´¢´æ½á¹¹£¨½öÊÊÓÃÓÚÍêÈ«¶þ²æÊ÷£©£º
 
 ```C
-# define MAX_TREE_SIZE 100 // äºŒå‰æ ‘çš„æœ€å¤§ç»“ç‚¹æ ‘
-typedef TElemType SqBiTree[MAX_TREE_SIZE]; // 0å·å•å…ƒå­˜å‚¨æ ¹èŠ‚ç‚¹
+# define MAX_TREE_SIZE 100 // ¶þ²æÊ÷µÄ×î´ó½áµãÊ÷
+typedef TElemType SqBiTree[MAX_TREE_SIZE]; // 0ºÅµ¥Ôª´æ´¢¸ù½Úµã
 SqBiTree bt;
 ```
 
-äºŒå‰æ ‘çš„é“¾å¼å­˜å‚¨ç»“æž„ï¼š
+¶þ²æÊ÷µÄÁ´Ê½´æ´¢½á¹¹£º
 
 ```C++
 struct BiTree {
-    TElemType data; // æ•°æ®åŸŸ
-    struct BiTree *lchild, *rchild; // å·¦å³å­©å­æŒ‡é’ˆ
+    TElemType data; // Êý¾ÝÓò
+    struct BiTree *lchild, *rchild; // ×óÓÒº¢×ÓÖ¸Õë
 }BiTree, *BiTree;
 ```
 
-> æ›´å¤šäºŒå‰æ ‘çŸ¥è¯†ï¼Œè¯·æˆ³ï¼š
+> ¸ü¶à¶þ²æÊ÷ÖªÊ¶£¬Çë´Á£º
 
-* [äºŒå‰æ ‘æ€»ç»“(ä¸€)æ¦‚å¿µå’Œæ€§è´¨](https://www.cnblogs.com/yeqluofwupheng/p/7428935.html)
+* [¶þ²æÊ÷×Ü½á(Ò»)¸ÅÄîºÍÐÔÖÊ](https://www.cnblogs.com/yeqluofwupheng/p/7428935.html)
 
-* [markdownä¸­çš„æ•°å­¦å…¬å¼ç®€è¦](https://blog.csdn.net/wireless_com/article/details/70596155)
+* [markdownÖÐµÄÊýÑ§¹«Ê½¼òÒª](https://blog.csdn.net/wireless_com/article/details/70596155)
 
-#### 4.2 éåŽ†äºŒå‰æ ‘
+#### 4.2 ±éÀú¶þ²æÊ÷
 
-> äºŒå‰æ ‘æ˜¯ä¸€ç§éžçº¿æ€§ç»“æž„ï¼Œæ˜¯ç”±3ä¸ªåŸºæœ¬å•å…ƒç»„æˆï¼šæ ¹èŠ‚ç‚¹ï¼Œå·¦å­æ ‘å’Œå³å­æ ‘ã€‚è§„å®šå…ˆå·¦åŽå³ï¼Œæœ‰3ç§åŸºæœ¬æƒ…å†µï¼Œå…ˆåºéåŽ†ï¼Œä¸­åºéåŽ†å’ŒåŽåºéåŽ†ã€‚
+> ¶þ²æÊ÷ÊÇÒ»ÖÖ·ÇÏßÐÔ½á¹¹£¬ÊÇÓÉ3¸ö»ù±¾µ¥Ôª×é³É£º¸ù½Úµã£¬×ó×ÓÊ÷ºÍÓÒ×ÓÊ÷¡£¹æ¶¨ÏÈ×óºóÓÒ£¬ÓÐ3ÖÖ»ù±¾Çé¿ö£¬ÏÈÐò±éÀú£¬ÖÐÐò±éÀúºÍºóÐò±éÀú¡£
 
-##### 4.2.1 ä¸‰å¤§éåŽ†çš„é€’å½’å®žçŽ°
+##### 4.2.1 Èý´ó±éÀúµÄµÝ¹éÊµÏÖ
 
-* å…ˆåºéåŽ†ï¼ˆæ ¹-å·¦-å³ï¼‰
+* ÏÈÐò±éÀú£¨¸ù-×ó-ÓÒ£©
 
     ~~~C
     void preOrder1(BinaryTreeNode* pRoot)  
@@ -338,7 +340,7 @@ struct BiTree {
     } 
     ~~~
 
-* ä¸­åºéåŽ†ï¼ˆå·¦-æ ¹-å³ï¼‰
+* ÖÐÐò±éÀú£¨×ó-¸ù-ÓÒ£©
 
     ~~~C
     void inOrder1(BinaryTreeNode* pRoot)  
@@ -354,7 +356,7 @@ struct BiTree {
     }
     ~~~
 
-* åŽåºéåŽ†ï¼ˆå·¦-å³-æ ¹ï¼‰
+* ºóÐò±éÀú£¨×ó-ÓÒ-¸ù£©
 
     ~~~C
     void postOrder1(BinaryTreeNode* pRoot)  
@@ -367,9 +369,9 @@ struct BiTree {
     }  
     ~~~
 
-##### 4.2.2 ä¸‰å¤§éåŽ†çš„éžéåŽ†å®žçŽ°
+##### 4.2.2 Èý´ó±éÀúµÄ·Ç±éÀúÊµÏÖ
 
-* å…ˆåºéåŽ†ï¼ˆæ ¹-å·¦-å³ï¼‰
+* ÏÈÐò±éÀú£¨¸ù-×ó-ÓÒ£©
 
     ~~~C
     void preOrder2(BinaryTreeNode* pRoot)  
@@ -397,7 +399,7 @@ struct BiTree {
     }  
     ~~~
 
-* ä¸­åºéåŽ†ï¼ˆå·¦-æ ¹-å³ï¼‰
+* ÖÐÐò±éÀú£¨×ó-¸ù-ÓÒ£©
 
     ~~~C
     void inOrder(BinaryTreeNode* pRoot)  
@@ -422,7 +424,7 @@ struct BiTree {
     }  
     ~~~
 
-* åŽåºéåŽ†ï¼ˆå·¦-å³-æ ¹ï¼‰
+* ºóÐò±éÀú£¨×ó-ÓÒ-¸ù£©
 
     ~~~C
     void postOrder(BinaryTreeNode* pRoot)  
@@ -430,13 +432,13 @@ struct BiTree {
         stack<BinaryTreeNode*> s;  
         BinaryTreeNode *cur;  
         BinaryTreeNode *pre=NULL;  
-        s.push(pRoot);//æ ¹ç»“ç‚¹å…¥æ ˆ  
+        s.push(pRoot);//¸ù½áµãÈëÕ»  
         while(!s.empty())  
         {  
             cur=s.top();  
             if((cur->left==NULL&&cur->right==NULL)||(pre!=NULL&&(pre==cur->left||pre==cur->right)))  
             {  
-                //å·¦å­©å­å’Œå³å­©å­åŒæ—¶ä¸ºç©ºï¼Œæˆ–è€…å½“å‰ç»“ç‚¹çš„å·¦å­©å­æˆ–å³å­©å­å·²ç»éåŽ†è¿‡äº†  
+                //×óº¢×ÓºÍÓÒº¢×ÓÍ¬Ê±Îª¿Õ£¬»òÕßµ±Ç°½áµãµÄ×óº¢×Ó»òÓÒº¢×ÓÒÑ¾­±éÀú¹ýÁË  
                 cout<<cur->value<<" ";  
                 s.pop();  
                 pre=cur;  
@@ -452,7 +454,7 @@ struct BiTree {
     } 
     ~~~
 
-##### 4.2.3 å±‚æ¬¡éåŽ†
+##### 4.2.3 ²ã´Î±éÀú
 
 ~~~C
 void PrintFromTopToBottom(BinaryTreeNode* pRoot)  
@@ -480,16 +482,124 @@ void PrintFromTopToBottom(BinaryTreeNode* pRoot)
 }  
 ~~~
 
-> æ›´å¤šäºŒå‰æ ‘çš„çŸ¥è¯†ï¼Œè¯·æˆ³ï¼š
-* [äºŒå‰æ ‘çš„å››ç§éåŽ†çš„é€’å½’å’Œéžé€’å½’çš„å®žçŽ°](https://blog.csdn.net/xiaominkong123/article/details/51567437) -> *recommend*ï¼
-* [äºŒå‰æ ‘ä¸‰ç§éåŽ†æ–¹å¼çš„é€’å½’å’Œå¾ªçŽ¯å®žçŽ°](https://blog.csdn.net/lieacui/article/details/52453292)
+> ¸ü¶à¶þ²æÊ÷µÄÖªÊ¶£¬Çë´Á£º
+* [¶þ²æÊ÷µÄËÄÖÖ±éÀúµÄµÝ¹éºÍ·ÇµÝ¹éµÄÊµÏÖ](https://blog.csdn.net/xiaominkong123/article/details/51567437) -> *recommend*£¡
+* [¶þ²æÊ÷ÈýÖÖ±éÀú·½Ê½µÄµÝ¹éºÍÑ­»·ÊµÏÖ](https://blog.csdn.net/lieacui/article/details/52453292)
 
-#### 4.3 æ ‘å’Œæ£®æž—
+#### 4.3 Ê÷ºÍÉ­ÁÖ
 
-##### 4.3.1 æ ‘çš„å‚¨å­˜ç»“æž„
+##### 4.3.1 Ê÷µÄ´æ´¢½á¹¹
 
+> Ë«Ç×±íÊ¾·¨
 
+~~~C
+ #define MAX_TREE_SIZE 100
+typedef struct PTNode { // ½áµã½á¹¹
+    TElemType data; // Êý¾ÝÓò
+    int parent; // Ë«Ç×Î»ÖÃÓò
+}PTNode;
+typedef struct { // Ê÷½á¹¹
+    PTNode nodes[MAX_TREE_SIZE]; 
+    int r, n; // ¸ùµÄÎ»ÖÃºÍ½áµãÊý
+}
+~~~
 
-> æ›´å¤šæ•°å’Œæ£®æž—çš„çŸ¥è¯†ï¼Œè¯·æˆ³ï¼š
-* [æ ‘çš„å­˜å‚¨ç»“æž„å’Œä»£ç å®žçŽ°](https://blog.csdn.net/qq_36016407/article/details/55272598)
+È±µã£ºÇó½áµãµÄº¢×ÓÊ±ÐèÒª±éÀúÕû¸ö½á¹¹¡£
 
+>  º¢×Ó±íÊ¾·¨
+
+~~~C
+typedef struct CTNode { // º¢×Ó½áµã
+    int child; 
+    sturct CTNode *next;
+}*ChildPtr;
+typedef struct {
+    TElemType data;
+    ChildPtr firstchild; // º¢×ÓÁ´±íÍ·½áµã
+}CTBox;
+typedef struct {
+    CTBox nodes[MAX_TREE_SIZE];
+    int n, r; // ½áµãÊýµÄ¸ùµÄÎ»ÖÃ
+}
+~~~
+
+> º¢×ÓÐÖµÜ±íÊ¾·¨£¨¿ÉÒÔ°Ñ¸´ÔÓµÄÊ÷±ä³É¶þ²æÊ÷£©
+
+~~~C
+typedef struct CSNode {
+    ElemType data;
+    struct CSNode *firstchild, *nextsibling; // µÚÒ»¸öº¢×Ó½áµãºÍÏÂÒ»¸öÐÖµÜ½áµã
+}
+~~~
+
+##### 4.3.2 Ê÷ºÍÉ­ÁÖµÄ±éÀú
+
+µ±¶þ²æÁ´±í×÷ÎªÊ÷µÄ´¢´æ½á¹¹Ê±£¬Ê÷µÄÏÈ¸ù±éÀúºÍºó¸ù±éÀú¿É½èÓÃ¶þ²æÊ÷µÄÏÈÐòºÍÖÐÐò±éÀúÊµÏÖ¡£
+
+É­ÁÖÒ»°ãÖ»ËµÏÈÐòºÍÖÐÐò±éÀú£¬ºÍ¶þ²æÊ÷µÄÏÈÐòºÍÖÐÐò±éÀúÏàÍ¬¡£
+
+> ¸ü¶àÊ÷ºÍÉ­ÁÖµÄÖªÊ¶£¬Çë´Á£º
+* [Ê÷µÄ´æ´¢½á¹¹ºÍ´úÂëÊµÏÖ](https://blog.csdn.net/qq_36016407/article/details/55272598)
+* [Ê÷ºÍÉ­ÁÖµÄ±éÀú](https://blog.csdn.net/wangzi11322/article/details/45391157)
+
+#### 4.4 ºÕ·òÂüÊ÷
+
+> ºÕ·òÂüÊ÷`Huffman`£¬ÓÖ³Æ×îÓÅ¶þ²æÊ÷£¬ÊÇÒ»Àà´øÈ¨Â·¾¶³¤¶È×î¶ÌµÄÊ÷¡£Ê÷µÄÂ·¾¶³¤¶ÈÎªÊ÷ÖÐËùÓÐÒ¶×Ó½áµãµÄ´øÈ¨Â·¾¶³¤¶ÈÖ®ºÍ¡£Í¨³£¼Ç×÷$WPL=\sum_{k=0}^{n}\omega_k\iota_k$ ¡£
+
+¼ÙÉèÓÐn¸öÈ¨Öµ£¬¹¹ÔìÒ»¿ÃÓÐn¸öÒ¶×Ó½áµãµÄ¶þ²æÊ÷£¬Ã¿¸öÒ¶×Ó½áµã´øÈ¨Îª$\omega_i$£¬ÔòÆäÖÐ´øÈ¨Â·¾¶³¤¶È$WPL$×îÐ¡µÄ¶þ²æÊ÷³ÆÎª**ºÕ·òÂüÊ÷**¡£
+
+~~~C
+typedef struct {
+    unsigned int weight; // È¨ÖØ
+    unsigned int parent, lchild, rchild; 
+}HTNode, *HuffmanTree; // ¶¯Ì¬·ÖÅäÊý×é´æ´¢ºÕ·òÂüÊ÷
+~~~
+
+> ¸ü¶àºÕ·òÂüÊ÷µÄÖªÊ¶£¬Çë´Á£º
+* [¹þ·òÂüÊ÷](https://blog.csdn.net/wo16fafafa/article/details/52420007)
+* [»ù´¡Êý¾Ý½á¹¹-¶þ²æÊ÷-ºÕ·òÂüÊ÷µÄ½âÂë](https://www.cnblogs.com/nathaneko/p/6497982.html)
+
+### 5. Í¼
+
+> **Í¼**`Graph`ÊÇÒ»ÖÖ½ÏÏßÐÔ±íºÍÊ÷¸üÎª¸´ÔÓµÄÊý¾Ý½á¹¹¡£ÔÚ**ÏßÐÔ±í**ÖÐ£¬Êý¾ÝÔªËØÖ®¼ä½öÓÐÏßÐÔ¹ØÏµ£¬Ã¿¸öÊý¾ÝÔªËØÖ»ÓÐÒ»¸öÖ±½ÓÇ°ÇýºÍÒ»¸öÖ±½Óºó¼Ì£»ÔÚ**Ê÷**ÐÎ½á¹¹ÖÐ£¬Êý¾ÝÔªËØÖ®¼äÓÐ×ÅÃ÷ÏÔµÄ²ã´Î¹ØÏµ£¬²¢ÇÒÃ¿Ò»²ãÉÏµÄÊý¾ÝÔªËØ¿ÉÄÜºÍÏÂÒ»²ãµÄ¶à¸öÔªËØ£¨¼´º¢×Ó½áµã£©Ïà¹Ø£¬µ«Ö»ºÍÉÏÒ»²ãµÄÒ»¸öÔªËØ£¨¼´Ë«Ç×½áµã£©Ïà¹Ø¡£¶øÔÚ**Í¼**ÐÎ½á¹¹ÖÐ£¬½áµãÖ®¼äµÄ¹ØÏµÊÇÈÎÒâµÄ¡£
+
+#### 5.1 Í¼µÄ¶¨Òå
+
+ÔÚÍ¼ÖÐ£¬Êý¾ÝÔªËØ³ÆÎª**¶¥µã**£¬$V$ÊÇ¶¥µãµÄÓÐÇî·Ç¿Õ¼¯ºÏ£»$VR$ÊÇÁ½¸ö¶¥µãÖ®¼äµÄ¹ØÏµ¼¯ºÏ¡£
+
+* Èô$<v,w>\epsilon VR$,Ôò$<v,w>$±íÊ¾´Ó$v$µ½$w$µÄÒ»Ìõ**»¡**`Arc`£¬ÇÒ³Æ$v$Îª**»¡Î²**`Tail`or**³õÊ¼µã**£¬$w$Îª**»¡Í·**`Head`or**ÖÕ¶Ëµã**¡£´ËÊ±µÄÍ¼³ÆÎª**ÓÐÏòÍ¼**`Digraph`¡£
+
+$$G_1 = (V_1,{A_1})$$
+
+* Èô$<v,w>\epsilon VR$£¬±ØÓÐ$<w,v>\epsilon VR$£¬¼´$VR$ÊÇ¶Ô³ÆµÄ£¬ÔòÒÔÎÞÐò¶Ô$(v,w)$´úÌæÕâÁ½¸öÓÐÐò¶Ô£¬±íÊ¾$v$ºÍ$w$Ö®¼äµÄÒ»Ìõ**±ß**`Edge`£¬´ËÊ±µÄÍ¼³ÆÎª**ÎÞÏòÍ¼**`Undigraph`¡£
+
+$$G_2 = (V_2,{E_2})$$
+
+#### 5.2 Í¼µÄ´æ´¢½á¹¹
+
+> Í¼µÄ½á¹¹½ÏÎª¸´ÔÓ£¬³£ÓÃµÄ´æ´¢½á¹¹ÓÐ**ÁÚ½Ó±í**£¬**Ê®×ÖÁ´±í**¡£
+
+##### 5.2.1 ÁÚ½Ó±í
+
+> **ÁÚ½Ó±í**ÊÇÍ¼µÄÒ»ÖÖÁ´Ê½´æ´¢½á¹¹¡£
+
+~~~C
+ #define MAX_VERTEX_NUM 20
+typedef struct ArcNode {
+    int adjvex; // ¸Ã»¡ËùÖ¸ÏòµÄ¶¥µãµÄÎ»ÖÃ
+    struct ArcNode *nextarc; // Ö¸ÏòÏÂÒ»Ìõ»¡µÄÖ¸Õë
+    InfoType *info; // ¸Ã»¡Ïà¹ØÐÅÏ¢µÄÖ¸Õë
+}ArcNode;
+typedef struct VNode {
+    VertexType data; // ¶¥µãÐÅÏ¢
+    ArcNode *firstarc; //Ö¸ÏòµÚÒ»ÌõÒÀ¸½¸Ã¶¥µãµÄ»¡µÄÖ¸Õë
+}VNode, AdjList[MAX_VERTEX_NUM];
+typedef struct {
+    AdjList vertices;
+    int vexnum, arcnum; //Í¼µÄµ±Ç°¶¥µãÊýºÍ»¡Êý
+    int kind; // Í¼µÄÖÖÀà±êÖ¾
+}ALGraph;
+~~~
+
+> ¸ü¶àÍ¼µÄÖªÊ¶£¬Çë´Á£º
+* [Êý¾Ý½á¹¹(16)--Í¼µÄ´æ´¢¼°ÊµÏÖ](https://blog.csdn.net/u010366748/article/details/50790324)
