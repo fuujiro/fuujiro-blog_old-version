@@ -69,10 +69,13 @@ tags:
     7.1.1 `直接插入排序`
     7.1.2 `折半插入排序`
     7.1.3 `希尔排序`
-    7.2 冒泡排序
-    7.3 快速排序
-    7.4 选择排序
-    7.5 归并排序
+    7.2 交换排序
+    7.2.1 `冒泡排序`
+    7.2.2 `快速排序`
+    7.3 选择排序
+    7.3.1 `简单选择排序`
+    7.3.2 `堆排序`
+    7.4 归并排序
 
 ---
 
@@ -992,7 +995,9 @@ void ShellSort(int array[], int len) // O(n*n)
 > * [希尔排序详解](https://blog.csdn.net/daiyudong2020/article/details/52445044) ->*recommend*！
 > * [排序五：希尔排序](https://www.cnblogs.com/ronnydm/p/5905715.html)  ->*recommend*！
 
-#### 7.2 冒泡排序
+#### 7.2 交换排序
+
+##### 7.2.1 `冒泡排序`
 
 > 冒泡排序算法的运作如下：（从后往前）
 1. 比较相邻的元素。如果第一个比第二个大，就交换他们两个。
@@ -1029,7 +1034,7 @@ void bubble_sort(T arr[], int len)
 > * [白话经典算法系列之一 冒泡排序的三种实现](https://blog.csdn.net/morewindows/article/details/6657829)
 > * [经典排序算法学习笔记一——冒泡排序](https://www.cnblogs.com/crystalmoore/p/5929814.html)
 
-#### 7.3 快速排序
+##### 7.2.2 `快速排序`
 
 > **快速排序**`Quick Sort`是对**冒泡排序**的一种改进。它的基本思想是，通过一趟排序将待排序记录分割成独立的两部分，其中一部分记录的关键字均比另一部分记录的关键字小，继续进行排序以达到整个序列有序。
 
@@ -1066,6 +1071,96 @@ int PartSort1(int* a,int left,int right)//左右指针法
 }  
 ~~~
 
-> 更多冒泡排序的知识，请戳：
+快速排序的时间复杂度为：$O(nlogn)$
+
+> 更多快速排序的知识，请戳：
 > * [快速排序基本思路（通俗易懂+例子）](https://blog.csdn.net/code_ac/article/details/74158681)
-> * [快速排序](https://blog.csdn.net/payshent/article/details/60879120) ->*recommend*！
+> * [快速排序](https://blog.csdn.net/payshent/article/details/60879120)
+> * [快速排序基本思路（通俗易懂+例子）](https://blog.csdn.net/code_ac/article/details/74158681) ->*recommend*！
+> * [图解快速排序](https://www.cnblogs.com/MOBIN/p/4681369.html) ->*recommend*！
+
+#### 7.3 选择排序
+
+> **选择排序**`Selection Sort`：每一趟在$n-i+1(i=1,2,3,...,n-1)$个记录中选取关键字最小的记录作为有序序列的第$i$个记录。
+
+##### 7.3.1 简单选择排序
+
+> 一趟简单选择排序的操作是：通过$n-i$次关键字间的比较，从$n-i+1(i=1,2,3,...,n-1)$个记录中选取关键字最小的记录，并和第$i$个记录交换之。
+
+简单选择排序的时间复杂度为$O(n^2)$
+
+~~~C
+void SelectSort (SqList &L) {
+    for(i = 1; i < L.length; ++i) {
+        j = SelectMinKey(L, i); // 在L.r[i...L.length]中选择key最小的记录
+        if(i != j)
+            swap(L.r[i], L.r[j]);
+    }
+}
+~~~
+
+> 更多关于选择排序的知识，请戳：
+> * [经典排序算法之选择排序](http://baijiahao.baidu.com/s?id=1586561314836092820&wfr=spider&for=pc)
+
+##### 7.3.2 堆排序
+
+> **堆排序**`Heap Sort`是利用堆这种数据结构而设计的一种排序算法，堆排序是一种选择排序，它的最坏，最好，平均时间复杂度均为$O(nlogn)$，它也是不稳定排序。首先简单了解下堆结构。
+
+堆排序的基本思想是：将待排序序列构造成一个大顶堆，此时，整个序列的最大值就是堆顶的根节点。将其与末尾元素进行交换，此时末尾就为最大值。然后将剩余n-1个元素重新构造成一个堆，这样会得到n个元素的次小值。如此反复执行，便能得到一个有序序列了。
+
+~~~C
+void swap(int *a, int *b);
+void adjustHeap(int param1,int j, int inNums[]);
+void  HeapSort(int nums, int inNums[]);
+//大根堆进行调整
+void adjustHeap(int param1, int j, int inNums[])
+{
+    int temp=inNums[param1];
+    for (int k=param1*2+1;k<j;k=k*2+1)
+    {
+        //如果右边值大于左边值，指向右边
+        if (k+1<j && inNums[k]< inNums[k+1])
+        {
+            k++;
+        }
+        //如果子节点大于父节点，将子节点值赋给父节点,并以新的子节点作为父节点（不用进行交换）
+        if (inNums[k]>temp)
+        {
+            inNums[param1]=inNums[k];
+            param1=k;
+        }
+        else
+            break;
+    }
+        //put the value in the final position
+    inNums[param1]=temp;
+}
+//堆排序主要算法
+void HeapSort(int nums,int inNums[])
+{
+    //1.构建大顶堆
+    for (int i=nums/2-1;i>=0;i--)
+    {
+                //put the value in the final position
+        adjustHeap(i,nums,inNums);
+    }
+    //2.调整堆结构+交换堆顶元素与末尾元素
+    for (int j=nums-1;j>0;j--)
+    {
+                //堆顶元素和末尾元素进行交换
+        int temp=inNums[0];
+        inNums[0]=inNums[j];
+        inNums[j]=temp;
+ 
+        adjustHeap(0,j,inNums);//重新对堆进行调整
+    }
+}
+~~~
+
+> 更多堆排序的知识，请戳：
+> * [浅谈堆排序](https://www.jianshu.com/p/938789fde325)
+> * [堆排序详解](https://www.cnblogs.com/0zcl/p/6737944.html) ->*recommend*！
+> * [图解排序算法(三)之堆排序](https://www.cnblogs.com/chengxiao/p/6129630.html)
+
+#### 7.4 归并排序
+
