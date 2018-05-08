@@ -1164,3 +1164,57 @@ void HeapSort(int nums,int inNums[])
 
 #### 7.4 归并排序
 
+> **归并排序**`Merging Sort`是建立在归并操作上的一种有效的排序算法。该算法是采用分治法（Divide and Conquer）的一个非常典型的应用。
+
+~~~C
+//将有二个有序数列a[first...mid]和a[mid...last]合并。  
+void mergearray(int a[], int first, int mid, int last, int temp[])  
+{  
+    int i = first, j = mid + 1;  
+    int m = mid,   n = last;  
+    int k = 0;  
+      
+    while (i <= m && j <= n)  
+    {  
+        if (a[i] <= a[j])  
+            temp[k++] = a[i++];  
+        else  
+            temp[k++] = a[j++];  
+    }  
+      
+    while (i <= m)  
+        temp[k++] = a[i++];  
+      
+    while (j <= n)  
+        temp[k++] = a[j++];  
+      
+    for (i = 0; i < k; i++)  
+        a[first + i] = temp[i];  
+}  
+void mergesort(int a[], int first, int last, int temp[])  
+{  
+    if (first < last)  
+    {  
+        int mid = (first + last) / 2;  
+        mergesort(a, first, mid, temp);    //左边有序  
+        mergesort(a, mid + 1, last, temp); //右边有序  
+        mergearray(a, first, mid, last, temp); //再将二个有序数列合并  
+    }  
+}  
+  
+bool MergeSort(int a[], int n)  
+{  
+    int *p = new int[n];  
+    if (p == NULL)  
+        return false;  
+    mergesort(a, 0, n - 1, p);  
+    delete[] p;  
+    return true;  
+}  
+~~~
+
+> * [白话经典算法系列之五 归并排序的实现](https://blog.csdn.net/morewindows/article/details/6678165/)
+
+### 总结
+
+在数据结构和算法的路上，越走越远！~
