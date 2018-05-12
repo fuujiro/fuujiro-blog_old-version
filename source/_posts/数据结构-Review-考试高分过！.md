@@ -1093,14 +1093,31 @@ int PartSort1(int* a,int left,int right)//左右指针法
 简单选择排序的时间复杂度为$O(n^2)$
 
 ~~~C
-void SelectSort (SqList &L) {
-    for(i = 1; i < L.length; ++i) {
-        j = SelectMinKey(L, i); // 在L.r[i...L.length]中选择key最小的记录
-        if(i != j)
-            swap(L.r[i], L.r[j]);
+void select_sort(int A[],int n)
+{
+    register int i,j,min,m;
+    for(i=0;i<n-1;i++)
+    {
+        min=i;//查找最小值
+        for(j=i+1;j<n;j++)
+        {
+            if(A[min]>A[j])
+            {
+                min=j;
+            }
+        }
+        if(min!=i)
+        {
+            swap(&A[min],&A[i]);
+            
+        }
     }
 }
 ~~~
+
+* 稳定性
+
+选择排序是给每个位置选择当前元素最小的，比如给第一个位置选择最小的，在剩余元素里面给第二个元素选择第二小的，依次类推，直到第n-1个元素，第n个元素不用选择了，因为只剩下它一个最大的元素了。那么，在一趟选择，如果一个元素比当前元素小，而该小的元素又出现在一个和当前元素相等的元素后面，那么交换后稳定性就被破坏了。比较拗口，举个例子，序列5 8 5 2 9，我们知道第一遍选择第1个元素5会和2交换，那么原序列中两个5的相对前后顺序就被破坏了，所以选择排序是一个不稳定的排序算法。
 
 > 更多关于选择排序的知识，请戳：
 > * [经典排序算法之选择排序](http://baijiahao.baidu.com/s?id=1586561314836092820&wfr=spider&for=pc)
