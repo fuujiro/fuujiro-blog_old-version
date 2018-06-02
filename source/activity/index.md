@@ -55,7 +55,7 @@ date: 2018-06-02 14:49:59
 
 > As a runner
 
-![runner](https://raw.githubusercontent.com/fuujiro/pictures/master/activity/IMG_6789.JPG)
+![runner](https://raw.githubusercontent.com/fuujiro/pictures/master/activity/92AE007BC2C759364868C26A047A86A4.png)
 
 > As a student
 
