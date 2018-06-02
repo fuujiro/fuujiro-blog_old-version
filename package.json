@@ -6,7 +6,9 @@
     "version": "3.7.1"
   },
   "dependencies": {
+    "hexo": "^3.7.1",
     "hexo-browsersync": "^0.3.0",
+    "hexo-cli": "^1.1.0",
     "hexo-deployer-git": "^0.3.1",
     "hexo-deployer-heroku": "^0.1.2",
     "hexo-deployer-openshift": "^0.1.2",
