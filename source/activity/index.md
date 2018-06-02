@@ -45,11 +45,11 @@ date: 2018-06-02 14:49:59
 
 <h4 id = "2.1"> 2.1 30th "DaShang Cup" Dalian International Marathon </h4>
 
-![30th](https://raw.githubusercontent.com/fuujiro/pictures/master/activity/IMG_7314(20180602-164513).jpg)
+![30th](https://raw.githubusercontent.com/fuujiro/pictures/master/activity/20180602-164513.jpg)
 
 <h4 id = "2.2"> 2.2 31st "ICBC Cup" Dalian International Marathon </h4>
 
-![31st](https://raw.githubusercontent.com/fuujiro/pictures/master/activity/IMG_7312(20180602-164157).jpg)
+![31st](https://raw.githubusercontent.com/fuujiro/pictures/master/activity/20180602-164157.jpg)
 
 <h3 id = "3"> 3. Honors </h3>
 
