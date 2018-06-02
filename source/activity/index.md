@@ -38,7 +38,7 @@ date: 2018-06-02 14:49:59
 
 * Identity: **Member**
 
-* Advisor: [Porf. Shenglan Liu](http://faculty.dlut.edu.cn/liushenglan/en/index.htm)
+* Advisor: [Associate Porf. Shenglan Liu](http://faculty.dlut.edu.cn/liushenglan/en/index.htm)
 
 * progress:
     2017-7 research.
