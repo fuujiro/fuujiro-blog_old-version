@@ -11,5 +11,5 @@ date: 2018-02-14 21:33:13
  * GitHub: [fuujiro真正会做点事情的地方](https://github.com/fuujiro)
  * E-Mail: [你是不是有什么话想对我讲啊？](mailto:fuujiro@foxmail.com)
 
-
+如无特殊声明，本站所有内容均在 [CC-BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) 许可下发布，抵制抄袭和洗稿。
 
