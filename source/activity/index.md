@@ -21,7 +21,7 @@ date: 2018-06-02 14:49:59
 
 > DUT-RVLab (Robot Vision Lab, [Dalian Univ. of Tech.](http://en.dlut.edu.cn/)) is built on **Student's Platform for Innovation and Entrepreneurship Training Program**. Our team is devoted ourselves to robot vision calibration. Our *research-program "Robot Arm Vision Calibration Research"* is rated as **National Research Project** in Student's Platform for Innovation and Entrepreneurship Training Program.
 
-![DUT-RVLab](https://raw.githubusercontent.com/fuujiro/pictures/master/logo/robot.jpeg)
+![DUT-RVLab](https://raw.githubusercontent.com/fuujiro/pictures/master/logo/IMG_7233.JPG)
 
 * Identity: **Principal**
 
