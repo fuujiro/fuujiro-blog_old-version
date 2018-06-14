@@ -1,0 +1,135 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 使用Hexo框架+Apollo主题搭建博客 · fuujiro's island</title><meta name="description" content="使用Hexo框架+Apollo主题搭建博客 - fuujiro"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="https://blog.fuujiro.com/atom.xml" title="fuujiro's island"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/activity/" target="_self" class="nav-list-link">ACTIVITY</a></li><li class="nav-list-item"><a href="https://github.com/fuujiro" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">使用Hexo框架+Apollo主题搭建博客</h1><div class="post-info">Feb 14, 2018</div><div class="post-content"><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>时间过得贼快啊！我一下子就要大二下学期了！想着自己以后大概率就是一名老实的程序员。按着这个程序猿们的习惯啊，一般都会有个自己的博客，也不论是追求技术还是跟风吧，我脑子一热呢，就准备搭一个自己的Blog。</p>
+<p>脑子热的时候是2月11号晚上，然后既然热了，那就行动呗。先google了一下个人博客的主流框架和搭建入门咯。最后还是放弃了Wordpress，选择了Hexo来搭建，原因是Hexo开源，主题选择丰富，emmmm就酱。关于为啥选择apollo主题呢，主要是有天瞎逛时，误入了<a href="https://blog.phoenixlzx.com" target="_blank" rel="noopener">phoenixlzx巨巨的blog</a>，他用的就是Apollo主题。我定睛一看，这就是我想要的<del>滑板鞋</del>主题！</p>
+<p><a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank" rel="noopener">Apollo</a>主题的<a href="https://github.com/pinggod" target="_blank" rel="noopener">开发者</a>据说是一位92年的小哥哥，开发Apollo的时候在美团前端任职，现在根据他的GitHub主页应该是在Alipay工作了。我选择Apollo主题的原因是因为它风格简约，我觉得浏览时加载体验比博客华丽的外观会重要很多，你想想等加载是很烦躁的一件事（嗯，至少来说我是这样…），何况Apollo还简约得好看一匹，果断Mark。如下图。</p>
+<p><img src="https://cloud.githubusercontent.com/assets/9530963/13026956/08e76eca-d277-11e5-8bfc-2e80cea20a0d.png" alt="hexo-apollo"></p>
+<p>嗯！真的很耐看！清新，简约，Nice！</p>
+<p>既然选择好了框架+主题，就进入正式阶段（以下一切安装代码，在OS X无问题，Windows可能会要稍作修改）。</p>
+<h3 id="1-安装Hexo"><a href="#1-安装Hexo" class="headerlink" title="1. 安装Hexo"></a>1. 安装Hexo</h3><p>因为Hexo是一款基于Node.js的静态博客框架，生成静态网页托管在GitHub。所以我们在安装Hexo前得先装上Node.js和git。</p>
+<h4 id="1-1-安装Node-js"><a href="#1-1-安装Node-js" class="headerlink" title="1.1 安装Node.js"></a>1.1 安装Node.js</h4><ul>
+<li><a href="https://nodejs.org/en/" target="_blank" rel="noopener">下载Node.js</a></li>
+<li><a href="http://www.runoob.com/nodejs/nodejs-install-setup.html" target="_blank" rel="noopener">安装Node.js</a></li>
+</ul>
+<h4 id="1-2-安装git"><a href="#1-2-安装git" class="headerlink" title="1.2 安装git"></a>1.2 安装git</h4><ul>
+<li><a href="https://git-scm.com/downloads" target="_blank" rel="noopener">下载git</a>（可能会有墙的限制，请翻墙|在网盘or网站CSDN上都可以找到离线包）</li>
+<li><a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137396287703354d8c6c01c904c7d9ff056ae23da865a000" target="_blank" rel="noopener">安装git</a></li>
+<li><a href="https://git-scm.com/book/zh/v1/起步-初次运行-Git-前的配置" target="_blank" rel="noopener">配置自己的git</a>（重要：别忘了这步）</li>
+</ul>
+<h4 id="1-3-安装Hexo"><a href="#1-3-安装Hexo" class="headerlink" title="1.3 安装Hexo"></a>1.3 安装Hexo</h4><p>因为已经装好了Node.js环境了，所以可以使用npm命令。</p>
+<ol>
+<li>使用npm命令安装Hexo，输入：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli </span><br><span class="line"></span><br><span class="line">or</span><br><span class="line"></span><br><span class="line">$ npm install -g hexo</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>如果收到error，在命令行首加上<code>sudo</code>。</p>
+<ol start="2">
+<li><p>初始化博客<br>找到你要放置博客的根目录（推荐建立一个文件夹用来放置，<del>强迫症必须不得不这么干</del>），建好了我们就开始初始化，比如我们已经了创建了一个名为blog的文件夹<del>程序员最好不要创造出有中文的路径吧</del>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init blog</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>常规操作<br>接下来搭个静态界面，看看预期，满足下心脏。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ cd blog #切到blog文件夹下</span><br><span class="line">$ npm install  </span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>按照正常操作，这时候命令行会抛出一个链接<code>http://localhost:4000/</code>，你复制这串网址粘贴到浏览器打开，不出错误的话，会看到第一个由Hexo框架搭建的网页。如果这时候，你没看到or失败了，可能需要google一下。</p>
+<p>接着，普及一下Hexo框架的基本操作和作用</p>
+<ol>
+<li>hexo generate (hexo g) 生成静态文件，会在当前目录下生成一个新的叫做public的文件</li>
+<li>hexo server (hexo s) 启动本地web服务，用于博客的预览</li>
+<li>hexo deploy (hexo d) 部署博客到远端（比如github平台）</li>
+<li>hexo clean 清除缓存</li>
+</ol>
+<p>你还会用到<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new &quot;postName&quot; #新建博客的文章</span><br><span class="line">$ hexo new page &quot;pageName&quot; #新建博客的页面</span><br><span class="line">$ hexo g &amp;&amp; hexo d #生成部署</span><br><span class="line">$ hexo s #生成本地预览</span><br></pre></td></tr></table></figure></p>
+<p>我写这篇文章时的本地环境，你可以参考一下（使用<code>hexo -v</code>查看，我使用的是OS X系统搭建）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">hexo: 3.5.0</span><br><span class="line">hexo-cli: 1.0.4</span><br><span class="line">os: Darwin 17.2.0 darwin x64</span><br><span class="line">http_parser: 2.7.0</span><br><span class="line">node: 8.9.4</span><br><span class="line">v8: 6.1.534.50</span><br><span class="line">uv: 1.15.0</span><br><span class="line">zlib: 1.2.11</span><br><span class="line">ares: 1.10.1-DEV</span><br><span class="line">modules: 57</span><br><span class="line">nghttp2: 1.25.0</span><br><span class="line">openssl: 1.0.2n</span><br><span class="line">icu: 59.1</span><br><span class="line">unicode: 9.0</span><br><span class="line">cldr: 31.0.1</span><br><span class="line">tz: 2017b</span><br></pre></td></tr></table></figure></p>
+<h3 id="2-apollo主题配置"><a href="#2-apollo主题配置" class="headerlink" title="2. apollo主题配置"></a>2. apollo主题配置</h3><h4 id="2-1-安装"><a href="#2-1-安装" class="headerlink" title="2.1 安装"></a>2.1 安装</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ cd Blog </span><br><span class="line">$ npm install</span><br><span class="line">$ npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive</span><br><span class="line">$ git clone https://github.com/pinggod/hexo-theme-apollo.git themes/apollo</span><br></pre></td></tr></table></figure>
+<h4 id="2-2-启用"><a href="#2-2-启用" class="headerlink" title="2.2 启用"></a>2.2 启用</h4><p>修改<code>_config.yml</code>的<code>theme</code>配置项为<code>apollo</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">theme: apollo</span><br><span class="line"></span><br><span class="line">archive_generator:</span><br><span class="line">    per_page: 0</span><br><span class="line">    yearly: false</span><br><span class="line">    monthly: false</span><br><span class="line">    daily: false</span><br></pre></td></tr></table></figure></p>
+<h4 id="2-3-测试"><a href="#2-3-测试" class="headerlink" title="2.3 测试"></a>2.3 测试</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+<p>浏览器打开<code>http://localhost:4000/</code>，看有没有出现apollo标准样式博客，如果没有成功，请自行Google查错。</p>
+<h4 id="2-4-更新"><a href="#2-4-更新" class="headerlink" title="2.4 更新"></a>2.4 更新</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd themes/apollo </span><br><span class="line">$ git pull</span><br></pre></td></tr></table></figure>
+<h3 id="3-托管到GitHub-链接个人域名"><a href="#3-托管到GitHub-链接个人域名" class="headerlink" title="3. 托管到GitHub + 链接个人域名"></a>3. 托管到GitHub + 链接个人域名</h3><h4 id="3-1-基本准备"><a href="#3-1-基本准备" class="headerlink" title="3.1 基本准备"></a>3.1 基本准备</h4><ul>
+<li>GitHub账户一个</li>
+<li><p>一个自定义域名（从阿里云，腾讯云等都可以购买，自带解析服务，推荐；当然也可以选择国外网站，不过国内访问速度可能会稍差一点）</p>
+<p>我默认你会基本git和GitHub操作，嗯！如果不会，请移步<a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="noopener">廖雪峰老师的git教程</a>。</p>
+</li>
+</ul>
+<h4 id="3-2-托管步骤"><a href="#3-2-托管步骤" class="headerlink" title="3.2 托管步骤"></a>3.2 托管步骤</h4><p>我们利用<a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a>来介绍托管在GitHub的项目。由于<code>GitHub Pages</code>的空间免费稳定，用来做搭建一个博客再好不过了。</p>
+<ul>
+<li><a href="https://www.jianshu.com/p/05289a4bc8b2" target="_blank" rel="noopener">如何搭建一个独立博客——简明Github Pages与Hexo教程</a></li>
+</ul>
+<p>上面这篇博文详细的介绍了<code>ssh key</code>的获取和链接，介绍了<code>GitHub Pages</code>上面搭建Hexo博客的步骤.</p>
+<p>关键点：</p>
+<h5 id="3-2-1-设置ssh-key"><a href="#3-2-1-设置ssh-key" class="headerlink" title="3.2.1 设置ssh-key"></a>3.2.1 设置ssh-key</h5><ol>
+<li>配置 SSH keys<br> 我们如何让本地 git 项目与远程的 GitHub 建立联系呢？用 SSH keys。</li>
+<li><p>检查 SSH keys的设置<br> 首先我们需要检查电脑上是否已有ssh key：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~/.ssh 检查本机的ssh密钥</span><br></pre></td></tr></table></figure>
+<p> 如果提示的是<code>No such file or directory</code>，说明你是第一次在本机上使用，需要创建一个。</p>
+</li>
+<li><p>生成新的 SSH Key</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C &quot;邮件地址@youremail.com&quot;</span><br><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file in which to save the key (/Users/your_user_directory/.ssh/id_rsa):&lt;回车就OK&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>此处的邮箱地址，推荐使用你的GitHub账户邮箱</li>
+<li><p>此处的「-C」的是大写的「C」</p>
+<p>然后系统会要你输入密码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ Enter passphrase (empty for no passphrase):&lt;输入密码&gt;</span><br><span class="line">$ Enter same passphrase again:&lt;再次输入密码&gt;</span><br></pre></td></tr></table></figure>
+<p>在回车中会提示你输入一个密码，这个密码会在你提交项目时使用，如果为空的话提交项目时则不用输入。这个设置是防止别人往你的项目里提交内容。</p>
+</li>
+<li>其实没必要设置，完全可以敲两下回车；当然设置也没有关系</li>
+<li>注意：输入密码的时候没有 * 字样的，你直接输入就可以了。（我个人觉得git还可以完善的一个细节）</li>
+</ul>
+</li>
+<li>最后看到这样的界面，就成功设置ssh key了：<br> <img src="https://upload-images.jianshu.io/upload_images/32598-cf2af2bff37b1031.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/544" alt="ssh-key"></li>
+</ol>
+<h5 id="3-2-2-添加ssh-key到GitHub"><a href="#3-2-2-添加ssh-key到GitHub" class="headerlink" title="3.2.2 添加ssh key到GitHub"></a>3.2.2 添加ssh key到GitHub</h5><p>在本机设置 SSH Key 之后，需要添加到 GitHub上，以完成 SSH 链接的设置。</p>
+<ul>
+<li>1、打开本地 id_rsa.pub 文件（如：<code>/Users/fuujiro/.ssh/id_rsa.pub</code>）。此文件里面内容为刚才生成的密钥。如果看不到这个文件，你需要设置显示隐藏文件。准确的复制这个文件的内容，才能保证设置的成功。</li>
+<li>2、登陆 GitHub 系统。点击右上角的<code>Account Settings</code>—&gt;<code>SSH Public keys</code>—&gt;<code>add another public keys</code></li>
+<li>把你本地生成的密钥复制到里面（<code>key</code>文本框中）， 点击<code>add key</code>就ok了<br><img src="https://upload-images.jianshu.io/upload_images/32598-c8b55d62cc0dbd07.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/470" alt="add-ssh-key"></li>
+</ul>
+<h4 id="3-2-3-测试"><a href="#3-2-3-测试" class="headerlink" title="3.2.3 测试"></a>3.2.3 测试</h4><p>可以输入下面的命令，看看设置是否成功，<a href="mailto:git@GitHub.com" target="_blank" rel="noopener">git@GitHub.com</a> 的部分不要修改：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@GitHub.com</span><br></pre></td></tr></table></figure></p>
+<p>按道理会显示下面的反馈：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">The authenticity of host &apos;GitHub.com (207.97.227.239)&apos; can&apos;t be established.</span><br><span class="line">RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.</span><br><span class="line">Are you sure you want to continue connecting (yes/no)?</span><br></pre></td></tr></table></figure></p>
+<p>输入<code>yes</code>就ok，按道理会显示：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi （你的GitHub名字）! You&apos;ve successfully authenticated, but GitHub does not provide shell access.</span><br></pre></td></tr></table></figure></p>
+<p>恭喜你！SSH Key 配置成功！本机已成功连接到 GitHub。</p>
+<ul>
+<li>当然，比较倒霉。如果没按道理，大部分可能是墙的原因，你可能需要<code>ping git@GitHub.com</code>拿d到IP地址，然后在/hosts里添加上这个解析。请自行Google解决这个<code>little issue</code></li>
+<li>一个常见错误：<a href="https://help.github.com/articles/error-permission-denied-publickey/" target="_blank" rel="noopener">GitHub Help - Error Permission denied (publickey)</a></li>
+</ul>
+<h4 id="3-3-将独立域名与-GitHub-Pages-的空间绑定"><a href="#3-3-将独立域名与-GitHub-Pages-的空间绑定" class="headerlink" title="3.3 将独立域名与 GitHub Pages 的空间绑定"></a>3.3 将独立域名与 GitHub Pages 的空间绑定</h4><ol>
+<li><code>DNS</code>设置 or 域名解析<br>我用的腾讯云的控制台，找到域名，点一下右侧的解析按钮即可解决。阿里云买的域名也可以由阿里云解析。这里也可以使用<a href="https://www.dnspod.cn" target="_blank" rel="noopener">DNSpod</a>，注册一个账户，即可解析域名了，但应该仅限于解析国内域名。国外的域名，如<code>GoDaddy</code>，请上<code>GoDaddy</code>自行修改DNS。</li>
+<li><p>如何设置DNS<br> <img src="https://mc.qcloudimg.com/static/img/8231080d9d713baf5d4edf4163b23ee0/image.png" alt="DNS设置"><br> 主要有以下几项设置需要填写（以域名fuujiro.com为例）：</p>
+<ul>
+<li>主机记录<ul>
+<li>www：解析后的域名为 <code>www.fuujiro.com</code></li>
+<li>@：直接解析主域名 <code>fuujiro.com</code></li>
+<li><em>：泛解析，匹配其他所有域名 `</em>.fuujiro.com`</li>
+<li>mail：将域名解析为 <code>mail.fuujiro.com</code>，通常用于解析邮箱服务器</li>
+<li>二级域名：如<code>blog.fuujiro.com</code>，填写blog</li>
+<li>手机网站：<code>m.fuujiro.com</code>，填写m</li>
+</ul>
+</li>
+<li>记录类型<ul>
+<li>A：将域名指向云服务器，请选择「A」；</li>
+<li>CNAME：将域名指向另一个域名，请选择「CNAME」；</li>
+<li>MX：建立邮箱请选择「MX」，根据邮箱服务商提供的MX记录填写。</li>
+</ul>
+</li>
+<li><p>记录值：填写需要链接的那个域名，如：<code>fuujiro.github.io</code></p>
+<p>例：如果我们需要把<code>fuujiro.github.io</code>和<code>blog.fuujiro.com</code>链接，主机记录：<code>blog</code>，记录类型：<code>CNAME</code>，记录值：<code>fuujiro.github.io</code>。</p>
+</li>
+</ul>
+</li>
+<li>然后在你的博客根目录下，找到<code>/source</code>文件夹，进入文件夹，创建一个无格式的名为<code>CNAME</code>的文本文件，文件里填好<code>blog.fuujiro.com</code>（你的个人域名）</li>
+<li>测试<br>浏览器打开<code>你的个人域名</code>如<del>blog.fuujiro.com</del>，查看是否加载出页面，如果成功！恭喜你啊，你所有步骤基本完成，尽情地享受你的个人blog，开始码代码吧！頑張って！</li>
+</ol>
+<h3 id="4-后记"><a href="#4-后记" class="headerlink" title="4.后记"></a>4.后记</h3><p>本来情人节当晚，<del>我就完成了blog的全部搭建</del>我就准备开始写这篇文章了，emmmm也就是昨晚了，结果写着写着就困了，就睡觉去了<del>知道我为什么这么菜了吧我真的很懒</del>。然后今天白天，按着假期规律呗，中午11点多起床，码了几行字，然后<del>吃饭陪我爸聊天，买衣服，陪弟弟放鞭炮</del>在大年三十完成这篇文章的<code>flag</code>就倒了，无情地倒下了！</p>
+<p>不过我没有放弃，继续加油，还是在大年初一，emmmm完结了这篇blog！也谢谢你看到这里，祝你在狗年新年快乐～万事如意！狗年不再出bug！！hahah~</p>
+<p>致谢：</p>
+<ol>
+<li><a href="https://linghucong.js.org/2016/04/15/2016-04-15-hexo-github-pages-blog/" target="_blank" rel="noopener">令狐葱@前端笔记</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="noopener">吴润的知乎专栏：cs专业那些事</a></li>
+</ol>
+</div></article></div></main><footer><div class="paginator"><a href="/2018/03/10/vim-蓝色星球迄今为止最强大的编辑器（持续更新/" class="prev">上一篇</a><a href="/2018/02/14/Markdown简单语法入门/" class="next">下一篇</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'fuujiro';
+var disqus_identifier = '2018/02/14/使用Hexo框架-Apollo主题搭建博客/';
+var disqus_title = '使用Hexo框架+Apollo主题搭建博客';
+var disqus_url = 'https://blog.fuujiro.com/2018/02/14/使用Hexo框架-Apollo主题搭建博客/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//fuujiro.disqus.com/count.js" async></script><div class="copyright"><p>© 2017 - 2018 <a href="https://blog.fuujiro.com">fuujiro</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script></body></html>

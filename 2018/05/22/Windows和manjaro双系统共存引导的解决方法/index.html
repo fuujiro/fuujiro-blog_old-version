@@ -1,0 +1,27 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Windows和manjaro双系统共存引导的解决方法 · fuujiro's island</title><meta name="description" content="Windows和manjaro双系统共存引导的解决方法 - fuujiro"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="https://blog.fuujiro.com/atom.xml" title="fuujiro's island"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/activity/" target="_self" class="nav-list-link">ACTIVITY</a></li><li class="nav-list-item"><a href="https://github.com/fuujiro" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">Windows和manjaro双系统共存引导的解决方法</h1><div class="post-info">May 22, 2018</div><div class="post-content"><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><blockquote>
+<p>Q: What do the <strong>Ninja-fuujiro</strong> do?<br>A: 简单来说，就是替换引导文件。我安装的是 Manjaro Linux，名称就是 Manjaro，打开之后会发现里面有一个名为 grubx64.efi 的文件，这就是启动 Linux 的引导文件。和 Windows 10 的 bootmgfw.efi 类似，我们想要用 grubx64.efi 引导代替掉 bootmgfw.efi，这样就可以用 GRUB 引导了。</p>
+</blockquote>
+<p>（为什么要替换？因为Manjaro太弱鸡，Windows是攻，我们帮Manjaro一把。我们是平权主义者！拒绝霸道2333！ε=ε=ε=┏(゜ロ゜;)┛</p>
+<h3 id="1-打开Windows-Powershell-Administrator"><a href="#1-打开Windows-Powershell-Administrator" class="headerlink" title="1. 打开Windows Powershell(Administrator)"></a>1. 打开Windows Powershell(Administrator)</h3><ol>
+<li><code>win + x</code></li>
+<li><code>a</code></li>
+</ol>
+<h3 id="2-将grubx64-efi-引导代替掉-bootmgfw-efi"><a href="#2-将grubx64-efi-引导代替掉-bootmgfw-efi" class="headerlink" title="2. 将grubx64.efi 引导代替掉 bootmgfw.efi"></a>2. 将grubx64.efi 引导代替掉 bootmgfw.efi</h3><ul>
+<li>输入   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bcdedit /set &apos;&#123;bootmgr&#125;&apos; path \EFI\Manjaro\grubx64.efi</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>如果不好意思，你的Powershell对你有意见。你可能需要把<code>&#39;{bootmgr}&#39;</code>换成<code>{bootmgr}</code>。原因是可能你没听话，用的是cmd，没见着我说用Powershell了嘛~！</p>
+<h3 id="感谢"><a href="#感谢" class="headerlink" title="感谢"></a>感谢</h3><blockquote>
+<ul>
+<li><a href="https://blog.itswincer.com/posts/ad42f575/" target="_blank" rel="noopener">Linux 与 Windows 10 用 GRUB 引导教程</a></li>
+</ul>
+</blockquote>
+</div></article></div></main><footer><div class="paginator"><a href="/2018/05/22/NJU-计算机系统基础笔记/" class="prev">上一篇</a><a href="/2018/04/30/尝螃蟹的人，体验Ubuntu-18-04-LTS（仿生河狸）！/" class="next">下一篇</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'fuujiro';
+var disqus_identifier = '2018/05/22/Windows和manjaro双系统共存引导的解决方法/';
+var disqus_title = 'Windows和manjaro双系统共存引导的解决方法';
+var disqus_url = 'https://blog.fuujiro.com/2018/05/22/Windows和manjaro双系统共存引导的解决方法/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//fuujiro.disqus.com/count.js" async></script><div class="copyright"><p>© 2017 - 2018 <a href="https://blog.fuujiro.com">fuujiro</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script></body></html>

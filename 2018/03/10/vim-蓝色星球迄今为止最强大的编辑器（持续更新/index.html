@@ -1,0 +1,221 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Vim-蓝色星球迄今为止最强大的编辑器（持续更新 · fuujiro's island</title><meta name="description" content="Vim-蓝色星球迄今为止最强大的编辑器（持续更新 - fuujiro"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="https://blog.fuujiro.com/atom.xml" title="fuujiro's island"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/activity/" target="_self" class="nav-list-link">ACTIVITY</a></li><li class="nav-list-item"><a href="https://github.com/fuujiro" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">Vim-蓝色星球迄今为止最强大的编辑器（持续更新</h1><div class="post-info">Mar 10, 2018</div><div class="post-content"><h3 id="1-故事-“编辑器之神”"><a href="#1-故事-“编辑器之神”" class="headerlink" title="1. 故事 - “编辑器之神”"></a>1. 故事 - “编辑器之神”</h3><p>为什么<code>Vim</code>被称为编辑器之神？话说啊，远古时候，有两大神仙，地上很多猿类大多分成两派，一部分仰慕<code>Vim</code>大神，另一部分崇拜<code>Emacs</code>大仙，这两派互相挖苦比较，只相信自己的信仰之神是最强大的！<del>我呢，暂时站<code>Vim</code>神的，不排除以后叛变啦！</del></p>
+<p>好了，正经说话吧！高校里教学c语言时，应该是用的<code>VC++6.0</code> or <code>VS2010</code>，这两个是编辑器嘛？当然，不是的！他们都是集成开发环境（<code>IDE</code>，<code>Integrated Development Environment</code>）,而<code>Vim</code>才是编辑器，与<code>vim</code>一起称作编辑器还有啥子呢？比如，<code>Emacs</code>（Vim在这个世界上的最强大对手）,<code>VS code</code>（Microsoft推出的开源编辑器，是我最近使用的最频繁的编辑器，可以说面对学习曲线陡峭的Vim来说，<code>VS code</code>是最容易上手的编辑器，我现在在写的这篇blog就是用<code>VS code</code>写的，插件十分丰富，除了由于GUI界面的存在，可能在内存上稍高于<code>Vim</code>，但比起鬼畜的<code>Atom</code>来说，那是好到不知道哪里去了的存在）,<code>Atom</code>（Google推出的开源编辑器，同样因为开源的原因，插件十分丰富）,<code>Sublime Text</code>（前端engineer一定经历过的编辑器，插件丰富，性能极优）等等……</p>
+<p>好了，你现在肯定会问我，为啥我这次blog只介绍Vim呢？因为，Vim难学啊！这里有一张网上嘲讽几大编辑器的学习曲线～<br><img src="https://raw.githubusercontent.com/fuujiro/pictures/master/vim操作/主流編輯器學習曲線圖.jpg" alt="vim-line"></p>
+<h3 id="2-学习Vim能给你带来什么？"><a href="#2-学习Vim能给你带来什么？" class="headerlink" title="2. 学习Vim能给你带来什么？"></a>2. 学习Vim能给你带来什么？</h3><p>从图上我们能看出，vim（vi）的学习曲线入门是十分陡峭的，Emacs的略显鬼畜2333～！那，学习Vim对于我来说，到底有什么什么好处呢？我在刚刚学习Vim时，也是有抱着这个疑惑的，后来总是强迫自己去学+在网上了解Vim，我觉得学习对你可能会有这些好处：</p>
+<ul>
+<li><p>熟悉命令行工具：Vim是在终端（Terminal）上运行的编辑器，学习Vim无疑你会在命令行下进行频繁操作，而命令行工具对于程序员来说，是十分重要的！也许大部分同学的开发环境大部分还是Windows，使用命令行工具的机会很少！但是以后科研or工作，开发平台就不一定是Windows了，也不一定会有带图形界面的开发工具给你使用。比如：</p>
+<ul>
+<li>你科研跑TensorFlow，进行深度学习方面的科研，大概率会需要在linux上跑；做机器学习离不开Linux～我最近在做计算机视觉（Computer Vision）的研究，小方向现在做的是对机械臂进行视觉定位，然而这个机械臂的ROS操作工具，就必须在Linux下进行~～macOS&amp;Windows都没提供~~</li>
+<li>你是EE爱好者（robot开发方向的爱好者），而ROS (Robot Operating System, 机器人操作系统) 恰恰只提供给你Linux的开发工具（且只保证Ubuntu（Linux的一个发行版）能够完美兼容），你作为机器人方向开发者，无法避免命令行工具的使用</li>
+<li>除了科研界，工程界对于命令行工具的使用不要太多！各大互联网的大厂的每一个开发岗offer，无论你是c/c++/java/python/c#/前端/运维等，哪个岗位要求都会有这么一句“熟悉使用命令行操作工具”or“熟悉shell脚本语言编程”，可以说，使用命令行工具是一位合格的计算机专业大学生应该具有的。</li>
+</ul>
+</li>
+<li><p>Vim具有其他编辑器不具有的与生俱来的特殊功能，比如轻松运用SSH（SSH指：. Secure Shell（缩写：SSH），即“安全壳协议”，一项计算机上的安全协议）；Vim内存占用很低，对于开发配置要求极低，比起具有图形界面的VS code，Atom，Sublime来说，可以说能开机的电脑都能顺溜地跑Vim～！</p>
+</li>
+<li><p>最后一个：Vim能帮助乌干达的贫苦儿童，这是个梗2333～！不过，认真讲哦～你用Vim写代码，是在帮助世界上的其他小孩子呢！还有什么理由，不好好写代码233～！<br><img src="https://raw.githubusercontent.com/fuujiro/pictures/master/vim操作/4170551-f560a9916f58202d.jpg" alt="Uganda"></p>
+</li>
+</ul>
+<p>相信前面的大串理由，你一定拒绝不了Vim的诱惑，不如和我一起来学习Vim工具吧～啦啦啦～！</p>
+<h3 id="3-Vim介绍以及如何入门"><a href="#3-Vim介绍以及如何入门" class="headerlink" title="3. Vim介绍以及如何入门"></a>3. Vim介绍以及如何入门</h3><h4 id="3-1-Vim和Vi的关系"><a href="#3-1-Vim和Vi的关系" class="headerlink" title="3.1 Vim和Vi的关系"></a>3.1 Vim和Vi的关系</h4><p>通过搜索引擎了解一下，就简单黏上来了！自己写的没有这么全面～<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Vim和Vi都是多模式编辑器，不同的是vim 是vi的升级版本，它不仅兼容vi的所有指令，而且还有一些新的特性在里面。</span><br><span class="line">vim的这些优势主要体现在以下几个方面：</span><br><span class="line">1、多级撤消</span><br><span class="line">我们知道在vi里，按`u`只能撤消上次命令，而在vim里可以无限制的撤消。</span><br><span class="line">2、易用性</span><br><span class="line">vi只能运行于unix中，而vim不仅可以运行于unix,windows ,mac等多操作平台。</span><br><span class="line">3、语法加亮</span><br><span class="line">vim可以用不同的颜色来加亮你的代码。</span><br><span class="line">4、可视化操作</span><br><span class="line">就是说vim不仅可以在终端运行，也可以运行于x window、 mac os、 windows。</span><br><span class="line">5、对vi的完全兼容</span><br><span class="line">某些情况下，你可以把vim当成vi来使用。</span><br></pre></td></tr></table></figure></p>
+<p>所以，我们通常就把Vim包括了Vi啦～！</p>
+<h4 id="3-2-Vim安装"><a href="#3-2-Vim安装" class="headerlink" title="3.2 Vim安装"></a>3.2 Vim安装</h4><p>按道理来说，现如今的操作系统（除Windows）都已经自带好了Vim。为了避免古老版本只安装Vi的gg情况，我们可以先敲<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vim -version</span><br></pre></td></tr></table></figure></p>
+<p>来确定计算机是否已经安装好了Vim，一般出现的结果就是：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">fuujiro-Mac:~ fuujiro$ vim -version</span><br><span class="line">VIM - Vi IMproved 8.0 (2016 Sep 12, compiled Jul 26 2017 19:10:24)</span><br></pre></td></tr></table></figure></p>
+<p>如上结果的话，你的计算机就已经安装好了Vim，版本是8.0。<br>当然如果提示<code>command not found</code>，那也不慌，我们装上就好：</p>
+<ul>
+<li><p>Linux用户：<br>  因为Linux存在两大派系，Debian和Redhat，对于不同派系，安装命令也不相同。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ubuntu系统（基于Debian）：</span><br><span class="line">普通用户下输入命令：sudo apt-get install vim-gtk</span><br><span class="line">centos系统（基于Redhat）：</span><br><span class="line">普通用户下输入命令：yum -y install vim*</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>macOS用户：<br>  macOS是自带Vim的，但由于随系统版本的原因，可能版本落后，那就讲一下Vim的升级吧～！<br>  我是推荐用Homebrew（Homebrew是一款自由及开放源代码的软件包管理系统，用以简化Mac OS X系统上的软件安装过程）来升级的。</p>
+<ol>
+<li><p>安装Homebrew</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装or升级Vim</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">安装Vim</span><br><span class="line">$ brew install vim</span><br><span class="line">升级Vim</span><br><span class="line">$ brew update vim</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+<li><p>Windows用户<br>  Windows因为不是*nix类系统，所以不会自带Vim，不过已经有大牛开发出了vim在Windows上的编辑器-gvim</p>
+<ul>
+<li><a href="http://blog.csdn.net/myloveqingmu/article/details/52518563" target="_blank" rel="noopener">gvim+w7+vundle安装教程</a><br>上面这个文章清晰的解释了每一步，跟着做就好。</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-3-Vim入门"><a href="#3-3-Vim入门" class="headerlink" title="3.3 Vim入门"></a>3.3 Vim入门</h4><h5 id="3-3-1-vim的基础模式"><a href="#3-3-1-vim的基础模式" class="headerlink" title="3.3.1 vim的基础模式"></a>3.3.1 vim的基础模式</h5><p>在使用vim时，主要你会在两个模式下操作：</p>
+<ul>
+<li>正常（normal）模式：任何其它模式中都可以通过键盘上的 Esc 键回到正常模式。在这个模式下可以进行命令（commmand）模式操作（按:进入）。例如，wq是保存并退出，q!是强制退出不保存。</li>
+<li>输入（insert）模式，输入文本时使用；在正常模式下键入“i”（insert）或“a”（append）即可进入插入模式。这时候一般进行文本编辑工作，例如写代码。</li>
+</ul>
+<p>当然除了这两种模式，还有可视（visual）模式：用于选定文本块；可以在正常模式下输入“v”（小写）来按字符选定，输入“V”（大写）来按行选定，或输入“Ctrl-V”来按方块选定。主要的话，还是上面那2种模式用的比较多。</p>
+<h5 id="3-3-2-vim的基本操作"><a href="#3-3-2-vim的基本操作" class="headerlink" title="3.3.2 vim的基本操作"></a>3.3.2 vim的基本操作</h5><p>你如果是第一次接触命令行，可以在打开终端（open terminal），敲下<code>vimtutor</code>然后按下回车，就可以看到（如下图）</p>
+<p><img src="https://raw.githubusercontent.com/fuujiro/pictures/master/vim操作/DeepinScreenshot_select-area_20180331125208.png" alt="vimtutor"></p>
+<p>这是vim的学习文档，文档语言取决于你的系统语言，所以不会英语的小伙伴也不必害怕学习vim，毕竟中文文档也是挺丰富的，不过我还是推荐学习好英语的。</p>
+<p>好，现在默认大家都已经跟着<code>vimtutor</code>过了一遍了，那再复现一下文档里的一些主要的操作。</p>
+<p>注意：</p>
+<ul>
+<li><p>首先是控制光标移动的方向键，依然还是可以用上下左右键的，不过vim发明者的本意是提高使用者的打字效率，所以推荐<code>h</code>,<code>j</code>,<code>k</code>,<code>l</code>这4个键分别，这样你的双手就不用离开主键盘区了，完完全全的效率工具。当然，刚刚开始使用时，你会觉得有点变扭，不过熟悉后你肯定会赞成我这句话的。</p>
+</li>
+<li><p>在插入模式下按<code>:</code>键就可以进入命令模式；在命令模式下按<code>i</code>就可以进入插入模式。在插入模式下，输入<code>wq</code>可以保存并退出文件，按<code>q!</code>是强制退出不保存。如果有需要保存的路径，那么就<code>w</code>+<code>空格</code>+<code>保存文件的路径</code>。</p>
+</li>
+</ul>
+<p>总结的详细操作：</p>
+<h4 id="命令历史"><a href="#命令历史" class="headerlink" title="命令历史"></a>命令历史</h4><p>以:和/开头的命令都有历史纪录，可以首先键入:或/然后按上下箭头来选择某个历史命令。</p>
+<h4 id="启动vim"><a href="#启动vim" class="headerlink" title="启动vim"></a>启动vim</h4><p>在命令行窗口中输入以下命令即可</p>
+<p>vim 直接启动vim</p>
+<p>vim filename 打开vim并创建名为filename的文件</p>
+<h4 id="文件命令"><a href="#文件命令" class="headerlink" title="文件命令"></a>文件命令</h4><p>打开单个文件</p>
+<p>vim file</p>
+<p>同时打开多个文件</p>
+<p>vim file1 file2 file3 …</p>
+<p>在vim窗口中打开一个新文件</p>
+<p>:open file</p>
+<p>在新窗口中打开文件</p>
+<p>:split file</p>
+<p>切换到下一个文件</p>
+<p>:bn</p>
+<p>切换到上一个文件</p>
+<p>:bp</p>
+<p>查看当前打开的文件列表，当前正在编辑的文件会用[]括起来。</p>
+<p>:args</p>
+<p>打开远程文件，比如ftp或者share folder</p>
+<p>:e <a href="ftp://192.168.10.76/abc.txt" target="_blank" rel="noopener">ftp://192.168.10.76/abc.txt</a></p>
+<p>:e \qadrive\test\1.txt</p>
+<h4 id="vim的模式"><a href="#vim的模式" class="headerlink" title="vim的模式"></a>vim的模式</h4><p>正常模式（按Esc或Ctrl+[进入） 左下角显示文件名或为空<br>插入模式（按i键进入） 左下角显示–INSERT–<br>可视模式（不知道如何进入） 左下角显示–VISUAL–</p>
+<h4 id="导航命令"><a href="#导航命令" class="headerlink" title="导航命令"></a>导航命令</h4><p>% 括号匹配</p>
+<h4 id="插入命令"><a href="#插入命令" class="headerlink" title="插入命令"></a>插入命令</h4><p>i 在当前位置生前插入</p>
+<p>I 在当前行首插入</p>
+<p>a 在当前位置后插入</p>
+<p>A 在当前行尾插入</p>
+<p>o 在当前行之后插入一行</p>
+<p>O 在当前行之前插入一行</p>
+<h4 id="查找命令"><a href="#查找命令" class="headerlink" title="查找命令"></a>查找命令</h4><p>/text　　查找text，按n健查找下一个，按N健查找前一个。</p>
+<p>?text　　查找text，反向查找，按n健查找下一个，按N健查找前一个。</p>
+<p>vim中有一些特殊字符在查找时需要转义　　.*[]^%/?~$</p>
+<p>:set ignorecase　　忽略大小写的查找</p>
+<p>:set noignorecase　　不忽略大小写的查找</p>
+<p>查找很长的词，如果一个词很长，键入麻烦，可以将光标移动到该词上，按*或#键即可以该单词进行搜索，相当于/搜索。而#命令相当于?搜索。</p>
+<p>:set hlsearch　　高亮搜索结果，所有结果都高亮显示，而不是只显示一个匹配。</p>
+<p>:set nohlsearch　　关闭高亮搜索显示</p>
+<p>:nohlsearch　　关闭当前的高亮显示，如果再次搜索或者按下n或N键，则会再次高亮。</p>
+<p>:set incsearch　　逐步搜索模式，对当前键入的字符进行搜索而不必等待键入完成。</p>
+<p>:set wrapscan　　重新搜索，在搜索到文件头或尾时，返回继续搜索，默认开启。</p>
+<h4 id="替换命令"><a href="#替换命令" class="headerlink" title="替换命令"></a>替换命令</h4><p>ra 将当前字符替换为a，当期字符即光标所在字符。</p>
+<p>s/old/new/ 用old替换new，替换当前行的第一个匹配</p>
+<p>s/old/new/g 用old替换new，替换当前行的所有匹配</p>
+<p>%s/old/new/ 用old替换new，替换所有行的第一个匹配</p>
+<p>%s/old/new/g 用old替换new，替换整个文件的所有匹配</p>
+<p>:10,20 s/^/    /g 在第10行知第20行每行前面加四个空格，用于缩进。</p>
+<p>ddp 交换光标所在行和其下紧邻的一行。</p>
+<h4 id="移动命令"><a href="#移动命令" class="headerlink" title="移动命令"></a>移动命令</h4><p>h 左移一个字符<br>l 右移一个字符，这个命令很少用，一般用w代替。<br>k 上移一个字符<br>j 下移一个字符<br>以上四个命令可以配合数字使用，比如20j就是向下移动20行，5h就是向左移动5个字符，在Vim中，很多命令都可以配合数字使用，比如删除10个字符10x，在当前位置后插入3个！，3a！<esc>，这里的Esc是必须的，否则命令不生效。</esc></p>
+<p>w 向前移动一个单词（光标停在单词首部），如果已到行尾，则转至下一行行首。此命令快，可以代替l命令。</p>
+<p>b 向后移动一个单词 2b 向后移动2个单词</p>
+<p>e，同w，只不过是光标停在单词尾部</p>
+<p>ge，同b，光标停在单词尾部。</p>
+<p>^ 移动到本行第一个非空白字符上。</p>
+<p>0（数字0）移动到本行第一个字符上，</p>
+<p><home> 移动到本行第一个字符。同0健。</home></p>
+<p>$ 移动到行尾 3$ 移动到下面3行的行尾</p>
+<p>gg 移动到文件头。 = [[</p>
+<p>G（shift + g） 移动到文件尾。 = ]]</p>
+<p>f（find）命令也可以用于移动，fx将找到光标后第一个为x的字符，3fd将找到第三个为d的字符。</p>
+<p>F 同f，反向查找。</p>
+<p>跳到指定行，冒号+行号，回车，比如跳到240行就是 :240回车。另一个方法是行号+G，比如230G跳到230行。</p>
+<p>Ctrl + e 向下滚动一行</p>
+<p>Ctrl + y 向上滚动一行</p>
+<p>Ctrl + d 向下滚动半屏</p>
+<p>Ctrl + u 向上滚动半屏</p>
+<p>Ctrl + f 向下滚动一屏</p>
+<p>Ctrl + b 向上滚动一屏</p>
+<h4 id="撤销和重做"><a href="#撤销和重做" class="headerlink" title="撤销和重做"></a>撤销和重做</h4><p>u 撤销（Undo）<br>U 撤销对整行的操作<br>Ctrl + r 重做（Redo），即撤销的撤销。</p>
+<h4 id="删除命令"><a href="#删除命令" class="headerlink" title="删除命令"></a>删除命令</h4><p>x 删除当前字符</p>
+<p>3x 删除当前光标开始向后三个字符</p>
+<p>X 删除当前字符的前一个字符。X=dh</p>
+<p>dl 删除当前字符， dl=x</p>
+<p>dh 删除前一个字符</p>
+<p>dd 删除当前行</p>
+<p>dj 删除上一行</p>
+<p>dk 删除下一行</p>
+<p>10d 删除当前行开始的10行。</p>
+<p>D 删除当前字符至行尾。D=d$</p>
+<p>d$ 删除当前字符之后的所有字符（本行）</p>
+<p>kdgg 删除当前行之前所有行（不包括当前行）</p>
+<p>jdG（jd shift + g）   删除当前行之后所有行（不包括当前行）</p>
+<p>:1,10d 删除1-10行</p>
+<p>:11,$d 删除11行及以后所有的行</p>
+<p>:1,$d 删除所有行</p>
+<p>J(shift + j)　　删除两行之间的空行，实际上是合并两行。</p>
+<h4 id="拷贝和粘贴"><a href="#拷贝和粘贴" class="headerlink" title="拷贝和粘贴"></a>拷贝和粘贴</h4><p>yy 拷贝当前行</p>
+<p>nyy 拷贝当前后开始的n行，比如2yy拷贝当前行及其下一行。</p>
+<p>p  在当前光标后粘贴,如果之前使用了yy命令来复制一行，那么就在当前行的下一行粘贴。</p>
+<p>shift+p 在当前行前粘贴</p>
+<p>:1,10 co 20 将1-10行插入到第20行之后。</p>
+<p>:1,$ co $ 将整个文件复制一份并添加到文件尾部。</p>
+<p>正常模式下按v（逐字）或V（逐行）进入可视模式，然后用jklh命令移动即可选择某些行或字符，再按y即可复制</p>
+<p>ddp交换当前行和其下一行</p>
+<p>xp交换当前字符和其后一个字符</p>
+<h4 id="剪切命令"><a href="#剪切命令" class="headerlink" title="剪切命令"></a>剪切命令</h4><p>正常模式下按v（逐字）或V（逐行）进入可视模式，然后用jklh命令移动即可选择某些行或字符，再按d即可剪切</p>
+<p>ndd 剪切当前行之后的n行。利用p命令可以对剪切的内容进行粘贴</p>
+<p>:1,10d 将1-10行剪切。利用p命令可将剪切后的内容进行粘贴。</p>
+<p>:1, 10 m 20 将第1-10行移动到第20行之后。</p>
+<h4 id="退出命令"><a href="#退出命令" class="headerlink" title="退出命令"></a>退出命令</h4><p>:wq 保存并退出</p>
+<p>ZZ 保存并退出</p>
+<p>:q! 强制退出并忽略所有更改</p>
+<p>:e! 放弃所有修改，并打开原来文件。</p>
+<h4 id="窗口命令"><a href="#窗口命令" class="headerlink" title="窗口命令"></a>窗口命令</h4><p>:split或new 打开一个新窗口，光标停在顶层的窗口上</p>
+<p>:split file或:new file 用新窗口打开文件</p>
+<p>split打开的窗口都是横向的，使用vsplit可以纵向打开窗口。</p>
+<p>Ctrl+ww 移动到下一个窗口</p>
+<p>Ctrl+wj 移动到下方的窗口</p>
+<p>Ctrl+wk 移动到上方的窗口</p>
+<p>关闭窗口</p>
+<p>:close 最后一个窗口不能使用此命令，可以防止意外退出vim。</p>
+<p>:q 如果是最后一个被关闭的窗口，那么将退出vim。</p>
+<p>ZZ 保存并退出。</p>
+<p>关闭所有窗口，只保留当前窗口</p>
+<p>:only</p>
+<p>录制宏</p>
+<p>按q键加任意字母开始录制，再按q键结束录制（这意味着vim中的宏不可嵌套），使用的时候@加宏名，比如qa。。。q录制名为a的宏，@a使用这个宏。</p>
+<h4 id="执行shell命令"><a href="#执行shell命令" class="headerlink" title="执行shell命令"></a>执行shell命令</h4><p>:!command</p>
+<p>:!ls 列出当前目录下文件</p>
+<p>:!perl -c script.pl 检查perl脚本语法，可以不用退出vim，非常方便。</p>
+<p>:!perl script.pl 执行perl脚本，可以不用退出vim，非常方便。</p>
+<p>:suspend或Ctrl - Z 挂起vim，回到shell，按fg可以返回vim。</p>
+<h4 id="注释命令"><a href="#注释命令" class="headerlink" title="注释命令"></a>注释命令</h4><p>perl程序中#开始的行为注释，所以要注释某些行，只需在行首加入#</p>
+<p>3,5 s/^/#/g 注释第3-5行</p>
+<p>3,5 s/^#//g 解除3-5行的注释</p>
+<p>1,$ s/^/#/g 注释整个文档。</p>
+<p>:%s/^/#/g 注释整个文档，此法更快。</p>
+<h4 id="帮助命令"><a href="#帮助命令" class="headerlink" title="帮助命令"></a>帮助命令</h4><p>:help or F1 显示整个帮助<br>:help xxx 显示xxx的帮助，比如 :help i, :help CTRL-[（即Ctrl+[的帮助）。<br>:help ‘number’ Vim选项的帮助用单引号括起<br>:help <esc> 特殊键的帮助用&lt;&gt;扩起<br>:help -t Vim启动参数的帮助用-<br>：help i_<esc> 插入模式下Esc的帮助，某个模式下的帮助用模式_主题的模式<br>帮助文件中位于||之间的内容是超链接，可以用Ctrl+]进入链接，Ctrl+o（Ctrl + t）返回</esc></esc></p>
+<h4 id="其他非编辑命令"><a href="#其他非编辑命令" class="headerlink" title="其他非编辑命令"></a>其他非编辑命令</h4><p>. 重复前一次命令</p>
+<p>:set ruler?　　查看是否设置了ruler，在.vimrc中，使用set命令设制的选项都可以通过这个命令查看</p>
+<p>:scriptnames　　查看vim脚本文件的位置，比如.vimrc文件，语法文件及plugin等。</p>
+<p>:set list 显示非打印字符，如tab，空格，行尾等。如果tab无法显示，请确定用set lcs=tab:&gt;-命令设置了.vimrc文件，并确保你的文件中的确有tab，如果开启了expendtab，那么tab将被扩展为空格。</p>
+<p>Vim教程</p>
+<ul>
+<li>在Unix系统上 $ vimtutor</li>
+<li>在Windows系统上 :help tutor</li>
+</ul>
+<p>:syntax 列出已经定义的语法项<br>:syntax clear 清除已定义的语法规则<br>:syntax case match 大小写敏感，int和Int将视为不同的语法元素<br>:syntax case ignore 大小写无关，int和Int将视为相同的语法元素，并使用同样的配色方案</p>
+<p>最后贴2张Vim的命令大全图，可以留着当壁纸，时不时看几眼，没准就都记住了呢～<br><img src="https://raw.githubusercontent.com/fuujiro/pictures/master/vim操作/20160712110935064.png" alt="Vim命令图1"><br><img src="https://raw.githubusercontent.com/fuujiro/pictures/master/vim操作/343184-20170103184312878-397465891.png" alt="Vim命令图2"><br><img src="https://raw.githubusercontent.com/fuujiro/pictures/master/vim操作/175824-20161123224659425-328736487.png" alt="Vim命令图3"></p>
+<h3 id="4-Vim的终极配置"><a href="#4-Vim的终极配置" class="headerlink" title="4. Vim的终极配置"></a>4. Vim的终极配置</h3><p>vim是一个开放性很强的编辑器，个性化定制很丰富，你可以创建一个完全自我定制的<code>vimrc</code>，然后自己选择一些插件安装。不过，我推荐一个高度定制好的vim配置，正在使用的，它不一定是完美的，但的确是一款好用的。那就是<code>spf13-vim</code>，它的官方地址是：</p>
+<ul>
+<li><a href="http://vim.spf13.com/" target="_blank" rel="noopener">spf13-vim官网</a></li>
+<li><a href="https://github.com/spf13/spf13-vim" target="_blank" rel="noopener">spf13-vim的GitHUb仓库地址</a></li>
+</ul>
+<p>这两个地址，都有详细的安装介绍，我就不多说了，打字受累，大家可以参考介绍，搭建你自己的vim终极配置！</p>
+<h3 id="5-Vim使用时遇到过的问题及处理方法（持续更新"><a href="#5-Vim使用时遇到过的问题及处理方法（持续更新" class="headerlink" title="5. Vim使用时遇到过的问题及处理方法（持续更新"></a>5. Vim使用时遇到过的问题及处理方法（持续更新</h3><p>祝大家使用Vim更加爽快～！在编程的道路上越走越远～！</p>
+<p>致谢：</p>
+<ol>
+<li><a href="https://linghucong.js.org/2016/04/15/2016-04-15-hexo-github-pages-blog/" target="_blank" rel="noopener">令狐葱@前端笔记</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="noopener">吴润的知乎专栏：cs专业那些事</a></li>
+<li><a href="https://www.cnblogs.com/yangjig/p/6014198.html" target="_blank" rel="noopener">vim常用命令总结 （转)</a></li>
+</ol>
+</div></article></div></main><footer><div class="paginator"><a href="/2018/04/13/对网站进行全方位优化！焕然一新喔～/" class="prev">上一篇</a><a href="/2018/02/14/使用Hexo框架-Apollo主题搭建博客/" class="next">下一篇</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'fuujiro';
+var disqus_identifier = '2018/03/10/vim-蓝色星球迄今为止最强大的编辑器（持续更新/';
+var disqus_title = 'Vim-蓝色星球迄今为止最强大的编辑器（持续更新';
+var disqus_url = 'https://blog.fuujiro.com/2018/03/10/vim-蓝色星球迄今为止最强大的编辑器（持续更新/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//fuujiro.disqus.com/count.js" async></script><div class="copyright"><p>© 2017 - 2018 <a href="https://blog.fuujiro.com">fuujiro</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script></body></html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 全站https化&全方位SEO优化！焕然一新喔～ · fuujiro's island</title><meta name="description" content="全站https化&amp;全方位SEO优化！焕然一新喔～ - fuujiro"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="https://blog.fuujiro.com/atom.xml" title="fuujiro's island"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/activity/" target="_self" class="nav-list-link">ACTIVITY</a></li><li class="nav-list-item"><a href="https://github.com/fuujiro" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">全站https化&全方位SEO优化！焕然一新喔～</h1><div class="post-info">Apr 13, 2018</div><div class="post-content"><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>最近学习一些信息安全和计算机网络方面的知识，知道了<code>http</code>和<code>https</code>的差距，现在全网各大网站和平台都在进行全站<code>https</code>化，所以我准备把我的<a href="https://blog.fuujiro.com/">fuujiro’s land</a>也实现一波全站https化。除了这个之外，我也打算对我的blog进行<code>SEO</code>优化。<code>SEO</code>优化这是门大学问，不论是我这样的小小blog，还是大厂的页面，都会试图让自家的产品和网站出现在搜索引擎最靠前的位置，<code>SEO</code>优化大概就是在干这样一件事～</p>
+<h3 id="1-实现全站https化"><a href="#1-实现全站https化" class="headerlink" title="1. 实现全站https化"></a>1. 实现全站<code>https</code>化</h3><h4 id="1-1-为什么要进行https化"><a href="#1-1-为什么要进行https化" class="headerlink" title="1.1 为什么要进行https化"></a>1.1 为什么要进行<code>https</code>化</h4><p>先说说<code>http</code>和<code>https</code>的区别：</p>
+<blockquote>
+<p>HTTP协议传输的数据都是未加密的，也就是明文的，因此使用HTTP协议传输隐私信息非常不安全，为了保证这些隐私数据能加密传输，于是网景公司设计了SSL（Secure Sockets Layer）协议用于对HTTP协议传输的数据进行加密，从而就诞生了HTTPS。简单来说，HTTPS协议是由SSL+HTTP协议构建的可进行加密传输、身份认证的网络协议，要比http协议安全。</p>
+</blockquote>
+<p>其中HTTPS和HTTP的区别主要如下：</p>
+<ol>
+<li>https协议需要到ca申请证书，一般免费证书较少，因而需要一定费用。</li>
+<li>http是超文本传输协议，信息是明文传输，https则是具有安全性的ssl加密传输协议。</li>
+<li>http和https使用的是完全不同的连接方式，用的端口也不一样，前者是80，后者是443。</li>
+<li>http的连接很简单，是无状态的；HTTPS协议是由SSL+HTTP协议构建的可进行加密传输、身份认证的网络协议，比http协议安全。</li>
+</ol>
+<p>所以～尽管HTTPS并非绝对安全，掌握根证书的机构、掌握加密算法的组织同样可以进行中间人形式的攻击，但HTTPS仍是现行架构下最安全的解决方案，主要有以下几个好处：</p>
+<ul>
+<li>使用HTTPS协议可认证用户和服务器，确保数据发送到正确的客户机和服务器；</li>
+<li>HTTPS协议是由SSL+HTTP协议构建的可进行加密传输、身份认证的网络协议，要比http协议安全，可防止数据在传输过程中不被窃取、改变，确保数据的完整性。</li>
+<li>HTTPS是现行架构下最安全的解决方案，虽然不是绝对安全，但它大幅增加了中间人攻击的成本。</li>
+<li>谷歌曾在2014年8月份调整搜索引擎算法，并称“比起同等HTTP网站，采用HTTPS加密的网站在搜索结果中的排名将会更高”。</li>
+</ul>
+<p>So，大家赶紧一起撸起袖子把自己的网站 or 博客实现全站<code>https</code>化吧！！</p>
+<h4 id="1-2-所需要的工具和基础："><a href="#1-2-所需要的工具和基础：" class="headerlink" title="1.2 所需要的工具和基础："></a>1.2 所需要的工具和基础：</h4><ul>
+<li>仓库：<code>Github</code></li>
+<li>Hexo 博客主题：<code>Apollo</code></li>
+<li>评论插件：<code>Disqus</code></li>
+<li>SSL证书 &amp; 服务器：<code>CloudFlare</code></li>
+<li>个人域名(腾讯云)一个</li>
+</ul>
+<blockquote>
+<p>注意：如果你的hexo blog并没有自己额外购买的独立域名如<code>fuujiro.com</code>，在使用<code>GitHub Pages</code>自带的<code>yourname.github.io</code>，那么其实你是不需要进行<code>手动https</code>，因为<code>*GitHub Pages</code>自带<code>https</code>优化了。买独立域名的优势是可以让搜索引擎检索到，比如百度这种公司是不检索<code>github.io</code>的…</p>
+</blockquote>
+<h4 id="1-3-步骤"><a href="#1-3-步骤" class="headerlink" title="1.3 步骤"></a>1.3 步骤</h4><p>现在默认已经将博客搭好了，也链接上了自己的独立域名，如果没有，请参考我的另一篇博客：<a href="https://blog.fuujiro.com/2018/02/14/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6-Apollo%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">使用Hexo框架+Apollo主题搭建博客</a></p>
+<h5 id="1-3-1-注册一个CloudFlare账户"><a href="#1-3-1-注册一个CloudFlare账户" class="headerlink" title="1.3.1 注册一个CloudFlare账户"></a>1.3.1 注册一个<code>CloudFlare</code>账户</h5><ol>
+<li><p>首先进入<a href="https://www.cloudflare.com/" target="_blank" rel="noopener">cloudflare</a>，注册好你的账户，然后绑好你的个人域名。教程：<a href="http://www.wugongqi.cn/2700.html" target="_blank" rel="noopener">如何注册使用cloudfare？</a></p>
+</li>
+<li><p>进行完第一步的基本操作后，你会得到<code>cloudfare</code>赏给你的两个服务器DNS地址：</p>
+</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/fuujiro/pictures/master/对网站进行全方位SEO优化/DeepinScreenshot_select-area_20180413102513.png" alt="DNS"></p>
+<p>把这两个地址copy好，打开你购买你的域名的服务商，比如我用的是腾讯云。按下面步骤操作，其他网站也大同小异，就是修改一下域名的DNS服务器。</p>
+<p><img src="https://raw.githubusercontent.com/fuujiro/pictures/master/对网站进行全方位SEO优化/DeepinScreenshot_select-area_20180427205201.png" alt="tencentYUN"></p>
+<p><img src="https://raw.githubusercontent.com/fuujiro/pictures/master/对网站进行全方位SEO优化/a_20180413103553.png" alt="tencentYUN"></p>
+<p>最后，使用<a href="https://www.whois.net/" target="_blank" rel="noopener">whois工具</a>查看是否已经更改服务器成功。</p>
+<blockquote>
+<p>更改之前(我的域名是腾讯云购买的，所以云解析的服务器也是腾讯云)。</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/fuujiro/pictures/master/%E5%AF%B9%E7%BD%91%E7%AB%99%E8%BF%9B%E8%A1%8C%E5%85%A8%E6%96%B9%E4%BD%8DSEO%E4%BC%98%E5%8C%96/DeepinScreenshot_select-area_20180413102311.png" alt="aliyun"></p>
+<blockquote>
+<p>更改以后，服务器DNS解析转移到cloudfare服务器。</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/fuujiro/pictures/master/%E5%AF%B9%E7%BD%91%E7%AB%99%E8%BF%9B%E8%A1%8C%E5%85%A8%E6%96%B9%E4%BD%8DSEO%E4%BC%98%E5%8C%96/DeepinScreenshot_select-area_20180427203932.png" alt="cloudfare"></p>
+<p>这意味着你去成功了，这时候进入<code>cloudfare</code>主页，你的域名的状态就是<code>Active</code>了(可能<code>cloudfare</code>因为服务器缓存的原因，会晚几小时，不过如果whois查看已修改了，基本没有问题)，就像下面这样。</p>
+<hr>
+<p><strong>注意</strong>：以下所有操作的前提建立在，域名的状态是<code>Active</code>：</p>
+<p><img src="https://raw.githubusercontent.com/fuujiro/pictures/master/对网站进行全方位SEO优化/DeepinScreenshot_select-area_20180413102540.png" alt="Active"></p>
+<p>如果域名状态还未变绿，说明你还不够成熟，请您继续上面两步的操作。因为你继续下去也不会有结果，就像你死缠难打也不会有女朋友一样。</p>
+<hr>
+<ol start="3">
+<li>接下来，就是cloudfare的优化操作了。</li>
+</ol>
+<ul>
+<li>实现全站<code>https</code>化</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/fuujiro/pictures/master/%E5%AF%B9%E7%BD%91%E7%AB%99%E8%BF%9B%E8%A1%8C%E5%85%A8%E6%96%B9%E4%BD%8DSEO%E4%BC%98%E5%8C%96/DeepinScreenshot_select-area_20180427211022.png" alt="first"></p>
+<p><img src="https://raw.githubusercontent.com/fuujiro/pictures/master/对网站进行全方位SEO优化/DeepinScreenshot_select-area_20180427211140.png" alt="first"></p>
+<ul>
+<li>实现网站加速（关于<code>Page Rules</code>可以搜索引擎了解）</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/fuujiro/pictures/master/%E5%AF%B9%E7%BD%91%E7%AB%99%E8%BF%9B%E8%A1%8C%E5%85%A8%E6%96%B9%E4%BD%8DSEO%E4%BC%98%E5%8C%96/DeepinScreenshot_select-area_20180427210836.png" alt="second"></p>
+<p>至此，你重新刷新的网站or博客页面，域名地址左侧出现绿色小锁标识，恭喜你，你已经实现<code>https</code>化。至于全站<code>https</code>化，请保持你网站上所有引用的图片链接，也必须是https网站的，否则无法实现全站<code>https</code>化，实现<code>https</code>后的<a href="https://blog.fuujiro.com/">fuujiro’s island</a>：</p>
+<p><img src="https://raw.githubusercontent.com/fuujiro/pictures/master/%E5%AF%B9%E7%BD%91%E7%AB%99%E8%BF%9B%E8%A1%8C%E5%85%A8%E6%96%B9%E4%BD%8DSEO%E4%BC%98%E5%8C%96/DeepinScreenshot_google-chrome_20180427212529.png" alt="fuujiro&#39;s island"></p>
+<h3 id="2-全方位SEO优化"><a href="#2-全方位SEO优化" class="headerlink" title="2. 全方位SEO优化"></a>2. 全方位<code>SEO</code>优化</h3><hr>
+<p>未完待续…</p>
+</div></article></div></main><footer><div class="paginator"><a href="/2018/04/27/初识wsl（Windows-Subsystem-for-Linux）的Surprise，微软这次真的给了我惊喜！/" class="prev">上一篇</a><a href="/2018/03/10/vim-蓝色星球迄今为止最强大的编辑器（持续更新/" class="next">下一篇</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'fuujiro';
+var disqus_identifier = '2018/04/13/对网站进行全方位优化！焕然一新喔～/';
+var disqus_title = '全站https化&amp;全方位SEO优化！焕然一新喔～';
+var disqus_url = 'https://blog.fuujiro.com/2018/04/13/对网站进行全方位优化！焕然一新喔～/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//fuujiro.disqus.com/count.js" async></script><div class="copyright"><p>© 2017 - 2018 <a href="https://blog.fuujiro.com">fuujiro</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script></body></html>

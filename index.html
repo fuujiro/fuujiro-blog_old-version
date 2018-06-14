@@ -1,0 +1,129 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> fuujiro's island</title><meta name="description" content="A Blog Powered By Hexo"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="https://blog.fuujiro.com/atom.xml" title="fuujiro's island"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link active">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/activity/" target="_self" class="nav-list-link">ACTIVITY</a></li><li class="nav-list-item"><a href="https://github.com/fuujiro" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li></ul></header><main class="container"><ul class="home post-list"><li class="post-list-item"><article class="post-block"><h2 class="post-title"><a href="/2018/05/22/NJU-计算机系统基础笔记/" class="post-title-link">NJU-计算机系统基础笔记</a></h2><div class="post-info">May 22, 2018</div><div class="post-content"><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>准备自学csapp了，怕听不懂课。知乎说NJU的袁春华老师讲的<strong>计算机系统基础</strong>特别好，所以准备先学这个好了。</p>
+<h3 id="1-第一章"><a href="#1-第一章" class="headerlink" title="1. 第一章"></a>1. 第一章</h3><h4 id="1-1-理解"><a href="#1-1-理解" class="headerlink" title="1.1 理解"></a>1.1 理解</h4><blockquote>
+<p>计算机系统抽象层，从上至下依次是：应用（问题），算法，编程（语言），操作系统/虚拟机，指令集体系结构（ISA），微体系结构，功能部件，电路，器件。<strong>指令集体系结构</strong>是软件和硬件的交界层。</p>
+</blockquote>
+<h4 id="1-2-程序开发和执行过程简介"><a href="#1-2-程序开发和执行过程简介" class="headerlink" title="1.2 程序开发和执行过程简介"></a>1.2 程序开发和执行过程简介</h4><ol>
+<li>指令包含操作码和操作数或其他地址码</li>
+<li>机器语言和汇编语言都是面向机器结构的语言，统称为<strong>机器级语言</strong></li>
+</ol>
+<ul>
+<li>编译程序(Complier)：将高级语言源程序转换为机器级目 标程序，执行时只要启动目标程序即可 </li>
+<li>解释程序(Interpreter )：将高级语言语句逐条翻译成机器 指令并立即执行，不生成目标文</li>
+</ul>
+<h4 id="1-3-指令集体系结构"><a href="#1-3-指令集体系结构" class="headerlink" title="1.3 指令集体系结构"></a>1.3 指令集体系结构</h4><ul>
+<li>ISA(Instruction Set Architecture)，即<strong>指令集体系结构</strong></li>
+<li>ISA是一种规约</li>
+</ul></div><a href="/2018/05/22/NJU-计算机系统基础笔记/" class="read-more">...阅读全文</a></article></li><li class="post-list-item"><article class="post-block"><h2 class="post-title"><a href="/2018/05/22/Windows和manjaro双系统共存引导的解决方法/" class="post-title-link">Windows和manjaro双系统共存引导的解决方法</a></h2><div class="post-info">May 22, 2018</div><div class="post-content"><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><blockquote>
+<p>Q: What do the <strong>Ninja-fuujiro</strong> do?<br>A: 简单来说，就是替换引导文件。我安装的是 Manjaro Linux，名称就是 Manjaro，打开之后会发现里面有一个名为 grubx64.efi 的文件，这就是启动 Linux 的引导文件。和 Windows 10 的 bootmgfw.efi 类似，我们想要用 grubx64.efi 引导代替掉 bootmgfw.efi，这样就可以用 GRUB 引导了。</p>
+</blockquote>
+<p>（为什么要替换？因为Manjaro太弱鸡，Windows是攻，我们帮Manjaro一把。我们是平权主义者！拒绝霸道2333！ε=ε=ε=┏(゜ロ゜;)┛</p>
+<h3 id="1-打开Windows-Powershell-Administrator"><a href="#1-打开Windows-Powershell-Administrator" class="headerlink" title="1. 打开Windows Powershell(Administrator)"></a>1. 打开Windows Powershell(Administrator)</h3><ol>
+<li><code>win + x</code></li>
+<li><code>a</code></li>
+</ol>
+<h3 id="2-将grubx64-efi-引导代替掉-bootmgfw-efi"><a href="#2-将grubx64-efi-引导代替掉-bootmgfw-efi" class="headerlink" title="2. 将grubx64.efi 引导代替掉 bootmgfw.efi"></a>2. 将grubx64.efi 引导代替掉 bootmgfw.efi</h3><ul>
+<li>输入   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bcdedit /set &apos;&#123;bootmgr&#125;&apos; path \EFI\Manjaro\grubx64.efi</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>如果不好意思，你的Powershell对你有意见。你可能需要把<code>&#39;{bootmgr}&#39;</code>换成<code>{bootmgr}</code>。原因是可能你没听话，用的是cmd，没见着我说用Powershell了嘛~！</p>
+<h3 id="感谢"><a href="#感谢" class="headerlink" title="感谢"></a>感谢</h3><blockquote>
+<ul>
+<li><a href="https://blog.itswincer.com/posts/ad42f575/" target="_blank" rel="noopener">Linux 与 Windows 10 用 GRUB 引导教程</a></li>
+</ul>
+</blockquote></div><a href="/2018/05/22/Windows和manjaro双系统共存引导的解决方法/" class="read-more">...阅读全文</a></article></li><li class="post-list-item"><article class="post-block"><h2 class="post-title"><a href="/2018/04/30/尝螃蟹的人，体验Ubuntu-18-04-LTS（仿生河狸）！/" class="post-title-link">尝螃蟹的人，体验Ubuntu 18.04 LTS（仿生河狸）！</a></h2><div class="post-info">Apr 30, 2018</div><div class="post-content"><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><code>Ubuntu 18.04 LTS</code>在2018年4月26号准时发布啦！！！当天我还是没挤进去成功下载，国内几大镜像源似乎都爆掉了，直到今天我才把<code>Ubuntu 18.04</code>装在虚拟机上体验了一把！感觉很棒哦，不错嘛~！</p>
+<blockquote>
+<p><code>Ubuntu 18.04 LTS</code> 被 Canonical 创始人 Mark Shuttleworth 命名为<strong>Bionic Beaver，仿生海狸</strong>，这主要是为了纪念 Ubuntu 人孜孜不倦的辛劳工作。所以，以海狸充满活力的态度，勤劳的本性，此次版本更新周期以这种哺乳动物作为吉祥物进行命名。</p>
+</blockquote>
+<p>废话不多说，<code>Ubuntu 18.04 LTS</code>到底带给我们哪些<code>new features</code>呢？到底换不换发行版呢？让我们一起来看看！</p>
+<hr>
+<h3 id="1-Ubuntu-18-04-LTS的闪光点"><a href="#1-Ubuntu-18-04-LTS的闪光点" class="headerlink" title="1. Ubuntu 18.04 LTS的闪光点"></a>1. <code>Ubuntu 18.04 LTS</code>的<code>闪光点</code></h3><h4 id="1-1-GNOME正式抵达"><a href="#1-1-GNOME正式抵达" class="headerlink" title="1.1 GNOME正式抵达"></a>1.1 <code>GNOME</code>正式抵达</h4><p><img src="https://raw.githubusercontent.com/fuujiro/pictures/master/ubuntu-18.04-LTS/7.PNG" alt="gnome"></p>
+<p>我觉得太tm酷啦！！23333~</p>
+<p>Ubuntu 18.04 LTS 发布的同时也带来了 GNOME 3.28，由于 GNOME 在 Ubuntu 17.10 中已经取代了 Unity（尽管 Unity 并未完全挂掉），因此 GNOME 也已经成为了 Ubuntu 系统默认的桌面环境。</p></div><a href="/2018/04/30/尝螃蟹的人，体验Ubuntu-18-04-LTS（仿生河狸）！/" class="read-more">...阅读全文</a></article></li><li class="post-list-item"><article class="post-block"><h2 class="post-title"><a href="/2018/04/29/数据结构-Review-考试高分过！/" class="post-title-link">数据结构-Review！</a></h2><div class="post-info">Apr 29, 2018</div><div class="post-content"><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>复习一下课没好好上过的数据结构，唉！要期末考试噜！数据结构和算法要是想成为<code>Master</code>，好难欸！！~</p>
+<blockquote>
+<p>Q：如何高效率使用这篇总结？<br>A：查看写的所有数据结构的定义，然后戳所有带<code>-&gt; recommend！</code>这个标识的链接，嗯！速度就是这样~认真的话，建议复写所有数据结构的实现代码啦！</p>
+</blockquote>
+<hr>
+<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><ol>
+<li><p><a href="#1"><strong>线性表</strong></a><br> 1.1 <a href="#1.1">顺序表示和实现</a><br> 1.2 <a href="#1.2">链式表示和实现</a><br> 1.2.1 <a href="#1.2.1"><code>线性链表</code></a><br> 1.2.2 <a href="#1.2.2"><code>循环链表</code></a><br> 1.2.3 <a href="#1.2.3"><code>双向链表</code></a></p>
+</li>
+<li><p><a href="#2"><strong>栈和队列</strong></a><br> 2.1 <a href="#2.1">栈</a><br> 2.2 <a href="#2.2">队列</a></p>
+</li>
+<li><p><a href="#3"><strong>数组</strong></a><br> 3.1 <a href="#3.1">数组的顺序表示和实现</a><br> 3.2 <a href="#3.2">矩阵的压缩存储</a><br> 3.2.1 <a href="#3.2.1"><code>稀疏矩阵</code></a></p>
+</li>
+<li><p><a href="#4"><strong>树</strong></a><br> 4.1 <a href="#4.1">二叉树</a><br> 4.2 <a href="#4.2">遍历二叉树</a><br> 4.2.1 <a href="#4.2.1"><code>三大遍历的递归实现</code></a><br> 4.2.2 <a href="#4.2.2"><code>三大遍历的非递归实现</code></a><br> 4.2.3 <a href="#4.2.3"><code>层次遍历</code></a><br> 4.3 <a href="#4.3">树和森林</a><br> 4.3.1 <a href="#4.3.1"><code>数和森林的存储结构</code></a><br> 4.3.2 <a href="#4.3.2"><code>数和森林的遍历</code></a><br> 4.4 <a href="4.4">赫夫曼树</a></p>
+</li>
+<li><p><a href="#5"><strong>图</strong></a><br> 5.1 <a href="#5.1">图的定义</a><br> 5.2 <a href="#5.2">图的存储结构</a><br> 5.2.1 <a href="#5.2.1"><code>邻接表</code></a><br> 5.2.2 <a href="#5.2.2"><code>十字链表</code></a><br> 5.3 <a href="#5.3">图的遍历</a><br> 5.3.1 <a href="#5.3.1"><code>深度优先搜索</code></a><br> 5.3.2 <a href="#5.3.2"><code>广度优先搜索</code></a><br> 5.4 <a href="#5.4">图的连通性</a><br> 5.4.1 <a href="#5.4.1"><code>最小生成树</code></a><br> 5.5 <a href="#5.5">拓扑排序</a><br> 5.6 <a href="#5.6">最短路径</a><br> 5.6.1 <a href="#5.6.1"><code>Dijkstra算法</code></a></p>
+</li>
+<li><p><a href="#6"><strong>查找</strong></a><br> 6.1 <a href="#6.1">静态查找</a><br> 6.1.1 <a href="#6.1.1"><code>顺序查找</code></a><br> 6.1.2 <a href="#6.1.2"><code>二分查找</code></a><br> 6.2 <a href="#6.2">动态查找</a><br> 6.2.1 <a href="#6.2.1"><code>二叉排序树</code></a><br> 6.3 <a href="#6.3">哈希表</a></p>
+</li>
+<li><p><a href="#7"><strong>内部排序</strong></a><br> 7.1 <a href="#7.1">插入排序</a><br> 7.1.1 <a href="#7.1.1"><code>直接插入排序</code></a><br> 7.1.2 <a href="#7.1.2"><code>折半插入排序</code></a><br> 7.1.3 <a href="#7.1.3"><code>希尔排序</code></a><br> 7.2 <a href="#7.2">交换排序</a><br> 7.2.1 <a href="#7.2.1"><code>冒泡排序</code></a><br> 7.2.2 <a href="#7.2.2"><code>快速排序</code></a><br> 7.3 <a href="#7.3">选择排序</a><br> 7.3.1 <a href="#7.3.1"><code>简单选择排序</code></a><br> 7.3.2 <a href="#7.3.2"><code>堆排序</code></a><br> 7.4 <a href="#7.4">归并排序</a></p>
+</li>
+</ol>
+<hr>
+<h3 id="1"> 1. 线性表 </h3>
+
+<blockquote>
+<p>线性表<code>Linear_list</code>是最常用且最简单的一种数据结构。简言之，一个线性表是n个数据元素的有限序列。</p>
+</blockquote>
+<h4 id="1.1"> 1.1 顺序表示和实现 </h4></div><a href="/2018/04/29/数据结构-Review-考试高分过！/" class="read-more">...阅读全文</a></article></li><li class="post-list-item"><article class="post-block"><h2 class="post-title"><a href="/2018/04/27/初识wsl（Windows-Subsystem-for-Linux）的Surprise，微软这次真的给了我惊喜！/" class="post-title-link">初识wsl（Windows Subsystem for Linux），微软这次真的给了我惊喜！</a></h2><div class="post-info">Apr 27, 2018</div><div class="post-content"><h3 id="Surprise！"><a href="#Surprise！" class="headerlink" title="Surprise！"></a>Surprise！</h3><p>这次，微软给了我们一个<code>surprise</code>！当然，我得到的消息是不是太晚！！因为，我看知乎他们似乎在两年前就开始尝鲜<code>WSL</code>了，但那时的<code>wsl</code>似乎还是不太稳定的，而到了2018年，在体验了<code>WSL</code>后，我对她非常满意！嗯，就像微软所说，<strong>Windows love Linux</strong>，而<code>wsl</code>的的确确地让我体验到了<code>Linux</code>的feel！不得不感慨，巨硬大法好👌！</p>
+</div><a href="/2018/04/27/初识wsl（Windows-Subsystem-for-Linux）的Surprise，微软这次真的给了我惊喜！/" class="read-more">...阅读全文</a></article></li><li class="post-list-item"><article class="post-block"><h2 class="post-title"><a href="/2018/04/13/对网站进行全方位优化！焕然一新喔～/" class="post-title-link">全站https化&全方位SEO优化！焕然一新喔～</a></h2><div class="post-info">Apr 13, 2018</div><div class="post-content"><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>最近学习一些信息安全和计算机网络方面的知识，知道了<code>http</code>和<code>https</code>的差距，现在全网各大网站和平台都在进行全站<code>https</code>化，所以我准备把我的<a href="https://blog.fuujiro.com/">fuujiro’s land</a>也实现一波全站https化。除了这个之外，我也打算对我的blog进行<code>SEO</code>优化。<code>SEO</code>优化这是门大学问，不论是我这样的小小blog，还是大厂的页面，都会试图让自家的产品和网站出现在搜索引擎最靠前的位置，<code>SEO</code>优化大概就是在干这样一件事～</p>
+<h3 id="1-实现全站https化"><a href="#1-实现全站https化" class="headerlink" title="1. 实现全站https化"></a>1. 实现全站<code>https</code>化</h3><h4 id="1-1-为什么要进行https化"><a href="#1-1-为什么要进行https化" class="headerlink" title="1.1 为什么要进行https化"></a>1.1 为什么要进行<code>https</code>化</h4><p>先说说<code>http</code>和<code>https</code>的区别：</p>
+<blockquote>
+<p>HTTP协议传输的数据都是未加密的，也就是明文的，因此使用HTTP协议传输隐私信息非常不安全，为了保证这些隐私数据能加密传输，于是网景公司设计了SSL（Secure Sockets Layer）协议用于对HTTP协议传输的数据进行加密，从而就诞生了HTTPS。简单来说，HTTPS协议是由SSL+HTTP协议构建的可进行加密传输、身份认证的网络协议，要比http协议安全。</p>
+</blockquote>
+<p>其中HTTPS和HTTP的区别主要如下：</p>
+<ol>
+<li>https协议需要到ca申请证书，一般免费证书较少，因而需要一定费用。</li>
+<li>http是超文本传输协议，信息是明文传输，https则是具有安全性的ssl加密传输协议。</li>
+<li>http和https使用的是完全不同的连接方式，用的端口也不一样，前者是80，后者是443。</li>
+<li>http的连接很简单，是无状态的；HTTPS协议是由SSL+HTTP协议构建的可进行加密传输、身份认证的网络协议，比http协议安全。</li>
+</ol>
+<p>所以～尽管HTTPS并非绝对安全，掌握根证书的机构、掌握加密算法的组织同样可以进行中间人形式的攻击，但HTTPS仍是现行架构下最安全的解决方案，主要有以下几个好处：</p>
+<ul>
+<li>使用HTTPS协议可认证用户和服务器，确保数据发送到正确的客户机和服务器；</li>
+<li>HTTPS协议是由SSL+HTTP协议构建的可进行加密传输、身份认证的网络协议，要比http协议安全，可防止数据在传输过程中不被窃取、改变，确保数据的完整性。</li>
+<li>HTTPS是现行架构下最安全的解决方案，虽然不是绝对安全，但它大幅增加了中间人攻击的成本。</li>
+<li>谷歌曾在2014年8月份调整搜索引擎算法，并称“比起同等HTTP网站，采用HTTPS加密的网站在搜索结果中的排名将会更高”。</li>
+</ul></div><a href="/2018/04/13/对网站进行全方位优化！焕然一新喔～/" class="read-more">...阅读全文</a></article></li><li class="post-list-item"><article class="post-block"><h2 class="post-title"><a href="/2018/03/10/vim-蓝色星球迄今为止最强大的编辑器（持续更新/" class="post-title-link">Vim-蓝色星球迄今为止最强大的编辑器（持续更新</a></h2><div class="post-info">Mar 10, 2018</div><div class="post-content"><h3 id="1-故事-“编辑器之神”"><a href="#1-故事-“编辑器之神”" class="headerlink" title="1. 故事 - “编辑器之神”"></a>1. 故事 - “编辑器之神”</h3><p>为什么<code>Vim</code>被称为编辑器之神？话说啊，远古时候，有两大神仙，地上很多猿类大多分成两派，一部分仰慕<code>Vim</code>大神，另一部分崇拜<code>Emacs</code>大仙，这两派互相挖苦比较，只相信自己的信仰之神是最强大的！<del>我呢，暂时站<code>Vim</code>神的，不排除以后叛变啦！</del></p>
+<p>好了，正经说话吧！高校里教学c语言时，应该是用的<code>VC++6.0</code> or <code>VS2010</code>，这两个是编辑器嘛？当然，不是的！他们都是集成开发环境（<code>IDE</code>，<code>Integrated Development Environment</code>）,而<code>Vim</code>才是编辑器，与<code>vim</code>一起称作编辑器还有啥子呢？比如，<code>Emacs</code>（Vim在这个世界上的最强大对手）,<code>VS code</code>（Microsoft推出的开源编辑器，是我最近使用的最频繁的编辑器，可以说面对学习曲线陡峭的Vim来说，<code>VS code</code>是最容易上手的编辑器，我现在在写的这篇blog就是用<code>VS code</code>写的，插件十分丰富，除了由于GUI界面的存在，可能在内存上稍高于<code>Vim</code>，但比起鬼畜的<code>Atom</code>来说，那是好到不知道哪里去了的存在）,<code>Atom</code>（Google推出的开源编辑器，同样因为开源的原因，插件十分丰富）,<code>Sublime Text</code>（前端engineer一定经历过的编辑器，插件丰富，性能极优）等等……</p>
+<p>好了，你现在肯定会问我，为啥我这次blog只介绍Vim呢？因为，Vim难学啊！这里有一张网上嘲讽几大编辑器的学习曲线～<br><img src="https://raw.githubusercontent.com/fuujiro/pictures/master/vim操作/主流編輯器學習曲線圖.jpg" alt="vim-line"></p>
+<h3 id="2-学习Vim能给你带来什么？"><a href="#2-学习Vim能给你带来什么？" class="headerlink" title="2. 学习Vim能给你带来什么？"></a>2. 学习Vim能给你带来什么？</h3><p>从图上我们能看出，vim（vi）的学习曲线入门是十分陡峭的，Emacs的略显鬼畜2333～！那，学习Vim对于我来说，到底有什么什么好处呢？我在刚刚学习Vim时，也是有抱着这个疑惑的，后来总是强迫自己去学+在网上了解Vim，我觉得学习对你可能会有这些好处：</p>
+<ul>
+<li><p>熟悉命令行工具：Vim是在终端（Terminal）上运行的编辑器，学习Vim无疑你会在命令行下进行频繁操作，而命令行工具对于程序员来说，是十分重要的！也许大部分同学的开发环境大部分还是Windows，使用命令行工具的机会很少！但是以后科研or工作，开发平台就不一定是Windows了，也不一定会有带图形界面的开发工具给你使用。比如：</p>
+<ul>
+<li>你科研跑TensorFlow，进行深度学习方面的科研，大概率会需要在linux上跑；做机器学习离不开Linux～我最近在做计算机视觉（Computer Vision）的研究，小方向现在做的是对机械臂进行视觉定位，然而这个机械臂的ROS操作工具，就必须在Linux下进行~～macOS&amp;Windows都没提供~~</li>
+<li>你是EE爱好者（robot开发方向的爱好者），而ROS (Robot Operating System, 机器人操作系统) 恰恰只提供给你Linux的开发工具（且只保证Ubuntu（Linux的一个发行版）能够完美兼容），你作为机器人方向开发者，无法避免命令行工具的使用</li>
+<li>除了科研界，工程界对于命令行工具的使用不要太多！各大互联网的大厂的每一个开发岗offer，无论你是c/c++/java/python/c#/前端/运维等，哪个岗位要求都会有这么一句“熟悉使用命令行操作工具”or“熟悉shell脚本语言编程”，可以说，使用命令行工具是一位合格的计算机专业大学生应该具有的。</li>
+</ul>
+</li>
+<li><p>Vim具有其他编辑器不具有的与生俱来的特殊功能，比如轻松运用SSH（SSH指：. Secure Shell（缩写：SSH），即“安全壳协议”，一项计算机上的安全协议）；Vim内存占用很低，对于开发配置要求极低，比起具有图形界面的VS code，Atom，Sublime来说，可以说能开机的电脑都能顺溜地跑Vim～！</p>
+</li>
+<li><p>最后一个：Vim能帮助乌干达的贫苦儿童，这是个梗2333～！不过，认真讲哦～你用Vim写代码，是在帮助世界上的其他小孩子呢！还有什么理由，不好好写代码233～！<br><img src="https://raw.githubusercontent.com/fuujiro/pictures/master/vim操作/4170551-f560a9916f58202d.jpg" alt="Uganda"></p>
+</li>
+</ul>
+<p>相信前面的大串理由，你一定拒绝不了Vim的诱惑，不如和我一起来学习Vim工具吧～啦啦啦～！</p>
+<h3 id="3-Vim介绍以及如何入门"><a href="#3-Vim介绍以及如何入门" class="headerlink" title="3. Vim介绍以及如何入门"></a>3. Vim介绍以及如何入门</h3><h4 id="3-1-Vim和Vi的关系"><a href="#3-1-Vim和Vi的关系" class="headerlink" title="3.1 Vim和Vi的关系"></a>3.1 Vim和Vi的关系</h4></div><a href="/2018/03/10/vim-蓝色星球迄今为止最强大的编辑器（持续更新/" class="read-more">...阅读全文</a></article></li><li class="post-list-item"><article class="post-block"><h2 class="post-title"><a href="/2018/02/14/使用Hexo框架-Apollo主题搭建博客/" class="post-title-link">使用Hexo框架+Apollo主题搭建博客</a></h2><div class="post-info">Feb 14, 2018</div><div class="post-content"><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>时间过得贼快啊！我一下子就要大二下学期了！想着自己以后大概率就是一名老实的程序员。按着这个程序猿们的习惯啊，一般都会有个自己的博客，也不论是追求技术还是跟风吧，我脑子一热呢，就准备搭一个自己的Blog。</p>
+<p>脑子热的时候是2月11号晚上，然后既然热了，那就行动呗。先google了一下个人博客的主流框架和搭建入门咯。最后还是放弃了Wordpress，选择了Hexo来搭建，原因是Hexo开源，主题选择丰富，emmmm就酱。关于为啥选择apollo主题呢，主要是有天瞎逛时，误入了<a href="https://blog.phoenixlzx.com" target="_blank" rel="noopener">phoenixlzx巨巨的blog</a>，他用的就是Apollo主题。我定睛一看，这就是我想要的<del>滑板鞋</del>主题！</p>
+<p><a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank" rel="noopener">Apollo</a>主题的<a href="https://github.com/pinggod" target="_blank" rel="noopener">开发者</a>据说是一位92年的小哥哥，开发Apollo的时候在美团前端任职，现在根据他的GitHub主页应该是在Alipay工作了。我选择Apollo主题的原因是因为它风格简约，我觉得浏览时加载体验比博客华丽的外观会重要很多，你想想等加载是很烦躁的一件事（嗯，至少来说我是这样…），何况Apollo还简约得好看一匹，果断Mark。如下图。</p>
+<p><img src="https://cloud.githubusercontent.com/assets/9530963/13026956/08e76eca-d277-11e5-8bfc-2e80cea20a0d.png" alt="hexo-apollo"></p>
+<p>嗯！真的很耐看！清新，简约，Nice！</p>
+<p>既然选择好了框架+主题，就进入正式阶段（以下一切安装代码，在OS X无问题，Windows可能会要稍作修改）。</p>
+<h3 id="1-安装Hexo"><a href="#1-安装Hexo" class="headerlink" title="1. 安装Hexo"></a>1. 安装Hexo</h3><p>因为Hexo是一款基于Node.js的静态博客框架，生成静态网页托管在GitHub。所以我们在安装Hexo前得先装上Node.js和git。</p>
+<h4 id="1-1-安装Node-js"><a href="#1-1-安装Node-js" class="headerlink" title="1.1 安装Node.js"></a>1.1 安装Node.js</h4></div><a href="/2018/02/14/使用Hexo框架-Apollo主题搭建博客/" class="read-more">...阅读全文</a></article></li><li class="post-list-item"><article class="post-block"><h2 class="post-title"><a href="/2018/02/14/Markdown简单语法入门/" class="post-title-link">Markdown简单语法入门</a></h2><div class="post-info">Feb 14, 2018</div><div class="post-content"><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><blockquote>
+<p>这是<strong>Cmd Markdown</strong> 的广告，我觉得写的不错，作为学习<code>markdown</code>语法的入门文档最好不过啦~！</p>
+</blockquote>
+<hr>
+<h3 id="原文档"><a href="#原文档" class="headerlink" title="原文档"></a>原文档</h3><p>我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，<strong>Cmd Markdown</strong> 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：</p>
+<blockquote>
+<ul>
+<li>整理知识，学习笔记</li>
+<li>发布日记，杂文，所见所想</li>
+<li>撰写发布技术文稿（代码支持）</li>
+<li>撰写发布学术论文（LaTeX 公式支持）</li>
+</ul>
+</blockquote>
+<p><img src="https://www.zybuluo.com/static/img/logo.png" alt="cmd-markdown-logo"></p>
+<p>除了您现在看到的这个 Cmd Markdown 在线版本，您还可以前往以下网址下载：</p>
+<h3 id="Windows-Mac-Linux-全平台客户端"><a href="#Windows-Mac-Linux-全平台客户端" class="headerlink" title="Windows/Mac/Linux 全平台客户端"></a><a href="https://www.zybuluo.com/cmd/" target="_blank" rel="noopener">Windows/Mac/Linux 全平台客户端</a></h3><blockquote>
+<p>请保留此份 Cmd Markdown 的欢迎稿兼使用说明，如需撰写新稿件，点击顶部工具栏右侧的 <i class="icon-file"></i> <strong>新文稿</strong> 或者使用快捷键 <code>Ctrl+Alt+N</code>。</p>
+</blockquote></div><a href="/2018/02/14/Markdown简单语法入门/" class="read-more">...阅读全文</a></article></li></ul></main><footer><div class="paginator"></div><div class="copyright"><p>© 2017 - 2018 <a href="https://blog.fuujiro.com">fuujiro</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script></body></html>

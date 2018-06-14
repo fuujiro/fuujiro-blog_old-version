@@ -1,0 +1,24 @@
+# MyBlog - fuujiro's island
+
+### 1. Main page
+
+The "about me" page of my blog.
+
+![aboutme](https://raw.githubusercontent.com/fuujiro/pictures/master/about-me.png)
+
+### 2. Building process
+
+I recorded the process of building this blog.
+[使用Hexo框架+Apollo主题搭建博客](https://blog.fuujiro.com/2018/02/14/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6-Apollo%E4%B8%BB%E9%A2%98%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/)
+
+### 3. purpose
+
+In my blog, I will record some funnuy and shinning time or some fuc*king problem with its solution. For example, traveling and so on.
+
+### 4. Follow me!
+
+I'm a freshman in programming and computer science. But I love it and it worths wasting time.[Come on! Follow me!](https://github.com/fuujiro)
+
+### 5. Thanks~!
+
+My blog is powered by [Hexo](https://github.com/hexojs/hexo) and [hexo-theme-apollo](https://github.com/pinggod/hexo-theme-apollo).

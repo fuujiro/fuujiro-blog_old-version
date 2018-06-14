@@ -1,0 +1,705 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 数据结构-Review！ · fuujiro's island</title><meta name="description" content="数据结构-Review！ - fuujiro"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="https://blog.fuujiro.com/atom.xml" title="fuujiro's island"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/activity/" target="_self" class="nav-list-link">ACTIVITY</a></li><li class="nav-list-item"><a href="https://github.com/fuujiro" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">数据结构-Review！</h1><div class="post-info">Apr 29, 2018</div><div class="post-content"><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>复习一下课没好好上过的数据结构，唉！要期末考试噜！数据结构和算法要是想成为<code>Master</code>，好难欸！！~</p>
+<blockquote>
+<p>Q：如何高效率使用这篇总结？<br>A：查看写的所有数据结构的定义，然后戳所有带<code>-&gt; recommend！</code>这个标识的链接，嗯！速度就是这样~认真的话，建议复写所有数据结构的实现代码啦！</p>
+</blockquote>
+<hr>
+<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><ol>
+<li><p><a href="#1"><strong>线性表</strong></a><br> 1.1 <a href="#1.1">顺序表示和实现</a><br> 1.2 <a href="#1.2">链式表示和实现</a><br> 1.2.1 <a href="#1.2.1"><code>线性链表</code></a><br> 1.2.2 <a href="#1.2.2"><code>循环链表</code></a><br> 1.2.3 <a href="#1.2.3"><code>双向链表</code></a></p>
+</li>
+<li><p><a href="#2"><strong>栈和队列</strong></a><br> 2.1 <a href="#2.1">栈</a><br> 2.2 <a href="#2.2">队列</a></p>
+</li>
+<li><p><a href="#3"><strong>数组</strong></a><br> 3.1 <a href="#3.1">数组的顺序表示和实现</a><br> 3.2 <a href="#3.2">矩阵的压缩存储</a><br> 3.2.1 <a href="#3.2.1"><code>稀疏矩阵</code></a></p>
+</li>
+<li><p><a href="#4"><strong>树</strong></a><br> 4.1 <a href="#4.1">二叉树</a><br> 4.2 <a href="#4.2">遍历二叉树</a><br> 4.2.1 <a href="#4.2.1"><code>三大遍历的递归实现</code></a><br> 4.2.2 <a href="#4.2.2"><code>三大遍历的非递归实现</code></a><br> 4.2.3 <a href="#4.2.3"><code>层次遍历</code></a><br> 4.3 <a href="#4.3">树和森林</a><br> 4.3.1 <a href="#4.3.1"><code>数和森林的存储结构</code></a><br> 4.3.2 <a href="#4.3.2"><code>数和森林的遍历</code></a><br> 4.4 <a href="4.4">赫夫曼树</a></p>
+</li>
+<li><p><a href="#5"><strong>图</strong></a><br> 5.1 <a href="#5.1">图的定义</a><br> 5.2 <a href="#5.2">图的存储结构</a><br> 5.2.1 <a href="#5.2.1"><code>邻接表</code></a><br> 5.2.2 <a href="#5.2.2"><code>十字链表</code></a><br> 5.3 <a href="#5.3">图的遍历</a><br> 5.3.1 <a href="#5.3.1"><code>深度优先搜索</code></a><br> 5.3.2 <a href="#5.3.2"><code>广度优先搜索</code></a><br> 5.4 <a href="#5.4">图的连通性</a><br> 5.4.1 <a href="#5.4.1"><code>最小生成树</code></a><br> 5.5 <a href="#5.5">拓扑排序</a><br> 5.6 <a href="#5.6">最短路径</a><br> 5.6.1 <a href="#5.6.1"><code>Dijkstra算法</code></a></p>
+</li>
+<li><p><a href="#6"><strong>查找</strong></a><br> 6.1 <a href="#6.1">静态查找</a><br> 6.1.1 <a href="#6.1.1"><code>顺序查找</code></a><br> 6.1.2 <a href="#6.1.2"><code>二分查找</code></a><br> 6.2 <a href="#6.2">动态查找</a><br> 6.2.1 <a href="#6.2.1"><code>二叉排序树</code></a><br> 6.3 <a href="#6.3">哈希表</a></p>
+</li>
+<li><p><a href="#7"><strong>内部排序</strong></a><br> 7.1 <a href="#7.1">插入排序</a><br> 7.1.1 <a href="#7.1.1"><code>直接插入排序</code></a><br> 7.1.2 <a href="#7.1.2"><code>折半插入排序</code></a><br> 7.1.3 <a href="#7.1.3"><code>希尔排序</code></a><br> 7.2 <a href="#7.2">交换排序</a><br> 7.2.1 <a href="#7.2.1"><code>冒泡排序</code></a><br> 7.2.2 <a href="#7.2.2"><code>快速排序</code></a><br> 7.3 <a href="#7.3">选择排序</a><br> 7.3.1 <a href="#7.3.1"><code>简单选择排序</code></a><br> 7.3.2 <a href="#7.3.2"><code>堆排序</code></a><br> 7.4 <a href="#7.4">归并排序</a></p>
+</li>
+</ol>
+<hr>
+<h3 id="1"> 1. 线性表 </h3>
+
+<blockquote>
+<p>线性表<code>Linear_list</code>是最常用且最简单的一种数据结构。简言之，一个线性表是n个数据元素的有限序列。</p>
+</blockquote>
+<h4 id="1.1"> 1.1 顺序表示和实现 </h4>
+
+<blockquote>
+<p>线性表的顺序表示<code>Sequential List</code>指的是用一组地址连续的储存单元依次储存线性表的数据元素。<code>顺序储存结构</code>是一种随机存取的储存结构。通常用<code>数组</code>来描述顺序储存结构。</p>
+</blockquote>
+<p>C语言用动态分配的一维数组，来描述线性表：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"> <span class="meta">#<span class="meta-keyword">define</span> LIST_INIT_SIZE 100 <span class="comment">//线性表储存空间的初始分配量</span></span></span><br><span class="line"> <span class="meta">#<span class="meta-keyword">define</span> LISTINCREMENT 10 <span class="comment">//线性表的分配量</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">int</span> ElemType;</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> &#123;</span></span><br><span class="line">    ElemType *elem;  <span class="comment">// 储存空间的基地址</span></span><br><span class="line">    <span class="keyword">int</span> length;  <span class="comment">//当前线性表的长度</span></span><br><span class="line">    <span class="keyword">int</span> listsize; <span class="comment">//当前分配的储存容量</span></span><br><span class="line">&#125;SqList;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>更多有关线性表的知识，请戳：</p>
+<ul>
+<li><a href="https://blog.csdn.net/bruthyu/article/details/52645510" target="_blank" rel="noopener">线性表与13个基本操作的实现</a></li>
+</ul>
+</blockquote>
+<h4 id="1.2"> 1.2 链式表示和实现 </h4>
+
+<blockquote>
+<p>链式储存结构<code>Linked List</code>与顺序储存结构<code>Sequential List</code>的不同：顺序储存结构的特点是逻辑关系上两个相邻元素在物理位置上也相同，这样随机存取任意元素很快很直观，缺点是需要移动大量其他元素。而链式结构，它不要求逻辑上相邻的元素在物理位置上相邻，因此它存取元素不需要移动其他元素，但是对于查找元素有心无力。</p>
+</blockquote>
+<h5 id="1.2.1"> 1.2.1 线性链表 </h5>
+
+<blockquote>
+<p>可以理解为单向链表<code>Singly Linked List</code>，单向链表是非随机存取结构。</p>
+</blockquote>
+<p>一些常用的方法：</p>
+<ul>
+<li><p>添加元素（s是指向待添加节点的指针）</p>
+  <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s-&gt;next = p-&gt;next;</span><br><span class="line">p-&gt;next = s;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除元素（a,b,c是链表中相连的3个结点，b是待删除的结点，现在p是指向a结点的指针）</p>
+  <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">p-&gt;next = p-&gt;next-&gt;next;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>用结构体实现链表结点：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//线性表的单链表储存结构</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Node</span> &#123;</span></span><br><span class="line">    <span class="keyword">int</span> data; <span class="comment">//数据域</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span> *<span class="title">next</span>;</span> <span class="comment">//指针域</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>更多链表知识，请戳：</p>
+<ul>
+<li><a href="https://blog.csdn.net/21aspnet/article/details/160019" target="_blank" rel="noopener">C语言单向链表的实现</a></li>
+<li><a href="https://blog.csdn.net/lan74__/article/details/53819849" target="_blank" rel="noopener">链表的基本使用一（构建链表）</a></li>
+<li><a href="https://blog.csdn.net/juanqinyang/article/details/51351619" target="_blank" rel="noopener">数据结构：链表(linked-list)</a></li>
+</ul>
+</blockquote>
+<h5 id="1.2.2"> 1.2.2 循环链表 </h5>
+
+<ol>
+<li><p>循环单链表特点：</p>
+<p> 链表中最后一个结点的指针域不再是结束标志，而是指向整个链表的第一个结点，从而使链表形成一个环。和单链表相同，循环单链表也有带头结点和不带头结点两种。带头结点的循环单链表实现插入和删除操作较为方便，且更加适用。</p>
+</li>
+<li><p>单链表与循环单链表比较：</p>
+<p> 循环单链表可以从尾到头，而单链表不能从尾到头。因此处理的数据序列具有环形结构特点时，适合采用循环单链表。</p>
+</li>
+<li><p>带头结点的循环单链表和带头结点的单链表比较：</p>
+<p> ① 在初始化函数中，把语句<code>head-&gt;next=NULL</code>改为<code>head-&gt;next = head</code>，即形成一个环<br> ② 在其他函数中，循环判断条件<code>p-&gt;next!=NULL</code>和<code>p-&gt;next-&gt;next!=NULL</code>中的NULL改成头指针<code>head</code>。</p>
+</li>
+</ol>
+<h5 id="1.2.3"> 1.2.3 双向链表 </h5>
+
+<ol>
+<li><p>双向链表特点：<br> 每个节点除了有后继指针域还有一个前驱指针域。</p>
+</li>
+<li><p>双向链表的分类：<br> 双向链表有：带头结点和不带头结点的双向链表（但是带头结点的双向链表更为常用）。也有循环和非循环之分，循环结构的双向链表更为常用。因此下面讨论的是带头结点的循环双链表。</p>
+</li>
+<li><p>双向循环链表结点的结构体定义</p>
+ <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//线性表的双向链表储存结构</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">DuLNode</span> &#123;</span></span><br><span class="line">    Elemtype data; <span class="comment">//数据域</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">DuLNode</span> *<span class="title">prior</span>;</span> <span class="comment">//前驱结点</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">DuLNode</span> *<span class="title">next</span>;</span>  <span class="comment">//后继结点</span></span><br><span class="line">&#125;DuLNode， *DuLinklist;</span><br></pre></td></tr></table></figure>
+<p> <strong>备注</strong>：data域、next域、prior域。其中data域是数据域，next域为指向后继结点的指针域，prior域为指向前驱结点的指针域。</p>
+</li>
+<li><p>双向链表的优点：<br> 在单链中查找当前结点的后继结点并不困难，可以通过当前结点的next指针进行，但要查找当前结点的前驱结点，就要从头指针head开始重新进行。对于一个要频繁进行当前结点的后继结点和前驱结点的应用来说，使用双向链表很有效。</p>
+</li>
+<li><p>双向循环链表的实现<br> 在双向链表中，有如下指针关系：设指针p指向双向循环链表中的第i个位置，则<code>p-&gt;next</code>指向i+1个结点。<code>p-&gt;next-&gt;prior</code>仍指向第i个结点，即<code>p-&gt;next-&gt;prior==p</code>;同样<code>p-&gt;prior</code>指向第i-1个结点，<code>p-&gt;prior-&gt;next</code>仍指向第i个结点，即<code>p-&gt;prior-&gt;next==p</code>;双向循环链表关系算法可以方便算法设计。</p>
+</li>
+</ol>
+<blockquote>
+<p>更多循环链表和双向链表的知识，请戳：</p>
+<ul>
+<li><a href="https://blog.csdn.net/xiaofei__/article/details/50984255" target="_blank" rel="noopener">数据结构——循环单链表和双向链表</a></li>
+<li><a href="http://www.cnblogs.com/hughdong/p/6785391.html" target="_blank" rel="noopener">数据结构 | 双向链表简单实现及图示</a> -&gt; <em>recommend</em>！</li>
+</ul>
+</blockquote>
+<h3 id="2"> 2. 栈和队列 </h3>
+
+<p>从数据结构上看，栈和队列也是线性表。不过他们是操作受限的线性表，因此，称它们为限定性的数据结构。</p>
+<h4 id="2.1"> 2.1 栈 </h4>
+
+<p>栈<code>stack</code>是限定仅在表尾进行插入和删除的线性表。对于栈，表尾称为<code>栈顶</code>，相应地，表头称为<code>栈底</code>。不含元素的空表称为<code>空栈</code>。栈是一种后进先出（last in first out, LIFO）结构。</p>
+<p>栈有两种储存方式，顺序栈和链式栈。</p>
+<p>顺序栈的定义：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">stack</span> &#123;</span></span><br><span class="line">    SElemType *base;</span><br><span class="line">    SElemType *top;</span><br><span class="line">    <span class="keyword">int</span> stacksize;</span><br><span class="line">&#125;SqStack;</span><br></pre></td></tr></table></figure>
+<p><strong>备注</strong>：<code>stacksize</code>指当前可使用的最大容量，<code>base</code>表示栈底指针，<code>base</code>为NULL时，表明栈结构不存在，其初值指向栈底，即<code>top = base</code>可作为栈空的标记。插入元素，top+1；删除元素，top-1。</p>
+<blockquote>
+<p>更多栈的知识，请戳：</p>
+<ul>
+<li><a href="https://www.cnblogs.com/racaljk/p/7822309.html" target="_blank" rel="noopener">[数据结构]C语言栈的实现</a></li>
+<li><a href="https://www.cnblogs.com/QG-whz/p/5170418.html" target="_blank" rel="noopener">数据结构图文解析之：栈的简介及C++模板实现</a> -&gt; <em>recommend</em>！</li>
+</ul>
+</blockquote>
+<h4 id="2.2"> 2.2 队列 </h4>
+
+<p>和栈相反，队列<code>quene</code>是一种先进先出（first in first out, FIFO）的线性表，它只允许在表的一端插入，另一端删除。在队列中，允许插入的一端叫做队尾<code>rear</code>，允许删除的一端叫做队头<code>front</code>。</p>
+<p>队列也有两种储存方式，顺序队列和链队列。</p>
+<p>链队列的实现：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">QNode</span> &#123;</span></span><br><span class="line">    QElemType data;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">QNode</span> *<span class="title">next</span>;</span></span><br><span class="line">&#125;QNode, *QuenePtr;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">LinkQuene</span> &#123;</span></span><br><span class="line">    QuenePtr front; <span class="comment">//队头指针</span></span><br><span class="line">    QuenePtr rear; <span class="comment">//队尾指针</span></span><br><span class="line">&#125;LinkQuene;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>更多队列知识，请戳：</p>
+<ul>
+<li><a href="https://blog.csdn.net/juanqinyang/article/details/51354293" target="_blank" rel="noopener">数据结构-队列(queue)</a> -&gt; <em>recommend</em>！</li>
+</ul>
+</blockquote>
+<h3 id="3"> 3. 数组 </h3>
+
+<p>数组和广义表可以看作是线性表的扩展，也算是一种数据结构。</p>
+<h4 id="3.1"> 3.1 数组的顺序表示和实现 </h4>
+
+<p>由于数组一般不做插入或删除操作，因此采用顺序储存结构表示数组是最吼滴！</p>
+<blockquote>
+<p>假设每个数据元素占$L$个存储单元，则二维数组$A$中任一元素$aij$的存储位置可由下式确定：$LOC(i, j) = LOC(0, 0) + (b_2*i + j)L$</p>
+</blockquote>
+<p>数组的顺序存储的表示：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"> <span class="meta">#<span class="meta-keyword">define</span> MAX_ARRAY_DIM 8</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">array</span> &#123;</span></span><br><span class="line">    ElemType *base;</span><br><span class="line">    <span class="keyword">int</span> dim;</span><br><span class="line">    <span class="keyword">int</span> *bounds;</span><br><span class="line">    <span class="keyword">int</span> *constants;</span><br><span class="line">&#125;Array;</span><br></pre></td></tr></table></figure>
+<h4 id="3.2"> 3.2 矩阵的压缩存储 </h4>
+
+<p>压缩存储指的是为多个值相同的元只分配一个存储单元；对零元不分配空间。</p>
+<blockquote>
+<p>更多压缩存储的知识，请戳：</p>
+<ul>
+<li><a href="https://www.cnblogs.com/zhang01010/p/7749339.html" target="_blank" rel="noopener">对称矩阵的压缩</a></li>
+</ul>
+</blockquote>
+<h5 id="3.2.1"> 3.2.1 稀疏矩阵 </h5>
+
+<blockquote>
+<p>对于那些零元素数目远远多于非零元素数目，并且非零元素的分布没有规律的矩阵称为稀疏矩阵（sparse）。</p>
+</blockquote>
+<ul>
+<li>由于非零元素分布没有任何规律，所以在进行压缩存储的时侯需要存储非零元素值的同时还要存储非零元素在矩阵中的位置，即非零元素所在的行号和列号，也就是在存储某个元素比如$aij$的值的同时，还需要存储该元素所在的行号$i$和它的列号$j$，这样就构成了一个三元组$(i,j,aij)$的线性表。</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> <span class="meta">#<span class="meta-keyword">define</span> MAXSIZE 12500</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">triple</span> &#123;</span></span><br><span class="line">    <span class="keyword">int</span> i, j; <span class="comment">// 该非零元的行下标和列下标</span></span><br><span class="line">    ElemType e;</span><br><span class="line">&#125;Triple;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">tsmatrix</span> &#123;</span></span><br><span class="line">    Triple data[MAXSIZE + <span class="number">1</span>]; <span class="comment">//非零元三元组</span></span><br><span class="line">    <span class="keyword">int</span> mu, nu, tu; <span class="comment">//行数，列数，非零元个数</span></span><br><span class="line">&#125;TSMatrix;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>更多稀疏矩阵的知识，请戳：</p>
+<ul>
+<li><a href="https://blog.csdn.net/sunhuaqiang1/article/details/51296803" target="_blank" rel="noopener">稀疏矩阵</a></li>
+</ul>
+</blockquote>
+<h3 id="4"> 4. 树 </h3>
+
+<blockquote>
+<p>树状图是一种数据结构，它是由$n$（$n&gt;=1$）个有限节点组成一个具有层次关系的集合。把它叫做“树”是因为它看起来像一棵倒挂的树，也就是说它是根朝上，而叶朝下的。它具有以下的特点：</p>
+<ul>
+<li>每个节点有零个或多个子节点</li>
+<li>没有父节点的节点称为根节点</li>
+<li>每一个非根节点有且只有一个父节点（除了根节点外，每个子节点可以分为多个不相交的子树）</li>
+</ul>
+</blockquote>
+<h4 id="4.1"> 4.1 二叉树 </h4>
+
+<blockquote>
+<p>二叉树<code>Binary Tree</code>是另一种树型结构，它的特点是每个结点至多有$2$棵子树（即二叉树中不存在度大于$2$的结点），并且，二叉树的子树有左右之分，其次序不能任意颠倒。</p>
+</blockquote>
+<p>二叉树的性质：</p>
+<ul>
+<li>在二叉树的第$i$层上至多有$2^(i-1)$个结点（$i&gt;=1$）。</li>
+<li>深度为$k$的二叉树至多有$2^k - 1$个结点（$K&gt;=1$）。</li>
+<li>对任何一棵二叉树$T$，如果其终端结点数为$n_0$，度为$2$的结点树为$n_2$，则$n_0=n_2+1$。</li>
+<li>具有$n$个结点的完全二叉树的深度为|$\log_2 n$| + 1。（|$\log_2 n$|表示不大于$\log_2 n$的最大整数）</li>
+<li>如果对一棵有$n$个结点的完全二叉树（其深度为|$\log_2 n$| + 1）的结点按层序编号（从第$1$层到第|$\log_2 n$| + $1$层，每层从左到右），则对任一结点$i$（$1 &lt;= i &lt;= n$），有：<ol>
+<li>如果$i = 1$，则结点$i$是二叉树的根，无双亲；如果$i &gt; 1$，则其双亲<code>PARENT(i)</code>是结点|$i/2$|。</li>
+<li>如果$2i &gt; n$，则结点$i$无左孩子（即结点i为叶子结点）；否则其左孩子<code>LCHILD(i)</code>是结点$2$。</li>
+<li>如果$2i + 1 &gt; n$，则结点$i$无右孩子；否则其右孩子<code>RCHILD(i)</code>是结点$2i+1$。</li>
+</ol>
+</li>
+</ul>
+<p>二叉树的顺序储存结构（仅适用于完全二叉树）：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="meta-keyword">define</span> MAX_TREE_SIZE 100 <span class="comment">// 二叉树的最大结点树</span></span></span><br><span class="line"><span class="keyword">typedef</span> TElemType SqBiTree[MAX_TREE_SIZE]; <span class="comment">// 0号单元存储根节点</span></span><br><span class="line">SqBiTree bt;</span><br></pre></td></tr></table></figure>
+<p>二叉树的链式存储结构：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">BiTree</span> &#123;</span></span><br><span class="line">    TElemType data; <span class="comment">// 数据域</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">BiTree</span> *<span class="title">lchild</span>, *<span class="title">rchild</span>;</span> <span class="comment">// 左右孩子指针</span></span><br><span class="line">&#125;BiTree, *BiTree;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>更多二叉树知识，请戳：</p>
+<ul>
+<li><a href="https://www.cnblogs.com/yeqluofwupheng/p/7428935.html" target="_blank" rel="noopener">二叉树总结(一)概念和性质</a></li>
+<li><a href="https://blog.csdn.net/wireless_com/article/details/70596155" target="_blank" rel="noopener">markdown中的数学公式简要</a></li>
+</ul>
+</blockquote>
+<h4 id="4.2"> 4.2 遍历二叉树 </h4>
+
+<blockquote>
+<p>二叉树是一种非线性结构，是由3个基本单元组成：根节点，左子树和右子树。规定先左后右，有3种基本情况，先序遍历，中序遍历和后序遍历。</p>
+</blockquote>
+<h5 id="4.2.1"> 4.2.1 三大遍历的递归实现 </h5>
+
+<ul>
+<li><p>先序遍历（根-左-右）</p>
+  <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">preOrder1</span><span class="params">(BinaryTreeNode* pRoot)</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="keyword">if</span>(pRoot==<span class="literal">NULL</span>)  </span><br><span class="line">        <span class="keyword">return</span>;  </span><br><span class="line"></span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;pRoot-&gt;value;  </span><br><span class="line">    <span class="keyword">if</span>(pRoot-&gt;left!=<span class="literal">NULL</span>)  </span><br><span class="line">        preOrder1(pRoot-&gt;left);  </span><br><span class="line">    <span class="keyword">if</span>(pRoot-&gt;right!=<span class="literal">NULL</span>)  </span><br><span class="line">        preOrder1(pRoot-&gt;right);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>中序遍历（左-根-右）</p>
+  <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">inOrder1</span><span class="params">(BinaryTreeNode* pRoot)</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="keyword">if</span>(pRoot==<span class="literal">NULL</span>)  </span><br><span class="line">        <span class="keyword">return</span>;  </span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span>(pRoot-&gt;left!=<span class="literal">NULL</span>)  </span><br><span class="line">        inOrder1(pRoot-&gt;left);  </span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;pRoot-&gt;value;  </span><br><span class="line">    <span class="keyword">if</span>(pRoot-&gt;right!=<span class="literal">NULL</span>)  </span><br><span class="line">        inOrder1(pRoot-&gt;right);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>后序遍历（左-右-根）</p>
+  <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">postOrder1</span><span class="params">(BinaryTreeNode* pRoot)</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="keyword">if</span>(pRoot==<span class="literal">NULL</span>)  </span><br><span class="line">        <span class="keyword">return</span>;  </span><br><span class="line">    postOrder1(pRoot-&gt;left);  </span><br><span class="line">    postOrder1(pRoot-&gt;right);  </span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;pRoot-&gt;value&lt;&lt;<span class="string">" "</span>;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h5 id="4.2.2"> 4.2.2 三大遍历的非遍历实现 </h5>
+
+<ul>
+<li><p>先序遍历（根-左-右）</p>
+  <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">preOrder2</span><span class="params">(BinaryTreeNode* pRoot)</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="built_in">stack</span>&lt;BinaryTreeNode*&gt; s;  </span><br><span class="line">    BinaryTreeNode *p=pRoot;  </span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(pRoot==<span class="literal">NULL</span>)  </span><br><span class="line">        <span class="keyword">return</span>;  </span><br><span class="line">    <span class="keyword">while</span>(p!=<span class="literal">NULL</span>||!s.empty())  </span><br><span class="line">    &#123;  </span><br><span class="line">        <span class="keyword">while</span>(p!=<span class="literal">NULL</span>)  </span><br><span class="line">        &#123;  </span><br><span class="line">            <span class="built_in">cout</span>&lt;&lt;p-&gt;value&lt;&lt;<span class="string">" "</span>;  </span><br><span class="line">            s.push(p);  </span><br><span class="line">            p=p-&gt;left;  </span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="keyword">if</span>(!s.empty())  </span><br><span class="line">        &#123;  </span><br><span class="line">            p=s.top();  </span><br><span class="line">            s.pop();  </span><br><span class="line">            p=p-&gt;right;  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>中序遍历（左-根-右）</p>
+  <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">inOrder</span><span class="params">(BinaryTreeNode* pRoot)</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="built_in">stack</span>&lt;BinaryTreeNode*&gt; s;  </span><br><span class="line">    BinaryTreeNode *p=pRoot;  </span><br><span class="line">    <span class="keyword">while</span>(p!=<span class="literal">NULL</span>||!s.empty())  </span><br><span class="line">    &#123;  </span><br><span class="line">        <span class="keyword">while</span>(p!=<span class="literal">NULL</span>)  </span><br><span class="line">        &#123;  </span><br><span class="line">            s.push(p);  </span><br><span class="line">            p=p-&gt;left;  </span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="keyword">if</span>(!s.empty())  </span><br><span class="line">        &#123;  </span><br><span class="line">            p=s.top();  </span><br><span class="line">            <span class="built_in">cout</span>&lt;&lt;p-&gt;value;  </span><br><span class="line">            s.pop();  </span><br><span class="line">            p=p-&gt;right;  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>后序遍历（左-右-根）</p>
+  <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">postOrder</span><span class="params">(BinaryTreeNode* pRoot)</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="built_in">stack</span>&lt;BinaryTreeNode*&gt; s;  </span><br><span class="line">    BinaryTreeNode *cur;  </span><br><span class="line">    BinaryTreeNode *pre=<span class="literal">NULL</span>;  </span><br><span class="line">    s.push(pRoot);<span class="comment">//根结点入栈  </span></span><br><span class="line">    <span class="keyword">while</span>(!s.empty())  </span><br><span class="line">    &#123;  </span><br><span class="line">        cur=s.top();  </span><br><span class="line">        <span class="keyword">if</span>((cur-&gt;left==<span class="literal">NULL</span>&amp;&amp;cur-&gt;right==<span class="literal">NULL</span>)||(pre!=<span class="literal">NULL</span>&amp;&amp;(pre==cur-&gt;left||pre==cur-&gt;right)))  </span><br><span class="line">        &#123;  </span><br><span class="line">            <span class="comment">//左孩子和右孩子同时为空，或者当前结点的左孩子或右孩子已经遍历过了  </span></span><br><span class="line">            <span class="built_in">cout</span>&lt;&lt;cur-&gt;value&lt;&lt;<span class="string">" "</span>;  </span><br><span class="line">            s.pop();  </span><br><span class="line">            pre=cur;  </span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="keyword">else</span>  </span><br><span class="line">        &#123;  </span><br><span class="line">            <span class="keyword">if</span>(cur-&gt;right!=<span class="literal">NULL</span>)  </span><br><span class="line">                s.push(cur-&gt;right);  </span><br><span class="line">            <span class="keyword">if</span>(cur-&gt;left!=<span class="literal">NULL</span>)  </span><br><span class="line">                s.push(cur-&gt;left);  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h5 id="4.2.3"> 4.2.3 层次遍历 </h5>
+
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">PrintFromTopToBottom</span><span class="params">(BinaryTreeNode* pRoot)</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="keyword">if</span>(pRoot == <span class="literal">NULL</span>)  </span><br><span class="line">        <span class="keyword">return</span>;  </span><br><span class="line">  </span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">deque</span>&lt;BinaryTreeNode *&gt; dequeTreeNode;  </span><br><span class="line">  </span><br><span class="line">    dequeTreeNode.push_back(pRoot);  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">while</span>(dequeTreeNode.size())  </span><br><span class="line">    &#123;  </span><br><span class="line">        BinaryTreeNode *pNode = dequeTreeNode.front();  </span><br><span class="line">        dequeTreeNode.pop_front();  </span><br><span class="line">  </span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d "</span>, pNode-&gt;m_nValue);  </span><br><span class="line">  </span><br><span class="line">        <span class="keyword">if</span>(pNode-&gt;m_pLeft)  </span><br><span class="line">            dequeTreeNode.push_back(pNode-&gt;m_pLeft);  </span><br><span class="line">  </span><br><span class="line">        <span class="keyword">if</span>(pNode-&gt;m_pRight)  </span><br><span class="line">            dequeTreeNode.push_back(pNode-&gt;m_pRight);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>更多二叉树的知识，请戳：</p>
+<ul>
+<li><a href="https://blog.csdn.net/xiaominkong123/article/details/51567437" target="_blank" rel="noopener">二叉树的四种遍历的递归和非递归的实现</a> -&gt; <em>recommend</em>！</li>
+<li><a href="https://blog.csdn.net/lieacui/article/details/52453292" target="_blank" rel="noopener">二叉树三种遍历方式的递归和循环实现</a></li>
+</ul>
+</blockquote>
+<h4 id="4.3"> 4.3 树和森林 </h4>
+
+<h5 id="4.3.1"> 4.3.1 树的存储结构 </h5>
+
+<blockquote>
+<p>双亲表示法</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> <span class="meta">#<span class="meta-keyword">define</span> MAX_TREE_SIZE 100</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">PTNode</span> &#123;</span> <span class="comment">// 结点结构</span></span><br><span class="line">    TElemType data; <span class="comment">// 数据域</span></span><br><span class="line">    <span class="keyword">int</span> parent; <span class="comment">// 双亲位置域</span></span><br><span class="line">&#125;PTNode;</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> &#123;</span> <span class="comment">// 树结构</span></span><br><span class="line">    PTNode nodes[MAX_TREE_SIZE]; </span><br><span class="line">    <span class="keyword">int</span> r, n; <span class="comment">// 根的位置和结点数</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>缺点：求结点的孩子时需要遍历整个结构。</p>
+<blockquote>
+<p> 孩子表示法</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">CTNode</span> &#123;</span> <span class="comment">// 孩子结点</span></span><br><span class="line">    <span class="keyword">int</span> child; </span><br><span class="line">    sturct CTNode *next;</span><br><span class="line">&#125;*ChildPtr;</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> &#123;</span></span><br><span class="line">    TElemType data;</span><br><span class="line">    ChildPtr firstchild; <span class="comment">// 孩子链表头结点</span></span><br><span class="line">&#125;CTBox;</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> &#123;</span></span><br><span class="line">    CTBox nodes[MAX_TREE_SIZE];</span><br><span class="line">    <span class="keyword">int</span> n, r; <span class="comment">// 结点数的根的位置</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>孩子兄弟表示法（可以把复杂的树变成二叉树）</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">CSNode</span> &#123;</span></span><br><span class="line">    ElemType data;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">CSNode</span> *<span class="title">firstchild</span>, *<span class="title">nextsibling</span>;</span> <span class="comment">// 第一个孩子结点和下一个兄弟结点</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="4.3.2"> 4.3.2 树和森林的遍历 </h5>
+
+<p>当二叉链表作为树的储存结构时，树的<strong>先根遍历</strong>和<strong>后根遍历</strong>类似于二叉树的<strong>先序遍历</strong>和<strong>中序遍历</strong>实现。</p>
+<p>森林一般只说<strong>先序遍历</strong>和<strong>中序遍历</strong>，和二叉树的<strong>先序遍历</strong>和<strong>中序遍历</strong>相同。</p>
+<blockquote>
+<p>更多树和森林的知识，请戳：</p>
+<ul>
+<li><a href="https://blog.csdn.net/qq_36016407/article/details/55272598" target="_blank" rel="noopener">树的存储结构和代码实现</a></li>
+<li><a href="https://blog.csdn.net/wangzi11322/article/details/45391157" target="_blank" rel="noopener">树和森林的遍历</a></li>
+</ul>
+</blockquote>
+<h4 id="4.4"> 4.4 赫夫曼树 </h4>
+
+<blockquote>
+<p>赫夫曼树<code>Huffman</code>，又称最优二叉树，是一类带权路径长度最短的树。树的路径长度为树中所有叶子结点的带权路径长度之和。通常记作$WPL=\sum_{k=0}^{n}\omega_k\iota_k$ 。</p>
+</blockquote>
+<p>假设有n个权值，构造一棵有n个叶子结点的二叉树，每个叶子结点带权为$\omega_i$，则其中带权路径长度$WPL$最小的二叉树称为<strong>赫夫曼树</strong>。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> &#123;</span></span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">int</span> weight; <span class="comment">// 权重</span></span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">int</span> parent, lchild, rchild; </span><br><span class="line">&#125;HTNode, *HuffmanTree; <span class="comment">// 动态分配数组存储赫夫曼树</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>更多赫夫曼树的知识，请戳：</p>
+<ul>
+<li><a href="https://blog.csdn.net/wo16fafafa/article/details/52420007" target="_blank" rel="noopener">哈夫曼树</a></li>
+<li><a href="https://www.cnblogs.com/nathaneko/p/6497982.html" target="_blank" rel="noopener">基础数据结构-二叉树-赫夫曼树的解码</a></li>
+</ul>
+</blockquote>
+<h3 id="5"> 5. 图 </h3>
+
+<blockquote>
+<p><strong>图</strong><code>Graph</code>是一种较线性表和树更为复杂的数据结构。在<strong>线性表</strong>中，数据元素之间仅有线性关系，每个数据元素只有一个直接前驱和一个直接后继；在<strong>树</strong>形结构中，数据元素之间有着明显的层次关系，并且每一层上的数据元素可能和下一层的多个元素（即孩子结点）相关，但只和上一层的一个元素（即双亲结点）相关。而在<strong>图</strong>形结构中，结点之间的关系是任意的。</p>
+</blockquote>
+<h4 id="5.1"> 5.1 图的定义 </h4>
+
+<p>在图中，数据元素称为<strong>顶点</strong>，$V$是顶点的有穷非空集合；$VR$是两个顶点之间的关系集合。</p>
+<ul>
+<li>若$&lt;v,w&gt;\epsilon VR$,则$&lt;v,w&gt;$表示从$v$到$w$的一条<strong>弧</strong><code>Arc</code>，且称$v$为<strong>弧尾</strong><code>Tail</code>or<strong>初始点</strong>，$w$为<strong>弧头</strong><code>Head</code>or<strong>终端点</strong>。此时的图称为<strong>有向图</strong><code>Digraph</code>。</li>
+</ul>
+<p>$$G_1 = (V_1,{A_1})$$</p>
+<ul>
+<li>若$&lt;v,w&gt;\epsilon VR$，必有$&lt;w,v&gt;\epsilon VR$，即$VR$是对称的，则以无序对$(v,w)$代替这两个有序对，表示$v$和$w$之间的一条<strong>边</strong><code>Edge</code>，此时的图称为<strong>无向图</strong><code>Undigraph</code>。</li>
+</ul>
+<p>$$G_2 = (V_2,{E_2})$$</p>
+<h4 id="5.2"> 5.2 图的存储结构 </h4>
+
+<blockquote>
+<p>图的结构较为复杂，常用的存储结构有<strong>邻接表</strong>，<strong>十字链表</strong>。</p>
+</blockquote>
+<h5 id="5.2.1"> 5.2.1 邻接表 </h5>
+
+<blockquote>
+<p><strong>邻接表</strong><code>Adjacency List</code>是图的一种链式存储结构。</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"> <span class="meta">#<span class="meta-keyword">define</span> MAX_VERTEX_NUM 20</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">ArcNode</span> &#123;</span></span><br><span class="line">    <span class="keyword">int</span> adjvex; <span class="comment">// 该弧所指向的顶点的位置</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">ArcNode</span> *<span class="title">nextarc</span>;</span> <span class="comment">// 指向下一条弧的指针</span></span><br><span class="line">    InfoType *info; <span class="comment">// 该弧相关信息的指针</span></span><br><span class="line">&#125;ArcNode;</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">VNode</span> &#123;</span></span><br><span class="line">    VertexType data; <span class="comment">// 顶点信息</span></span><br><span class="line">    ArcNode *firstarc; <span class="comment">//指向第一条依附该顶点的弧的指针</span></span><br><span class="line">&#125;VNode, AdjList[MAX_VERTEX_NUM];</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> &#123;</span></span><br><span class="line">    AdjList vertices;</span><br><span class="line">    <span class="keyword">int</span> vexnum, arcnum; <span class="comment">//图的当前顶点数和弧数</span></span><br><span class="line">    <span class="keyword">int</span> kind; <span class="comment">// 图的种类标志</span></span><br><span class="line">&#125;ALGraph;</span><br></pre></td></tr></table></figure>
+<h5 id="5.2.2"> 5.2.2 十字链表 </h5>
+
+<blockquote>
+<p><strong>十字链表</strong><code>Orthogonal List</code>是有向图的另一种链式存储结构。可以看作是将有向图的邻接表和逆邻接表结合起来的一种链表。</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"> <span class="meta">#<span class="meta-keyword">define</span> MAX_VERTEX_NUM 20</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">ArcBox</span> &#123;</span></span><br><span class="line">    <span class="keyword">int</span> tailvex, headvex; <span class="comment">// 该弧的尾和头顶点的位置</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">ArcBox</span> *<span class="title">hlink</span>, *<span class="title">tlink</span>;</span> <span class="comment">// 分别为弧头相同和弧尾相同的弧的链域</span></span><br><span class="line">    InfoType *info; <span class="comment">// 该弧相关的信息的指针</span></span><br><span class="line">&#125;ArcBox;</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">VexNode</span> &#123;</span></span><br><span class="line">    VertexType data;</span><br><span class="line">    ArcBox *firstin, *firstout; <span class="comment">// 分别指向该顶点的第一条入弧和出弧</span></span><br><span class="line">&#125;VexNode;</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> &#123;</span></span><br><span class="line">    VexNode xlist[MAX_VERTEX_NUM]; <span class="comment">// 表头向量</span></span><br><span class="line">    <span class="keyword">int</span> vexnum, arcnum; <span class="comment">// 有向图的当前顶点数和弧数</span></span><br><span class="line">&#125;OLGraph;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>更多关于图的存储的知识，请戳：</p>
+<ul>
+<li><a href="https://blog.csdn.net/u010366748/article/details/50790324" target="_blank" rel="noopener">数据结构(16)–图的存储及实现</a></li>
+<li><a href="https://www.cnblogs.com/ECJTUACM-873284962/p/6905416.html" target="_blank" rel="noopener">图的存储结构之邻接表(详解)</a></li>
+<li><a href="https://blog.csdn.net/wr_technology/article/details/51909432" target="_blank" rel="noopener">图的存储 ( 十字链表 )</a> -&gt; <em>recommend</em>！</li>
+<li><a href="https://www.cnblogs.com/zyl905487045/p/7815429.html" target="_blank" rel="noopener">十字链表的画法</a> -&gt; <em>recommend</em>！</li>
+</ul>
+</blockquote>
+<h4 id="5.3"> 5.3 图的遍历 </h4>
+
+<blockquote>
+<p><strong>图的遍历</strong><code>Traversing Graph</code>指从图中某一顶点出发访遍图中其余顶点，且使每一个顶点仅被访问一次。</p>
+</blockquote>
+<h5 id="5.3.1"> 5.3.1 深度优先搜索 </h5>
+
+<blockquote>
+<p><strong>深度优先搜索</strong><code>Depth_First Search</code>遍历类似于树的<strong>先根遍历</strong>。</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">DFS</span><span class="params">(Graph G, <span class="keyword">int</span> v)</span> </span>&#123;</span><br><span class="line">    <span class="comment">//从第v个顶点出发递归地深度优先遍历图G</span></span><br><span class="line">    visited[v] = TRUE;</span><br><span class="line">    visitFunc(v); <span class="comment">// 访问第v个顶点</span></span><br><span class="line">    <span class="keyword">for</span>(w = FirstAdjVex(G,v); w &gt;= <span class="number">0</span>; w = NextAdjVex(G,v,w))</span><br><span class="line">        <span class="keyword">if</span>(!visited[w])</span><br><span class="line">            DFS(G,w); <span class="comment">// 对v的尚未访问的邻接顶点w递归调用DFS</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="5.3.2"> 5.3.2 广度优先搜索 </h5>
+
+<blockquote>
+<p><strong>广度优先搜索</strong><code>Breadth_First Search</code>遍历类似于树的<strong>层次遍历</strong>。</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">void BFSTraverse(Graph G, Status(*visit)(int v)) &#123;</span><br><span class="line">    <span class="comment">// 按广度优先非递归遍历图G，使用辅助队列Q和访问标志数组visited</span></span><br><span class="line">    <span class="keyword">for</span>(v = <span class="number">0</span>; v &lt; G.vexnum; ++v)</span><br><span class="line">        visited[v] = FALSE;</span><br><span class="line">    InitQuene(Q); <span class="comment">// 置空的辅助队列Q</span></span><br><span class="line">    <span class="keyword">for</span>(v = <span class="number">0</span>; v &lt; G.vexnum; ++v)</span><br><span class="line">        <span class="keyword">if</span>(!visited[v]) &#123; <span class="comment">// v尚未访问</span></span><br><span class="line">            visited[v] = TRUE;</span><br><span class="line">            Visit(v);</span><br><span class="line">            Enquene(Q, v); <span class="comment">// v入队列</span></span><br><span class="line">            <span class="keyword">while</span>(!QueneEmpty(Q)) &#123;</span><br><span class="line">                DeQuene(Q, u); <span class="comment">// 队头元素出列并置为0</span></span><br><span class="line">                <span class="keyword">for</span>(w = FirstAdjVex(G, u); w &gt;= <span class="number">0</span>; w = NextAdjVex(G, u, w))</span><br><span class="line">                    <span class="keyword">if</span>(!Visited[w]) &#123; <span class="comment">// w为u的尚未访问的邻接顶点</span></span><br><span class="line">                        Visited[w] = TRUE;</span><br><span class="line">                        Visit(w);</span><br><span class="line">                        EnQuene(Q, W);</span><br><span class="line">                    &#125; <span class="comment">// if</span></span><br><span class="line">            &#125; <span class="comment">//while</span></span><br><span class="line">        &#125; <span class="comment">// if</span></span><br><span class="line">&#125; <span class="comment">// BFSTraverse</span></span><br></pre></td></tr></table></figure>
+<p>遍历图的过程实质上是通过边或弧找邻接点的过程，因此广度优先搜索和深度优先搜索地<strong>时间复杂度</strong>相同。</p>
+<blockquote>
+<p>更多关于图的遍历的知识，请戳：</p>
+<ul>
+<li><a href="https://www.cnblogs.com/George1994/p/6399889.html" target="_blank" rel="noopener">图的深度优先遍历和广度优先遍历理解</a></li>
+<li><a href="https://www.cnblogs.com/0kk470/p/7555033.html" target="_blank" rel="noopener">数据结构和算法总结（一）：广度优先搜索BFS和深度优先搜索DFS</a> -&gt; <em>recommend</em>！</li>
+</ul>
+</blockquote>
+<h4 id="5.4"> 5.4 图的连通性问题 </h4>
+
+<blockquote>
+<p>对于连通图来说，从任一顶点出发，便可访问图中所有顶点。而对于非连通地图，则需从多个顶点出发进行搜索。</p>
+</blockquote>
+<h5 id="5.4.1"> 5.4.1 最小生成树 </h5>
+
+<p>关于图的几个概念定义：</p>
+<ul>
+<li>连通图：在无向图中，若任意两个顶点vi与vj都有路径相通，则称该无向图为连通图。</li>
+<li>强连通图：在有向图中，若任意两个顶点vi与vj都有路径相通，则称该有向图为强连通图。</li>
+<li>连通网：在连通图中，若图的边具有一定的意义，每一条边都对应着一个数，称为权；权代表着连接连个顶点的代价，称这种连通图叫做连通网。</li>
+<li>生成树：一个连通图的生成树是指一个连通子图，它含有图中全部n个顶点，但只有足以构成一棵树的n-1条边。一颗有n个顶点的生成树有且仅有n-1条边，如果生成树中再添加一条边，则必定成环。</li>
+<li>最小生成树：在连通网的所有生成树中，所有边的代价和最小的生成树，称为最小生成树。</li>
+</ul>
+<blockquote>
+<p><strong>最小生成树</strong><code>Minimum Cost Spanning Tree</code>指构造连通网的最小代价生成树。</p>
+</blockquote>
+<ul>
+<li><strong>Kruskal算法</strong></li>
+</ul>
+<blockquote>
+<p>此算法可以称为“加边法”，初始最小生成树边数为0，每迭代一次就选择一条满足条件的最小代价边，加入到最小生成树的边集合里。 </p>
+</blockquote>
+<ol>
+<li>把图中的所有边按代价从小到大排序； </li>
+<li>把图中的n个顶点看成独立的n棵树组成的森林； </li>
+<li>按权值从小到大选择边，所选的边连接的两个顶点ui,vi,应属于两颗不同的树，则成为最小生成树的一条边，并将这两颗树合并作为一颗树。 </li>
+<li>重复(3),直到所有顶点都在一颗树内或者有n-1条边为止。</li>
+</ol>
+<ul>
+<li><strong>Prim算法</strong></li>
+</ul>
+<blockquote>
+<p>此算法可以称为“加点法”，每次迭代选择代价最小的边对应的点，加入到最小生成树中。算法从某一个顶点s开始，逐渐长大覆盖整个连通网的所有顶点。</p>
+</blockquote>
+<ol>
+<li>图的所有顶点集合为V；初始令集合u={s},v=V−u;</li>
+<li>在两个集合u,v能够组成的边中，选择一条代价最小的边(u0,v0)，加入到最小生成树中，并把v0并入到集合u中。</li>
+<li>重复上述步骤，直到最小生成树有n-1条边或者n个顶点为止。</li>
+</ol>
+<p>由于不断向集合u中加点，所以最小代价边必须同步更新；需要建立一个辅助数组closedge,用来维护集合v中每个顶点与集合u中最小代价边信息：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">char</span> vertexData   <span class="comment">//表示u中顶点信息</span></span><br><span class="line">    UINT lowestcost   <span class="comment">//最小代价</span></span><br><span class="line">&#125;closedge[vexCounts]</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>更多关于最小生成树的知识，请戳：</p>
+<ul>
+<li><a href="https://blog.csdn.net/luoshixian099/article/details/51908175" target="_blank" rel="noopener">算法导论–最小生成树（Kruskal和Prim算法）</a> -&gt; <em>recommend</em>！</li>
+</ul>
+</blockquote>
+<h4 id="5.5"> 5.5 拓扑排序 </h4>
+
+<blockquote>
+<p><strong>拓扑排序</strong><code>Topological Sort</code>指由某个集合上的一个偏序得到该集合上的一个全序。</p>
+</blockquote>
+<p>拓扑排序的实现步骤:</p>
+<ol>
+<li>在有向图中选一个没有前驱的顶点并且输出。</li>
+<li>从图中删除该顶点和所有以它为尾的弧（白话就是：删除所有和它有关的边）。</li>
+<li>重复上述两步，直至所有顶点输出，或者当前图中不存在无前驱的顶点为止，后者代表我们的有向图是有环的。</li>
+</ol>
+<p>因此，也可以通过拓扑排序来判断一个图是否有环。</p>
+<blockquote>
+<p>更多关于拓扑排序的知识，请戳：</p>
+<ul>
+<li><a href="https://blog.csdn.net/qq_35644234/article/details/60578189" target="_blank" rel="noopener">数据结构—拓扑排序详解</a></li>
+</ul>
+</blockquote>
+<h4 id="5.6"> 5.6 最短路径 </h4>
+
+<blockquote>
+<p><strong>最短路径</strong>指从图中的某个顶点出发到达另外一个顶点的所经过的边的权重和最小的一条路径.</p>
+</blockquote>
+<h5 id="5.6.1"> 5.6.1 Dijkstra算法 </h5>
+
+<blockquote>
+<p>算法特点：迪科斯彻算法使用了广度优先搜索解决赋权有向图或者无向图的单源最短路径问题，算法最终得到一个最短路径树。该算法常用于路由算法或者作为其他图算法的一个子模块。</p>
+</blockquote>
+<ul>
+<li>算法的思路</li>
+</ul>
+<ol>
+<li>Dijkstra算法采用的是一种贪心的策略，声明一个数组dis来保存源点到各个顶点的最短距离和一个保存已经找到了最短路径的顶点的集合：T，初始时，原点 s 的路径权重被赋为 0 （dis[s] = 0）。若对于顶点 s 存在能直接到达的边（s,m），则把dis[m]设为w（s, m）,同时把所有其他（s不能直接到达的）顶点的路径长度设为无穷大。初始时，集合T只有顶点s。 </li>
+<li>然后，从dis数组选择最小值，则该值就是源点s到该值对应的顶点的最短路径，并且把该点加入到T中，OK，此时完成一个顶点， </li>
+<li>然后，我们需要看看新加入的顶点是否可以到达其他顶点并且看看通过该顶点到达其他点的路径长度是否比源点直接到达短，如果是，那么就替换这些顶点在dis中的值。 </li>
+<li>然后，又从dis中找出最小值，重复上述动作，直到T中包含了图的所有顶点</li>
+</ol>
+<blockquote>
+<p>更多关于最短路径的知识，请戳：</p>
+<ul>
+<li><a href="https://blog.csdn.net/qq_35644234/article/details/60870719" target="_blank" rel="noopener">最短路径问题—Dijkstra算法详解</a></li>
+</ul>
+</blockquote>
+<h3 id="6"> 6. 查找 </h3>
+
+<blockquote>
+<p><strong>查找</strong><code>Search</code>：根据给定的某个值，在查找表中确定一个其关键字等于给定值的数据元素（或记录）。分类有<strong>静态查找</strong>和<strong>动态查找</strong>。</p>
+</blockquote>
+<ul>
+<li>注：静态或者动态都是针对查找表而言的。动态表指查找表中有删除和插入操作的表。</li>
+</ul>
+<h4 id="6.1"> 6.1 静态查找 </h4>
+
+<h5 id="6.1.1"> 6.1.1 顺序查找 </h5>
+
+<ol>
+<li>说明：顺序查找适合于存储结构为顺序存储或链接存储的线性表。</li>
+<li>基本思想：顺序查找也称为线形查找，属于无序查找算法。从数据结构线形表的一端开始，顺序扫描，依次将扫描到的结点关键字与给定值k相比较，若相等则表示查找成功；若扫描结束仍没有找到关键字等于k的结点，表示查找失败。</li>
+<li>复杂度分析：</li>
+</ol>
+<ul>
+<li>查找成功的平均查找长度为（假设每个数据元素的概率相等）: $$ASL = 1/n(1+2+3+…+n) = (n+1)/2$$</li>
+<li>当查找不成功时，需要$n+1$次比较，时间复杂度为$O(n)$；所以，顺序查找的时间复杂度为$O(n)$。</li>
+</ul>
+<blockquote>
+<p>C++实现源码：</p>
+</blockquote>
+<pre><code><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//顺序查找</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">SequenceSearch</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> value, <span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>; i&lt;n; i++)</span><br><span class="line">        <span class="keyword">if</span>(a[i]==value)</span><br><span class="line">            <span class="keyword">return</span> i;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</code></pre><h5 id="6.1.2"> 6.1.2 二分查找（折半查找） </h5>
+
+<ol>
+<li>说明：元素必须是<strong>有序</strong>的，如果是无序的则要先进行排序操作。</li>
+<li>基本思想：也称为是折半查找，属于<strong>有序查找算法</strong>。用给定值k先与中间结点的关键字比较，中间结点把线形表分成两个子表，若相等则查找成功；若不相等，再根据k与该中间结点关键字的比较结果确定下一步查找哪个子表，这样递归进行，直到查找到或查找结束发现表中没有这样的结点。</li>
+<li>折半查找的平均查找长度：$$ASL_{bs} = \frac{1}{n}\sum_{i=1}^{n}{j\times2^{j-1}} = \frac{n+1}{n}\log_2(n+1) - 1 = \log_2(n+1) - 1 $$</li>
+<li>复杂度分析：最坏情况下，关键词比较次数为$\log_2(n+1)$，且期望时间复杂度为$O(log_2n)$；</li>
+</ol>
+<ul>
+<li>注：折半查找的前提条件是需要有序表顺序存储，对于静态查找表，一次排序后不再变化，折半查找能得到不错的效率。但对于需要频繁执行插入或删除操作的数据集来说，维护有序的排序会带来不小的工作量，那就不建议使用。——《大话数据结构》</li>
+</ul>
+<blockquote>
+<p>C++实现源码：</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//二分查找（折半查找），非递归版本</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">BinarySearch1</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> value, <span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> low, high, mid;</span><br><span class="line">    low = <span class="number">0</span>;</span><br><span class="line">    high = n<span class="number">-1</span>;</span><br><span class="line">    <span class="keyword">while</span>(low&lt;=high)</span><br><span class="line">    &#123;</span><br><span class="line">        mid = (low+high)/<span class="number">2</span>;</span><br><span class="line">        <span class="keyword">if</span>(a[mid]==value)</span><br><span class="line">            <span class="keyword">return</span> mid;</span><br><span class="line">        <span class="keyword">if</span>(a[mid]&gt;value)</span><br><span class="line">            high = mid<span class="number">-1</span>;</span><br><span class="line">        <span class="keyword">if</span>(a[mid]&lt;value)</span><br><span class="line">            low = mid+<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//二分查找，递归版本</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">BinarySearch2</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> value, <span class="keyword">int</span> low, <span class="keyword">int</span> high)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> mid = low+(high-low)/<span class="number">2</span>;</span><br><span class="line">    <span class="keyword">if</span>(a[mid]==value)</span><br><span class="line">        <span class="keyword">return</span> mid;</span><br><span class="line">    <span class="keyword">if</span>(a[mid]&gt;value)</span><br><span class="line">        <span class="keyword">return</span> BinarySearch2(a, value, low, mid<span class="number">-1</span>);</span><br><span class="line">    <span class="keyword">if</span>(a[mid]&lt;value)</span><br><span class="line">        <span class="keyword">return</span> BinarySearch2(a, value, mid+<span class="number">1</span>, high);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>更多查找算法，请戳：</p>
+<ul>
+<li><a href="https://blog.csdn.net/sayhello_world/article/details/77200009" target="_blank" rel="noopener">数据结构–七大查找算法总结</a></li>
+<li><a href="https://blog.csdn.net/u013036274/article/details/49176027" target="_blank" rel="noopener">【数据结构】静态查找之分块查找</a></li>
+</ul>
+</blockquote>
+<h4 id="6.2"> 6.2 动态查找 </h4>
+
+<blockquote>
+<p>动态查找：当查找表以顺序存储结构存储且需要保持有序时，若对查找表进行插入、删除或排序操作，就必须移动大量的记录，当记录数很多时，这种移动的代价很大。 若查找表无序，则插入删除可无需移动大量记录，但于查找不利。 利用树的形式组织查找表，可以对查找表进行动态高效的查找。</p>
+</blockquote>
+<h5 id="6.2.1"> 6.2.1 二叉排序树 </h5>
+
+<p><strong>二叉排序树</strong><code>Binary Sort Tree</code>的定义为：二叉排序树或者是空树，或者是满足下列性质的二叉树。</p>
+<ol>
+<li>若左子树不为空，则左子树上所有结点的值(关键字)都小于根结点的值； </li>
+<li>若右子树不为空，则右子树上所有结点的值(关键字)都大于根结点的值； </li>
+<li>左、右子树都分别是二叉排序树。 </li>
+</ol>
+<ul>
+<li>二叉排序树性能</li>
+</ul>
+<ol>
+<li>二叉排序树查找关键字的比较次数，等于该结点所在的层次数（查找成功）； 若查找不成功，其比较次数最多为树的深度。</li>
+<li>对于一棵具有n个结点的树来说，其深度介$log_2(n+1)$与$n$之间。 </li>
+<li>二叉排序树的形态对于查找效率至关重要，或者说，一棵二叉排序树不一定就能提高查找的速度，而是要看这棵树的形态。</li>
+</ol>
+<p><strong>注</strong>：若按中序遍历一棵二叉排序树，所得到的结点序列是一个递增序列。</p>
+<blockquote>
+<p>更多动态查找的知识，请戳：</p>
+<ul>
+<li><a href="https://www.2cto.com/database/201505/396663.html" target="_blank" rel="noopener">数据结构-动态查找</a></li>
+<li><a href="https://blog.csdn.net/jerryburning/article/details/46636479" target="_blank" rel="noopener">查找算法总结之二（动态查找表）</a></li>
+</ul>
+</blockquote>
+<h4 id="6.3"> 6.3 哈希表 </h4>
+
+<blockquote>
+<p>散列表（<code>Hash table</code>，也叫<strong>哈希表</strong>），是根据关键码值(Key value)而直接进行访问的数据结构。也就是说，它通过把关键码值映射到表中一个位置来访问记录，以加快查找的速度。这个映射函数叫做散列函数，存放记录的数组叫做散列表。给定表M，存在函数f(key)，对任意给定的关键字值key，代入函数后若能得到包含该关键字的记录在表中的地址，则称表M为哈希(Hash）表，函数f(key)为哈希(Hash) 函数。</p>
+</blockquote>
+<blockquote>
+<p>哈希表是一种通过哈希函数将特定的键映射到特定值的一种数据结构，他维护者键和值之间一一对应关系。</p>
+</blockquote>
+<ol>
+<li>键(key)：又称为关键字。唯一的标示要存储的数据，可以是数据本身或者数据的一部分。</li>
+<li>槽(slot/bucket)：哈希表中用于保存数据的一个单元，也就是数据真正存放的容器。</li>
+<li>哈希函数(hash function)：将键(key)映射(map)到数据应该存放的槽(slot)所在位置的函数。</li>
+<li>哈希冲突(hash collision)：哈希函数将两个不同的键映射到同一个索引的情况。</li>
+</ol>
+<blockquote>
+<p>更多哈希表的知识，请戳：</p>
+<ul>
+<li><a href="https://www.jianshu.com/p/dbe7a1ea5928" target="_blank" rel="noopener">浅谈哈希表(HashTable)</a> -&gt; <em>recommend</em>！</li>
+<li><a href="http://baijiahao.baidu.com/s?id=1580022096840800840&amp;wfr=spider&amp;for=pc" target="_blank" rel="noopener">程序员常说的「哈希表」是个什么鬼?</a></li>
+</ul>
+</blockquote>
+<h3 id="7"> 7. 内部排序 </h3>
+
+<blockquote>
+<p><strong>内部排序</strong>指待排序记录存放在计算机随机存储器（如内存）中进行的排序过程。<br><strong>外部排序</strong>指待排序记录的数量很大，以致于内存一次不能容纳全部记录，在排序过程中尚需对外存进行访问的排序过程。</p>
+</blockquote>
+<p>注：我们常常用到的是<strong>内部排序</strong>。</p>
+<h4 id="7.1"> 7.1 插入排序 </h4>
+
+<h5 id="7.1.1"> 7.1.1 直接插入排序 </h5>
+
+<ul>
+<li>介绍</li>
+</ul>
+<p><strong>直接插入排序</strong><code>Straight Insertion Sort</code>是基于比较的排序。所谓的基于比较，就是通过比较数组中的元素，看谁大谁小，根据结果来调整元素的位置。</p>
+<p>因此，对于这类排序，就有两种基本的操作：①比较操作； ②交换操作</p>
+<p>其中，对于交换操作，可以优化成移动操作，即不直接进行两个元素的交换，还是用一个枢轴元素(tmp)将当前元素先保存起来，然后执行移动操作，待确定了最终位置后，再将当前元素放入合适的位置。（下面的插入排序就用到了这个技巧）–因为，交换操作需要三次赋值，而移动操作只需要一次赋值！</p>
+<p>有些排序算法，比较次数比较多，而移动次数比较少，而有些则相反。比如，归并排序和快速排序，前者移动次数比较多，而后者比较次数比较多。</p>
+<ul>
+<li>复杂度分析</li>
+</ul>
+<p>插入排序在实现上，通常采用in-place排序（即只需用到$O(1)$的空间复杂度和$O(N^2)$的时间复杂度）），因而在从后向前扫描过程中，需要反复把已排序元素逐步向后挪位，为最新元素提供插入空间。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Insertsort1</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> n)</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="keyword">int</span> i, j, k;  </span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">1</span>; i &lt; n; i++)  </span><br><span class="line">    &#123;  </span><br><span class="line">        <span class="comment">//为a[i]在前面的a[0...i-1]有序区间中找一个合适的位置  </span></span><br><span class="line">        <span class="keyword">for</span> (j = i - <span class="number">1</span>; j &gt;= <span class="number">0</span>; j--)  </span><br><span class="line">            <span class="keyword">if</span> (a[j] &lt; a[i])  </span><br><span class="line">                <span class="keyword">break</span>;  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">//如找到了一个合适的位置  </span></span><br><span class="line">        <span class="keyword">if</span> (j != i - <span class="number">1</span>)  </span><br><span class="line">        &#123;  </span><br><span class="line">            <span class="comment">//将比a[i]大的数据向后移  </span></span><br><span class="line">            <span class="keyword">int</span> temp = a[i];  </span><br><span class="line">            <span class="keyword">for</span> (k = i - <span class="number">1</span>; k &gt; j; k--)  </span><br><span class="line">                a[k + <span class="number">1</span>] = a[k];  </span><br><span class="line">            <span class="comment">//将a[i]放到正确位置上  </span></span><br><span class="line">            a[k + <span class="number">1</span>] = temp;  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>更多直接插入排序的知识，请戳：</p>
+<ul>
+<li><a href="https://blog.csdn.net/llzk_/article/details/51628574" target="_blank" rel="noopener">插入排序算法详解及实现</a></li>
+<li><a href="https://blog.csdn.net/morewindows/article/details/6665714" target="_blank" rel="noopener">白话经典算法系列之二 直接插入排序的三种实现</a></li>
+</ul>
+</blockquote>
+<h5 id="7.1.2"> 7.1.2 折半插入排序 </h5>
+
+<blockquote>
+<p>插入排序的基本操作是在一个有序表中进行查找和插入。利用“折半查找”的查找操作实现的插入排序，称为<strong>折半插入排序</strong><code>Binary Insertion Sort</code>。</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">InsertSort</span><span class="params">(Elemtype A[],<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i,j,low,high,mid;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        A[<span class="number">0</span>]=A[i];</span><br><span class="line">        low=<span class="number">1</span>;</span><br><span class="line">        high=i<span class="number">-1</span>;<span class="comment">//设置折半查找的范围，从1到i-1,A[0]用来暂存元素</span></span><br><span class="line">        <span class="keyword">while</span>(low&lt;=high)&#123;</span><br><span class="line">            mid=(low+high)/<span class="number">2</span>;</span><br><span class="line">            <span class="keyword">if</span>(A[mid].key&gt;A[<span class="number">0</span>].key) high=mid<span class="number">-1</span>;<span class="comment">//查找左半子表</span></span><br><span class="line">            <span class="keyword">else</span> low=mid+<span class="number">1</span>;<span class="comment">//查找右半子表</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(j=i<span class="number">-1</span>;j&gt;=high+<span class="number">1</span>;--j)</span><br><span class="line">                A[j+<span class="number">1</span>]=A[j];<span class="comment">//统一向后移动元素，空出插入位置</span></span><br><span class="line">        A[high+<span class="number">1</span>]=A[<span class="number">0</span>];<span class="comment">//插入操作</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>更多折半插入排序的知识，请戳：</p>
+<ul>
+<li><a href="https://blog.csdn.net/m0_37316917/article/details/70990523" target="_blank" rel="noopener">数据结构折半插入排序</a> -&gt;<em>recommend</em>！</li>
+</ul>
+</blockquote>
+<h5 id="7.1.3"> 7.1.3 希尔排序 </h5>
+
+<blockquote>
+<p><strong>希尔排序</strong><code>Shell&#39;s Sort</code>又称最小增量排序，它的基本思想是将整个待排序记录序列分割成若干个子序列分别进行<strong>插入排序</strong>，待整个序列的记录“基本有序”时，再对全体记录进行一次直接插入排序。</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">ShellSort</span><span class="params">(<span class="keyword">int</span> <span class="built_in">array</span>[], <span class="keyword">int</span> len)</span> <span class="comment">// O(n*n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> j = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> k = <span class="number">-1</span>;</span><br><span class="line">    <span class="keyword">int</span> temp = <span class="number">-1</span>;</span><br><span class="line">    <span class="keyword">int</span> gap = len;</span><br><span class="line">    <span class="keyword">do</span> &#123;</span><br><span class="line">        gap = gap / <span class="number">3</span> + <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (i=gap; i&lt;len; i+=gap) &#123;</span><br><span class="line">            k = i;</span><br><span class="line">            temp = <span class="built_in">array</span>[k];</span><br><span class="line">            <span class="keyword">for</span> (j=i-gap; (j&gt;=<span class="number">0</span>) &amp;&amp; (<span class="built_in">array</span>[j]&gt;temp); j-=gap) &#123;</span><br><span class="line">                <span class="built_in">array</span>[j+gap] = <span class="built_in">array</span>[j];</span><br><span class="line">                k = j;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="built_in">array</span>[k] = temp;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; <span class="keyword">while</span> (gap &gt; <span class="number">1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>更多希尔排序的知识，请戳：</p>
+<ul>
+<li><a href="http://www.cnblogs.com/chengxiao/p/6104371.html" target="_blank" rel="noopener">图解排序算法(二)之希尔排序</a></li>
+<li><a href="https://blog.csdn.net/daiyudong2020/article/details/52445044" target="_blank" rel="noopener">希尔排序详解</a> -&gt;<em>recommend</em>！</li>
+<li><a href="https://www.cnblogs.com/ronnydm/p/5905715.html" target="_blank" rel="noopener">排序五：希尔排序</a>  -&gt;<em>recommend</em>！</li>
+</ul>
+</blockquote>
+<h4 id="7.2"> 7.2 交换排序 </h4>
+
+<h5 id="7.2.1"> 7.2.1 冒泡排序 </h5>
+
+<blockquote>
+<p>冒泡排序算法的运作如下：（从后往前）</p>
+<ol>
+<li>比较相邻的元素。如果第一个比第二个大，就交换他们两个。</li>
+<li>对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对。在这一点，最后的元素应该会是最大的数。</li>
+<li>针对所有的元素重复以上的步骤，除了最后一个。</li>
+<li>持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较。 </li>
+</ol>
+</blockquote>
+<ul>
+<li>时间复杂度</li>
+</ul>
+<p>冒泡排序最好的时间复杂度为 $O(n)$。<br>冒泡排序的最坏时间复杂度为 $O(n^2)$。<br>综上，因此冒泡排序总的平均时间复杂度为 $O(n^2)$。</p>
+<ul>
+<li>算法稳定性</li>
+</ul>
+<p><strong>冒泡排序</strong><code>Bubble Sort</code>就是把小的元素往前调或者把大的元素往后调。比较是相邻的两个元素比较，交换也发生在这两个元素之间。所以，如果两个元素相等，我想你是不会再无聊地把他们俩交换一下的；如果两个相等的元素没有相邻，那么即使通过前面的两两交换把两个相邻起来，这时候也不会交换，所以相同元素的前后顺序并没有改变，所以冒泡排序是一种稳定排序算法。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">bubble_sort</span><span class="params">(T arr[], <span class="keyword">int</span> len)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i, j;  T temp;</span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; len - <span class="number">1</span>; i++)</span><br><span class="line">        <span class="keyword">for</span> (j = <span class="number">0</span>; j &lt; len - <span class="number">1</span> - i; j++)</span><br><span class="line">        <span class="keyword">if</span> (arr[j] &gt; arr[j + <span class="number">1</span>])</span><br><span class="line">        &#123;</span><br><span class="line">            temp = arr[j];</span><br><span class="line">            arr[j] = arr[j + <span class="number">1</span>];</span><br><span class="line">            arr[j + <span class="number">1</span>] = temp;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>更多冒泡排序的知识，请戳：</p>
+<ul>
+<li><a href="https://blog.csdn.net/morewindows/article/details/6657829" target="_blank" rel="noopener">白话经典算法系列之一 冒泡排序的三种实现</a></li>
+<li><a href="https://www.cnblogs.com/crystalmoore/p/5929814.html" target="_blank" rel="noopener">经典排序算法学习笔记一——冒泡排序</a></li>
+</ul>
+</blockquote>
+<h5 id="7.2.2"> 7.2.2 快速排序 </h5>
+
+<blockquote>
+<p><strong>快速排序</strong><code>Quick Sort</code>是对<strong>冒泡排序</strong>的一种改进。它的基本思想是，通过一趟排序将待排序记录分割成独立的两部分，其中一部分记录的关键字均比另一部分记录的关键字小，继续进行排序以达到整个序列有序。</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">PartSort1</span><span class="params">(<span class="keyword">int</span>* a,<span class="keyword">int</span> left,<span class="keyword">int</span> right)</span><span class="comment">//左右指针法  </span></span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="keyword">int</span> mid = GetMidIndex(a,left,right);    <span class="comment">//此处是对快排的优化，再后面会提到  </span></span><br><span class="line">    swap(a[mid],a[right]);  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">int</span> key = right;<span class="comment">//利用key作为基准值的下标  </span></span><br><span class="line">  </span><br><span class="line">    <span class="keyword">while</span> (left &lt; right)  </span><br><span class="line">    &#123;  </span><br><span class="line">        <span class="comment">//左指针向右找第一个比key大的数  </span></span><br><span class="line">        <span class="keyword">while</span> (left &lt; right &amp;&amp; a[left] &lt;= a[key])  </span><br><span class="line">        &#123;  </span><br><span class="line">            ++left;  </span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="comment">//右指针向左扎找第一个比key的数  </span></span><br><span class="line">        <span class="keyword">while</span> (left &lt; right &amp;&amp; a[right] &gt;= a[key])  </span><br><span class="line">        &#123;  </span><br><span class="line">            --right;  </span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="comment">//交换左右指针所指的值  </span></span><br><span class="line">        <span class="keyword">if</span> (a[left] != a[right])  </span><br><span class="line">        &#123;  </span><br><span class="line">            <span class="built_in">std</span>::swap(a[left],a[right]);  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="comment">//将key值放到正确位置上  </span></span><br><span class="line">    swap(a[left],a[key]);  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">return</span> left;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>快速排序的时间复杂度为：$O(nlogn)$</p>
+<blockquote>
+<p>更多快速排序的知识，请戳：</p>
+<ul>
+<li><a href="https://blog.csdn.net/code_ac/article/details/74158681" target="_blank" rel="noopener">快速排序基本思路（通俗易懂+例子）</a></li>
+<li><a href="https://blog.csdn.net/payshent/article/details/60879120" target="_blank" rel="noopener">快速排序</a></li>
+<li><a href="https://blog.csdn.net/code_ac/article/details/74158681" target="_blank" rel="noopener">快速排序基本思路（通俗易懂+例子）</a> -&gt;<em>recommend</em>！</li>
+<li><a href="https://www.cnblogs.com/MOBIN/p/4681369.html" target="_blank" rel="noopener">图解快速排序</a> -&gt;<em>recommend</em>！</li>
+</ul>
+</blockquote>
+<h4 id="7.3"> 7.3 选择排序 </h4>
+
+<blockquote>
+<p><strong>选择排序</strong><code>Selection Sort</code>：每一趟在$n-i+1(i=1,2,3,…,n-1)$个记录中选取关键字最小的记录作为有序序列的第$i$个记录。</p>
+</blockquote>
+<h5 id="7.3.1"> 7.3.1 简单选择排序 </h5>
+
+<blockquote>
+<p>一趟简单选择排序的操作是：通过$n-i$次关键字间的比较，从$n-i+1(i=1,2,3,…,n-1)$个记录中选取关键字最小的记录，并和第$i$个记录交换之。</p>
+</blockquote>
+<p>简单选择排序的时间复杂度为$O(n^2)$</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">select_sort</span><span class="params">(<span class="keyword">int</span> A[],<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">register</span> <span class="keyword">int</span> i,j,min,m;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n<span class="number">-1</span>;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        min=i;<span class="comment">//查找最小值</span></span><br><span class="line">        <span class="keyword">for</span>(j=i+<span class="number">1</span>;j&lt;n;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(A[min]&gt;A[j])</span><br><span class="line">            &#123;</span><br><span class="line">                min=j;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(min!=i)</span><br><span class="line">        &#123;</span><br><span class="line">            swap(&amp;A[min],&amp;A[i]);</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>稳定性</li>
+</ul>
+<p>选择排序是给每个位置选择当前元素最小的，比如给第一个位置选择最小的，在剩余元素里面给第二个元素选择第二小的，依次类推，直到第n-1个元素，第n个元素不用选择了，因为只剩下它一个最大的元素了。那么，在一趟选择，如果一个元素比当前元素小，而该小的元素又出现在一个和当前元素相等的元素后面，那么交换后稳定性就被破坏了。比较拗口，举个例子，序列5 8 5 2 9，我们知道第一遍选择第1个元素5会和2交换，那么原序列中两个5的相对前后顺序就被破坏了，所以选择排序是一个不稳定的排序算法。</p>
+<blockquote>
+<p>更多关于选择排序的知识，请戳：</p>
+<ul>
+<li><a href="http://baijiahao.baidu.com/s?id=1586561314836092820&amp;wfr=spider&amp;for=pc" target="_blank" rel="noopener">经典排序算法之选择排序</a></li>
+</ul>
+</blockquote>
+<h5 id="7.3.2"> 7.3.2 堆排序 </h5>
+
+<blockquote>
+<p><strong>堆排序</strong><code>Heap Sort</code>是利用堆这种数据结构而设计的一种排序算法，堆排序是一种选择排序，它的最坏，最好，平均时间复杂度均为$O(nlogn)$，它也是不稳定排序。首先简单了解下堆结构。</p>
+</blockquote>
+<p>堆排序的基本思想是：将待排序序列构造成一个大顶堆，此时，整个序列的最大值就是堆顶的根节点。将其与末尾元素进行交换，此时末尾就为最大值。然后将剩余n-1个元素重新构造成一个堆，这样会得到n个元素的次小值。如此反复执行，便能得到一个有序序列了。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">swap</span><span class="params">(<span class="keyword">int</span> *a, <span class="keyword">int</span> *b)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">adjustHeap</span><span class="params">(<span class="keyword">int</span> param1,<span class="keyword">int</span> j, <span class="keyword">int</span> inNums[])</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span>  <span class="title">HeapSort</span><span class="params">(<span class="keyword">int</span> nums, <span class="keyword">int</span> inNums[])</span></span>;</span><br><span class="line"><span class="comment">//大根堆进行调整</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">adjustHeap</span><span class="params">(<span class="keyword">int</span> param1, <span class="keyword">int</span> j, <span class="keyword">int</span> inNums[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> temp=inNums[param1];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> k=param1*<span class="number">2</span>+<span class="number">1</span>;k&lt;j;k=k*<span class="number">2</span>+<span class="number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">//如果右边值大于左边值，指向右边</span></span><br><span class="line">        <span class="keyword">if</span> (k+<span class="number">1</span>&lt;j &amp;&amp; inNums[k]&lt; inNums[k+<span class="number">1</span>])</span><br><span class="line">        &#123;</span><br><span class="line">            k++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//如果子节点大于父节点，将子节点值赋给父节点,并以新的子节点作为父节点（不用进行交换）</span></span><br><span class="line">        <span class="keyword">if</span> (inNums[k]&gt;temp)</span><br><span class="line">        &#123;</span><br><span class="line">            inNums[param1]=inNums[k];</span><br><span class="line">            param1=k;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">        <span class="comment">//put the value in the final position</span></span><br><span class="line">    inNums[param1]=temp;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//堆排序主要算法</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">HeapSort</span><span class="params">(<span class="keyword">int</span> nums,<span class="keyword">int</span> inNums[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//1.构建大顶堆</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=nums/<span class="number">2</span><span class="number">-1</span>;i&gt;=<span class="number">0</span>;i--)</span><br><span class="line">    &#123;</span><br><span class="line">                <span class="comment">//put the value in the final position</span></span><br><span class="line">        adjustHeap(i,nums,inNums);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//2.调整堆结构+交换堆顶元素与末尾元素</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j=nums<span class="number">-1</span>;j&gt;<span class="number">0</span>;j--)</span><br><span class="line">    &#123;</span><br><span class="line">                <span class="comment">//堆顶元素和末尾元素进行交换</span></span><br><span class="line">        <span class="keyword">int</span> temp=inNums[<span class="number">0</span>];</span><br><span class="line">        inNums[<span class="number">0</span>]=inNums[j];</span><br><span class="line">        inNums[j]=temp;</span><br><span class="line"> </span><br><span class="line">        adjustHeap(<span class="number">0</span>,j,inNums);<span class="comment">//重新对堆进行调整</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>更多堆排序的知识，请戳：</p>
+<ul>
+<li><a href="https://www.jianshu.com/p/938789fde325" target="_blank" rel="noopener">浅谈堆排序</a></li>
+<li><a href="https://www.cnblogs.com/0zcl/p/6737944.html" target="_blank" rel="noopener">堆排序详解</a> -&gt;<em>recommend</em>！</li>
+<li><a href="https://www.cnblogs.com/chengxiao/p/6129630.html" target="_blank" rel="noopener">图解排序算法(三)之堆排序</a></li>
+</ul>
+</blockquote>
+<h4 id="7.4"> 7.4 归并排序 </h4>
+
+<blockquote>
+<p><strong>归并排序</strong><code>Merging Sort</code>是建立在归并操作上的一种有效的排序算法。该算法是采用分治法（Divide and Conquer）的一个非常典型的应用。</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//将有二个有序数列a[first...mid]和a[mid...last]合并。  </span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">mergearray</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> first, <span class="keyword">int</span> mid, <span class="keyword">int</span> last, <span class="keyword">int</span> temp[])</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="keyword">int</span> i = first, j = mid + <span class="number">1</span>;  </span><br><span class="line">    <span class="keyword">int</span> m = mid,   n = last;  </span><br><span class="line">    <span class="keyword">int</span> k = <span class="number">0</span>;  </span><br><span class="line">      </span><br><span class="line">    <span class="keyword">while</span> (i &lt;= m &amp;&amp; j &lt;= n)  </span><br><span class="line">    &#123;  </span><br><span class="line">        <span class="keyword">if</span> (a[i] &lt;= a[j])  </span><br><span class="line">            temp[k++] = a[i++];  </span><br><span class="line">        <span class="keyword">else</span>  </span><br><span class="line">            temp[k++] = a[j++];  </span><br><span class="line">    &#125;  </span><br><span class="line">      </span><br><span class="line">    <span class="keyword">while</span> (i &lt;= m)  </span><br><span class="line">        temp[k++] = a[i++];  </span><br><span class="line">      </span><br><span class="line">    <span class="keyword">while</span> (j &lt;= n)  </span><br><span class="line">        temp[k++] = a[j++];  </span><br><span class="line">      </span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; k; i++)  </span><br><span class="line">        a[first + i] = temp[i];  </span><br><span class="line">&#125;  </span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">mergesort</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> first, <span class="keyword">int</span> last, <span class="keyword">int</span> temp[])</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="keyword">if</span> (first &lt; last)  </span><br><span class="line">    &#123;  </span><br><span class="line">        <span class="keyword">int</span> mid = (first + last) / <span class="number">2</span>;  </span><br><span class="line">        mergesort(a, first, mid, temp);    <span class="comment">//左边有序  </span></span><br><span class="line">        mergesort(a, mid + <span class="number">1</span>, last, temp); <span class="comment">//右边有序  </span></span><br><span class="line">        mergearray(a, first, mid, last, temp); <span class="comment">//再将二个有序数列合并  </span></span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">MergeSort</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> n)</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="keyword">int</span> *p = <span class="keyword">new</span> <span class="keyword">int</span>[n];  </span><br><span class="line">    <span class="keyword">if</span> (p == <span class="literal">NULL</span>)  </span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;  </span><br><span class="line">    mergesort(a, <span class="number">0</span>, n - <span class="number">1</span>, p);  </span><br><span class="line">    <span class="keyword">delete</span>[] p;  </span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li><a href="https://blog.csdn.net/morewindows/article/details/6678165/" target="_blank" rel="noopener">白话经典算法系列之五 归并排序的实现</a></li>
+</ul>
+</blockquote>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>在数据结构和算法的路上，越走越远！~</p>
+</div></article></div></main><footer><div class="paginator"><a href="/2018/04/30/尝螃蟹的人，体验Ubuntu-18-04-LTS（仿生河狸）！/" class="prev">上一篇</a><a href="/2018/04/27/初识wsl（Windows-Subsystem-for-Linux）的Surprise，微软这次真的给了我惊喜！/" class="next">下一篇</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'fuujiro';
+var disqus_identifier = '2018/04/29/数据结构-Review-考试高分过！/';
+var disqus_title = '数据结构-Review！';
+var disqus_url = 'https://blog.fuujiro.com/2018/04/29/数据结构-Review-考试高分过！/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//fuujiro.disqus.com/count.js" async></script><div class="copyright"><p>© 2017 - 2018 <a href="https://blog.fuujiro.com">fuujiro</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script></body></html>
