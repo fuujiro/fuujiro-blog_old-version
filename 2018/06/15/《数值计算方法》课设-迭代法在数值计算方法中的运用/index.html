@@ -1,7 +1,7 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 《数值计算方法》课设-迭代法在数值计算方法中的运用 · fuujiro's island</title><meta name="description" content="《数值计算方法》课设-迭代法在数值计算方法中的运用 - fuujiro"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="https://blog.fuujiro.com/atom.xml" title="fuujiro's island"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/activity/" target="_self" class="nav-list-link">ACTIVITY</a></li><li class="nav-list-item"><a href="https://github.com/fuujiro" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">《数值计算方法》课设-迭代法在数值计算方法中的运用</h1><div class="post-info">Jun 15, 2018</div><div class="post-content"><h3 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h3><blockquote>
 <p>迭代法也称辗转法，是一种不断用变量的旧值递推新值的过程，跟迭代法相对应的是直接法(或者称为一次解法)，即一次性解决问题。迭代算法是用计算机解决问题的一种基本方法，它利用计算机运算速度快、适合做重复性操作的特点，让计算机对一组指令(或一定步骤)进行重复执行，在每次执行这组指令(或这些步骤)时，都从变量的原值推出它的一个新值，迭代法又分为精确迭代和近似迭代。比较典型的迭代法如“二分法”和”牛顿迭代法”属于近似迭代法。</p>
 </blockquote>
-<p>在这篇文章里，主要介绍迭代法在线性方程组的数值解法和非线性方程组中迭代法运用，以及迭代法在数据结构算法中的优化和机器学习算法的运用。</p>
+<p>在这篇文章里，主要介绍迭代法在线性方程组的数值解法和非线性方程组中迭代法运用，以及迭代法在数据结构算法中的优化和计算机视觉算法的运用。</p>
 <p>关键词：</p>
 <ul>
 <li><p><strong>Jacobi</strong> 迭代法</p>
@@ -53,7 +53,7 @@ x_2=\frac{1}{a_{22}}(b_2&amp;-&amp;a_{21}x_1&amp;-&amp;a_{23}x_3&amp;-&amp;\cdot
 x_n=\frac{1}{a_{nn}}(b_n&amp;-&amp;a_{n1}x_1&amp;-&amp;a_{n2}x_2&amp;-&amp;\cdots&amp;-&amp;a_{n,n-1}x_{n-1})&amp;\\            
 </code></pre><p> \end{cases}$$    </p>
 <p> 即（1.8）</p>
-<p> $$<br> x_i=\frac{b_i - \sum_{j=1,j \neq i}^n a_{ij}x_j}{a_{ii}}, \quad i = 1,2,\cdots,n.<br> $$</p>
+<p> $$<br> x_i=\frac{b_i - \sum_{j=1,j \neq i}^{n} a_{ij}x_j}{a_{ii}}, \quad i = 1,2,\cdots,n.<br> $$</p>
 <p> (2)写成迭代形式（1.9）</p>
 <p> $$\begin{cases} </p>
 <pre><code>x_1^{(k+1)}=\frac{1}{a_{11}}(b_1&amp;-&amp;a_{12}x_2^{(k)}&amp;-&amp;a_{13}x_3^{(k)}&amp;-&amp;\cdots&amp;-&amp;a_{1n}x_n^{(k)})&amp;\\
@@ -241,7 +241,7 @@ $$
 <p>数值分析的目的是设计及分析一些计算的方式，可针对一些问题得到近似但够精确的结果。因此在这次的课程设计中我阐述的是迭代法的应用。</p>
 <p>迭代法是通过从一个初始估计出发寻找一系列近似解来解决问题的数学过程。和直接法不同，用迭代法求解问题时，其步骤没有固定的次数，而且只能求得问题的近似解，所找到的一系列近似解会收敛到问题的精确解。会利用审敛法来判别所得到的近似解是否会收敛。一般而言，即使使用无限精度算术的计算方式，迭代法也无法在有限次数内得到问题的精确解。</p>
 <p>通过课程设计的构思到编写代码实现，我感觉自己对迭代法的理解愈来愈深，深感数学工具与计算数学发展相辅相成。非常感谢孙焘老师对于数值计算方法这门课的付出，希望自己能够踏实地在学习的大路上慢慢走下去。</p>
-</div></article></div></main><footer><div class="paginator"><a href="/2018/05/22/NJU-计算机系统基础笔记/" class="next">下一篇</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'fuujiro';
+</div></article></div></main><footer><div class="paginator"><a href="/2018/05/22/NJU-计算机系统基础笔记/" class="next">NEXT</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'fuujiro';
 var disqus_identifier = '2018/06/15/《数值计算方法》课设-迭代法在数值计算方法中的运用/';
 var disqus_title = '《数值计算方法》课设-迭代法在数值计算方法中的运用';
 var disqus_url = 'https://blog.fuujiro.com/2018/06/15/《数值计算方法》课设-迭代法在数值计算方法中的运用/';
