@@ -115,3 +115,15 @@ baidusitemap:
 #    host: blog.fuujiro.com # 在百度站长平台中注册的域名
 #    token: 8OGYpxowYnhgVsUM # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
 #    path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里
+
+math:
+  engine: 'mathjax' # or 'katex'
+  mathjax:
+    src: custom_mathjax_source
+    config:
+      # MathJax config
+  katex:
+    css: custom_css_source
+    js: custom_js_source # not used
+    config:
+      # KaTeX config
